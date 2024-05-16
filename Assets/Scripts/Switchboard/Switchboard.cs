@@ -15,12 +15,12 @@ public class Switchboard : MonoBehaviour
     //when both lights turn off, the call has ended.
     //player turns switch off.
 
+    //--------------------------------
     [SerializeField] private GameObject _bell;
-    [SerializeField] private List<GameObject> _callers = new List<GameObject>();
+    //[SerializeField] private List<Caller> _callers = new List<Caller>();
 
-    // Start is called before the first frame update
-
-
+    [SerializeField] private bool _callInitialize = false;
+    
     // Update is called once per frame
     void Update()
     {
@@ -32,18 +32,23 @@ public class Switchboard : MonoBehaviour
             if (hit.collider.name == _bell.name)
             {
                 Debug.Log("Player clicked " + hit.collider.name);
-                //initiate call
+                Call_Zero();
             }
+           
         }
     }
 
-    private void Call_1()
+   
+
+
+    private void Call_Zero()
     {
-        Debug.Log("Call 1 initiated.");
-        int random_Call_1 = Random.Range(0, _callers.Count + 1);
-        //cycle through list of callers
-        //if random_call_1 matches caller
-        //start that dialog.
-        //need a caller script.
+        //caller game objects need colliders to hit...
+        _callInitialize = true;
+        Debug.Log("Call initializing");
+        //caller section light turns on
+        //call function to create caller
+        //CreateCaller(_callers[0]);
     }
+
 }

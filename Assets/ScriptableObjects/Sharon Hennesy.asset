@@ -9,11 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1310227c55a1e1489be4cfcb8528632, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
   m_Name: Sharon Hennesy
   m_EditorClassIdentifier: 
-  actorID: 4
-  actorName: Sharon Hennesy
-  actorOccupation: Teacher
-  actorLocation: Z3
-  icon: {fileID: -750394402, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  callerID: 4
+  callerName: Sharon Hennessy
+  callerOccupation: Diner Server
+  callerLocation: A2
+  callerIcon: {fileID: 0}
+  callerActiveLight: {fileID: 0}
+  callerSwitchState: {fileID: 0}
+  incomingCallerPlug: {fileID: 0}
+  outgoingCalleePlug: {fileID: 0}
