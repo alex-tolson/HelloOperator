@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
   m_Name: Robert Templeton
   m_EditorClassIdentifier: 
-  callerID: 3
+  callerID: 23
   callerName: Robert Templeton
-  callerOccupation: Mayor
+  callerOccupation: Mafioso type
   callerLocation: A3
   callerIcon: {fileID: 0}
+  description: Typical where black or dark grey.  Doesn't speak much.
   callerActiveLight: {fileID: 0}
   callerSwitchState: {fileID: 0}
   incomingCallerPlug: {fileID: 0}
