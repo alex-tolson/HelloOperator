@@ -11,14 +11,24 @@ public class JournalUI : MonoBehaviour
     private JournalInv _journal;
     [SerializeField] private GameObject _journalUIObject;
     [SerializeField] private GameObject _tableOfContentsGO;
-
+    [SerializeField] private GameObject _indexGO; 
+    [SerializeField] private GameObject _advanceGO;
+    [SerializeField] private GameObject _goBackGO;
 
     private void Start()
     {
         _journal = JournalInv.Instance;
         _journal.onCallerAddedCallback += UpdateUI;     //call update UI method
+        slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
+        DeactivateJournalPages();
     }
 
+    private void OnEnable()
+    {
+        _tableOfContentsGO.SetActive(true);  //activate the table of contents page.
+        Debug.Log("Showing Table of Contents");
+        
+    }
     public void UpdateUI()
     {
         Debug.Log("Updating Journal UI");
@@ -57,25 +67,34 @@ public class JournalUI : MonoBehaviour
     public void ExitJournalClicked()
     {
         //close out journal
-        DeactivateJournalPages();
-        _tableOfContentsGO.SetActive(false);
         _journalUIObject.SetActive(false);
+        //DeactivateJournalPages();
+        //_tableOfContentsGO.SetActive(false);
+        //_journalUIObject.SetActive(false);
     }
 
     public void TableOfContentsClicked()
     {   
         DeactivateJournalPages();            //jump to table of contents
         _tableOfContentsGO.SetActive(true);  //activate the table of contents page.
-        Debug.Log("Showing Table of Contents");
+
+        _goBackGO.SetActive(false);
     }
 
-    public void DeactivateJournalPages()
+    public void DeactivateJournalPages() //Sets all pages in the journal to false
     {
-        //cycle through all pages
-        //setactive to false.
-        for (int i = 0; i < slots.Length; i++)
-        {
-            slots[i].gameObject.SetActive(false);
+        foreach (JournalSlot slot in slots)
+        {       
+            slot.gameObject.SetActive(false);
         }
+    }
+    public void AdvanceButtonClicked()
+    {
+        Debug.Log("advance page");
+        _goBackGO.SetActive(true);
+    }
+    public void GoBackButtonClicked()
+    {
+        Debug.Log("go back page");
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class JournalInv : MonoBehaviour
@@ -13,102 +14,28 @@ public class JournalInv : MonoBehaviour
             if (_instance == null)
             {
                 Debug.LogError("JournalInv instance is null");
+                _instance = FindObjectOfType(typeof(JournalInv)) as JournalInv;
+                Debug.Log("Error resolved");
             }
             return _instance;
         }
     }
+    #endregion
 
     private void Awake()
     {
         _instance = this;
     }
-    #endregion
+    
 
     public delegate void onCallerAdded();                       //creates a delegate for onCallerAdded
     public onCallerAdded onCallerAddedCallback;
     public List<Caller> callers = new List<Caller>();           //a list of known callers (entries in the Journal)
 
-
-
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            foreach (Caller caller in CallerDB.Instance.callerDatabase)
-            {
-                Debug.Log("0 key was pressed");
-
-                if (caller.callerID == 0)
-                {
-                    AddToJournal(caller);
-                }
-            }
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            foreach (Caller caller in CallerDB.Instance.callerDatabase)
-            {
-
-                if (caller.callerID == 1)
-                {
-                    AddToJournal(caller);
-                }
-            }
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            foreach (Caller caller in CallerDB.Instance.callerDatabase)
-            {
-
-                if (caller.callerID == 2)
-                {
-                    AddToJournal(caller);
-                }
-            }
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            foreach (Caller caller in CallerDB.Instance.callerDatabase)
-            {
-
-                if (caller.callerID == 3)
-                {
-                    AddToJournal(caller);
-                }
-            }
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            foreach (Caller caller in CallerDB.Instance.callerDatabase)
-            {
-
-                if (caller.callerID == 4)
-                {
-                    AddToJournal(caller);
-                }
-            }
-
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            foreach (Caller caller in CallerDB.Instance.callerDatabase)
-            {
-                if (caller.callerID == 5)
-                {
-                    AddToJournal(caller);
-                }
-
-            }
-
-        }
-
+        DefaultJournalEntries();
     }
-
-
     public void AddToJournal(Caller newCaller)      //calling this function adds a new caller into the journal.
     {
         if (callers.Count == 0)
@@ -141,4 +68,15 @@ public class JournalInv : MonoBehaviour
             }
         }
     }
+    private void DefaultJournalEntries()
+    {
+        for (int i = 0; i < CallerDB.Instance.callerDatabase.Count; i++)
+        {
+            if (CallerDB.Instance.callerDatabase[i].callerID <= 5)
+            {
+                AddToJournal(CallerDB.Instance.callerDatabase[i]);
+            }
+        }
+    }
+   
 }

@@ -34,6 +34,7 @@ public class Switchboard : MonoBehaviour
                 Debug.Log("Player clicked " + hit.collider.name);
                 Call_Zero();
             }
+            else { return; }
            
         }
     }
