@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class JournalInv : MonoBehaviour
@@ -36,12 +35,13 @@ public class JournalInv : MonoBehaviour
     {
         DefaultJournalEntries();
     }
+
     public void AddToJournal(Caller newCaller)      //calling this function adds a new caller into the journal.
     {
         if (callers.Count == 0)
         {
             Debug.Log("adding " + newCaller + " to journal called");
-            callers.Add(newCaller);                 //add caller to journal 
+            callers.Add(newCaller);                 //add caller to callers list 
             if (onCallerAddedCallback != null)      //update UI Journal
             {
                 onCallerAddedCallback.Invoke();
@@ -68,6 +68,7 @@ public class JournalInv : MonoBehaviour
             }
         }
     }
+
     private void DefaultJournalEntries()
     {
         for (int i = 0; i < CallerDB.Instance.callerDatabase.Count; i++)
@@ -77,6 +78,26 @@ public class JournalInv : MonoBehaviour
                 AddToJournal(CallerDB.Instance.callerDatabase[i]);
             }
         }
+        if (onCallerAddedCallback != null)      //update UI Journal
+        {
+            onCallerAddedCallback.Invoke();
+        }
     }
-   
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (onCallerAddedCallback != null)      //update UI Journal
+            {
+                onCallerAddedCallback.Invoke();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject page = JournalPage_Manager.Instance.RequestPage();
+        }
+    }
+    
 }

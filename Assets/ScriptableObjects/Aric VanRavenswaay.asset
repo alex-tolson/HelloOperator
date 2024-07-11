@@ -17,7 +17,7 @@ MonoBehaviour:
   callerOccupation: Mine Worker
   callerLocation: 
   callerIcon: {fileID: 0}
-  description: 
+  description: Nunya bidness
   callerActiveLight: {fileID: 0}
   callerSwitchState: {fileID: 0}
   incomingCallerPlug: {fileID: 0}

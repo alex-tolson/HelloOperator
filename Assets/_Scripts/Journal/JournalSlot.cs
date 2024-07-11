@@ -6,18 +6,19 @@ using TMPro;
 
 public class JournalSlot : MonoBehaviour
 {
-     private Caller _newCaller;
-    [SerializeField] private int _callerID;
-    [SerializeField] private Image _icon;
-    [SerializeField] private TMP_Text _name;
-    [SerializeField] private TMP_Text _occupation;
-    [SerializeField] private TMP_Text _location;
-    [SerializeField] private TMP_Text _description;
-    /*[SerializeField]*/
+    private Caller _newCaller;
+    private int _callerID;
+    private Image _callerIcon;
+    private TMP_Text _callerName;
+    private TMP_Text _occupation;
+    private TMP_Text _description;
+
+    private TMP_Text _location;
     private GameObject _activeLight;
-    /*[SerializeField]*/ private GameObject _switchState;
-    /*[SerializeField]*/ private SpriteRenderer _incomingCallerPlug;
-    /*[SerializeField]*/ private SpriteRenderer _outgoingCalleePlug;
+    private GameObject _switchState;
+    private SpriteRenderer _incomingCallerPlug;
+    private SpriteRenderer _outgoingCalleePlug;
+
     JournalInv journal;
     
 
@@ -26,36 +27,39 @@ public class JournalSlot : MonoBehaviour
         journal = JournalInv.Instance;
     }
 
-    public void AddCaller(Caller newCaller)
+    public void AddCaller(Caller caller)
     {
         Debug.Log("adding new caller");
 
-        _newCaller = newCaller;
-        _callerID = newCaller.callerID;
-        _name.text = newCaller.callerName;
-        //_icon.sprite = newCaller.callerIcon;
-        _occupation.text = newCaller.callerOccupation;
-        _location.text = newCaller.callerLocation;
-        _description.text = newCaller.description;
-        _activeLight = newCaller.callerActiveLight;
-        _switchState = newCaller.callerSwitchState;
-        _incomingCallerPlug = newCaller.incomingCallerPlug;
-        _outgoingCalleePlug = newCaller.outgoingCalleePlug;
+        _newCaller = caller;
+        _callerID = caller.callerID;
+        _callerName.text = caller.callerName;
+        _occupation.text = caller.callerOccupation;
+        _description.text = caller.description;
+
+        //_location.text = caller.callerLocation;
+        //_icon.sprite = caller.callerIcon;
+        //_activeLight = caller.callerActiveLight;
+        //_switchState = caller.callerSwitchState;
+        //_incomingCallerPlug = caller.incomingCallerPlug;
+        //_outgoingCalleePlug = caller.outgoingCalleePlug;
     }
 
     public void ClearSlot()
     {
         Debug.Log("clearing slot");
         _newCaller = null;
-        _callerID = 0;
-        _name = null;
-        _icon = null;
-        _occupation = null;
-        _location = null;
-        _activeLight = null;
-        _switchState = null;
-        _incomingCallerPlug = null;
-        _outgoingCalleePlug = null;
+        _callerID = 9999;
+        _callerName.text = "";
+        _occupation.text = "";
+        _description.text = "";
+
+        //_icon = null;
+        //_location.text = "";
+        //_activeLight = null;
+        //_switchState = null;
+        //_incomingCallerPlug = null;
+        //_outgoingCalleePlug = null;
 
     }
 }
