@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Charlie Czerniak
   m_EditorClassIdentifier: 
   callerID: 2
-  callerName: Charlie Czerniak
+  cName: Charlie Czerniak
   callerOccupation: Sheriff
   callerLocation: 
   callerIcon: {fileID: 0}

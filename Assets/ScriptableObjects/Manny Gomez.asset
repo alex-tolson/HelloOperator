@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Manny Gomez
   m_EditorClassIdentifier: 
   callerID: 18
-  callerName: Manny Gomez
+  cName: Manny Gomez
   callerOccupation: Mail carrier
   callerLocation: 
   callerIcon: {fileID: 0}

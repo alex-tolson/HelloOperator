@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gordon Read
   m_EditorClassIdentifier: 
   callerID: 8
-  callerName: Gordon Read
+  cName: Gordon Read
   callerOccupation: Gossiper
   callerLocation: Z3
   callerIcon: {fileID: 0}

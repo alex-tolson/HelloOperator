@@ -1,35 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class JournalPage_Manager : MonoBehaviour
 {
-    #region Singleton
-    private static JournalPage_Manager _instance;
-
-    public static JournalPage_Manager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                Debug.LogError("JournalPage_Manager is null");
-
-            }
-            return _instance;
-        }
-    }
-    #endregion
-
     [SerializeField] private Transform _journalPages_container;
-    [SerializeField] private JournalSlot[] _journalPages;
+    private JournalSlot[] _journalPages;
     private JournalUI _journalUI;
-
-    private void Awake()
-    {
-        _instance = this;
-    }
 
     private void Start()
     {
@@ -40,16 +17,36 @@ public class JournalPage_Manager : MonoBehaviour
         }
     }
 
-    public GameObject RequestPage()
+    public void RequestPage()
     {
-        _journalPages = GetComponentsInChildren<JournalSlot>();
-        for (int i = 0; i < _journalPages.Length; i++)
+        _journalPages = _journalPages_container.GetComponentsInChildren<JournalSlot>();
+        for (int i = 0; i < _journalPages.Length; i++) //go through all the journal pages
         {
-            if (i == _journalUI.pageNumber)
+            foreach (JournalSlot page in _journalPages)
             {
-                //return page[i]
+                if (i == _journalUI.pageNumber)          //if one matches the correct page number
+                {
+                    _journalPages[i].gameObject.SetActive(true); //make page active
+
+                }
+                else                                    //else
+                {
+                    _journalPages[i].gameObject.SetActive(false); //make page inactive
+                }
+
             }
+           // return _journalPages[i].gameObject;         //return page
         }
-        return null;
+        
+        //return null;
     }
+
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        RequestPage();
+    //    }
+    //}
+
 }

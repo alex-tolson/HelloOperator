@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kiowa Oshinuga
   m_EditorClassIdentifier: 
   callerID: 14
-  callerName: Kiowa Oshinuga
+  cName: Kiowa Oshinuga
   callerOccupation: Tailor
   callerLocation: 
   callerIcon: {fileID: 0}

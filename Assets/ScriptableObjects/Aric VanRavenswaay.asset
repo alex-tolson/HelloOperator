@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aric VanRavenswaay
   m_EditorClassIdentifier: 
   callerID: 1
-  callerName: Aric VanRavenswaay
+  cName: Aric VanRavenswaay
   callerOccupation: Mine Worker
   callerLocation: 
   callerIcon: {fileID: 0}

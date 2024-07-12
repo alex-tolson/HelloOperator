@@ -6,6 +6,7 @@ public class JournalInv : MonoBehaviour
 {
     #region Journal Singleton
     private static JournalInv _instance;
+
     public static JournalInv Instance
     {
         get
@@ -21,18 +22,18 @@ public class JournalInv : MonoBehaviour
     }
     #endregion
 
-    private void Awake()
-    {
-        _instance = this;
-    }
-    
-
     public delegate void onCallerAdded();                       //creates a delegate for onCallerAdded
     public onCallerAdded onCallerAddedCallback;
     public List<Caller> callers = new List<Caller>();           //a list of known callers (entries in the Journal)
 
+
+    private void Awake()
+    {
+        _instance = this;
+    }
     private void Start()
     {
+        //_journalPage = GameObject.Find("JournalPages_container").GetComponent<JournalPage_Manager>();
         DefaultJournalEntries();
     }
 
@@ -84,20 +85,4 @@ public class JournalInv : MonoBehaviour
         }
     }
 
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            if (onCallerAddedCallback != null)      //update UI Journal
-            {
-                onCallerAddedCallback.Invoke();
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GameObject page = JournalPage_Manager.Instance.RequestPage();
-        }
-    }
-    
 }

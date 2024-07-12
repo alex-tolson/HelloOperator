@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fineas Waller
   m_EditorClassIdentifier: 
   callerID: 5
-  callerName: Fineas Waller
+  cName: Fineas Waller
   callerOccupation: Barber
   callerLocation: 
   callerIcon: {fileID: 0}

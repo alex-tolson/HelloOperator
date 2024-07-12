@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tallehassee Kinnison
   m_EditorClassIdentifier: 
   callerID: 28
-  callerName: Tallehasse Kinnison
+  cName: Tallehassee Kinnison
   callerOccupation: Clergy
   callerLocation: 
   callerIcon: {fileID: 0}

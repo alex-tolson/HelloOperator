@@ -6,7 +6,7 @@ using UnityEngine;
 public class Caller : ScriptableObject
 {
     public int callerID;
-    public string callerName;
+    public string cName;
     public string callerOccupation;
     public string callerLocation;
     public Sprite callerIcon;
