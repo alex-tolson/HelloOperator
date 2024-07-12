@@ -41,12 +41,15 @@ public class JournalPage_Manager : MonoBehaviour
         //return null;
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        RequestPage();
-    //    }
-    //}
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Requesting Page update");
+            _journalUI.DeactivateTableOfContents();
+            _journalUI.ActivateJournalPages();
+            RequestPage();
+        }
+    }
 
 }
