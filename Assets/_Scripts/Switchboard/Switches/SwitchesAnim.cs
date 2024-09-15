@@ -60,7 +60,7 @@ public class SwitchesAnim : MonoBehaviour
                 Debug.Log("clicked " + hit.collider.name);
                 OnToggleClicked();
             }
-            else
+            else 
             {
                 return;
             }

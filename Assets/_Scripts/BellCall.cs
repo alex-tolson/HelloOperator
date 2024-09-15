@@ -8,7 +8,7 @@ public class BellCall : MonoBehaviour, IPointerClickHandler
     
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Bell clicked");
+        //Debug.Log("Bell clicked");
         _switchboard.InitiateCall();
     }
 
