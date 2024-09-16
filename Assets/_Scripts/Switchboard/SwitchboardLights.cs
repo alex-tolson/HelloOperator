@@ -4,12 +4,12 @@ using UnityEngine.EventSystems;
 public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
 {
 
-    private WiresFunction _wiresFuntion;
+    private WiresFunction _wiresFunction;
     //private PointerEventData _wireData;
     private void Start()
     {
-        _wiresFuntion = FindObjectOfType<WiresFunction>(true);
-        if (_wiresFuntion == null)
+        _wiresFunction = FindObjectOfType<WiresFunction>(true);
+        if (_wiresFunction == null)
         {
             Debug.LogError("SwitchboardLights::Wires function is null");
         }
@@ -18,7 +18,8 @@ public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
     {
         Debug.Log("Connect wire");
         gameObject.SetActive(false);
-        _wiresFuntion.ActivateWire();
+        _wiresFunction.gameObject.SetActive(true);
+        _wiresFunction.ConnectWireAtAnchor();
     }
 
 

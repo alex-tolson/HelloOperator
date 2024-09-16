@@ -102,7 +102,7 @@ public class Switchboard : MonoBehaviour
         {
             if (incomingCall == _incomingCaller)//if the incoming call matches the incoming Caller from the List
             {
-                Debug.Log("setting _incoming caller location to " + _incomingCaller); //debug.log
+                //Debug.Log("setting _incoming caller location to " + _incomingCaller); //debug.log
 
                 foreach (SwitchboardLights light in _switchboardLights)
                 {
@@ -138,19 +138,4 @@ public class Switchboard : MonoBehaviour
                 }
         }
     }
-
-
-    //if (Input.GetMouseButtonDown(0))
-    //{
-    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    //    RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-
-    //    if (hit.collider.name == _bell.name)
-    //    {
-    //        Debug.Log("Player clicked " + hit.collider.name);
-    //        CallZero();
-    //    }
-    //    else { return; }
-
-    //}
 }

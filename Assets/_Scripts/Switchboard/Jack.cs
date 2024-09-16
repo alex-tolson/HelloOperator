@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class IncomingJack : MonoBehaviour
+public class Jack : MonoBehaviour
 {
     public float FindNearestJack(Vector3 position)
     {
