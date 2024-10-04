@@ -9,10 +9,11 @@ public class Switchboard : MonoBehaviour
     //a wire connects lit up area to the switchboard
     //player hits switch up to hear caller
     //Player selects where to place the call
+    //Player connects wire to outgoing jack
     //player hits switch down to connect the call
     //both lights turn green as they are connected
     //when both lights turn off, the call has ended.
-    //player turns switch off.
+    //player turns switch down.
 
     [SerializeField] private List<SwitchboardLights> _switchboardLights = new List<SwitchboardLights>(); 
     [SerializeField] private List<string> _incomingCalls = new List<string>();
@@ -53,6 +54,7 @@ public class Switchboard : MonoBehaviour
         _incomingCalls.Add("A1");
 
     }
+
     private void InitializeAllCallsDay2()
     {
         _incomingCalls.Add("A0");
@@ -75,6 +77,7 @@ public class Switchboard : MonoBehaviour
             Debug.LogError("Switchboard::SwitchboardLights is null");
         }
     }
+
     public void InitiateCall()
     {
         if (_callCount == _incomingCalls.Count)

@@ -48,19 +48,6 @@ public class JournalUI : MonoBehaviour
     //table of contents or journal slots must be active to populate the array.
     public void UpdateUI()
     {
-        Debug.Log("Updating Journal UI");
-
-        //_slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
-        //if (_slots == null)
-        //{
-        //    Debug.LogError("JournalUI::UpdateUI method:: _slots is null");
-        //}
-        //_tocSlots = _tocSlotsContainer.GetComponentsInChildren<TOCSlot>();
-        //if (_tocSlots == null)
-        //{
-        //    Debug.LogError("JournalUI::UpdateUI Method:: _tocSlots is null");
-        //}
-
         for (int i = 0; i < _slots.Length; i++)
         {
             if (i < journal.callers.Count)              // go through the journal and 

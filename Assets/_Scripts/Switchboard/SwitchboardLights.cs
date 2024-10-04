@@ -3,23 +3,22 @@ using UnityEngine.EventSystems;
 
 public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
 {
-
-    private WiresFunction _wiresFunction;
+    private IncomingWire _incomingWire;
     //private PointerEventData _wireData;
+
     private void Start()
     {
-        _wiresFunction = FindObjectOfType<WiresFunction>(true);
-        if (_wiresFunction == null)
+        _incomingWire = FindObjectOfType<IncomingWire>(true); //finds incoming wire even if it's inactive
+        if (_incomingWire == null)
         {
             Debug.LogError("SwitchboardLights::Wires function is null");
         }
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Connect wire");
         gameObject.SetActive(false);
-        _wiresFunction.gameObject.SetActive(true);
-        _wiresFunction.ConnectWireAtAnchor();
+        _incomingWire.gameObject.SetActive(true);
+        _incomingWire.ConnectWireAtAnchor(transform.position);
     }
 
 
