@@ -1,9 +1,7 @@
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class IncomingWire : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
+public class IncomingWire : MonoBehaviour, IPointerClickHandler
 {
     private float _oldDistanceToJack;
     private float _currentDistanceToJack;
@@ -15,28 +13,23 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler, IPointerDownHan
     [SerializeField] private GameObject _incomingWireEndAnchor;
     [SerializeField] private Vector3 _wireOffsetAtEnd;
     [SerializeField] private Vector3 _wireOffsetAtLight;
-    [SerializeField] private OutgoingWire _outgoing;
+    [SerializeField] private GameObject _outgoingWire;
+    [SerializeField] private Transform _switchboardParent;
 
+    //have a dot or have mouse change shape when near clickable wire edge
 
 
     private void OnEnable()
     {
-        _outgoing = FindObjectOfType<OutgoingWire>(true);
-        if (_outgoing == null)
-        {
-            Debug.LogError("IncomingWire::Outgoing Wire is null");
-        }
         _incomingJacks = GameObject.Find("Call-Jacks-Container").GetComponentsInChildren<IncomingJack>();
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        _outgoing.gameObject.SetActive(false);
         ConnectWireAtEnd();
         //Set up outgoing wire
-        _outgoing.gameObject.SetActive(true);//
-        _outgoing.transform.position = _incomingWireEnd.transform.position;
-        _outgoing.ConnectOutgoingAnchorToJack();
+        _outgoingWire.SetActive(true);
+        _outgoingWire.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_incomingWireEnd.transform.position);
     }
 
     public void ConnectWireAtEnd()
@@ -55,13 +48,12 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler, IPointerDownHan
         _incomingWireEnd.transform.position = _incomingWireEndAnchor.transform.position + _wireOffsetAtEnd;
     }
 
-    public void ConnectWireAtAnchor(Vector3 positionOfLight)
+    public void ConnectWireAtAnchor(SwitchboardLights light)
     {
-        _incomingWireAnchor.transform.position = positionOfLight + _wireOffsetAtLight;
+        _incomingWireAnchor.transform.position = light.transform.position + _wireOffsetAtLight;
+        light.TurnLightColor(Color.green);
     }
+    //if switch is flipped, 
+    //turn corresponding light blue
 
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        _outgoing.gameObject.SetActive(false);
-    }
 }

@@ -3,13 +3,6 @@ using UnityEngine.EventSystems;
 
 public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
 {
-    //when switch is pressed
-    //toggle up
-    //when switch is pressed again
-    //toggle down
-    //if pressed a third time
-    //toggle off
-
     [SerializeField] private SpriteRenderer _mainToggle;
     [SerializeField] private Sprite _toggleUp;
     [SerializeField] private Sprite _toggleDown;
@@ -20,9 +13,16 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
         if (eventData.pointerCurrentRaycast.gameObject.name == _mainToggle.name)
         {
             OnToggleClicked();
+            //if outgoing
+            //OutgoingJack _jack,
+            //AnchorPlaceHolder _switchboardPosition
+            //and SwitchboardLights _light are not null
+            //then we know we have the connection
+            //turn the lights blue.
         }
-
     }
+
+    
 
     public void OnToggleClicked()
     {

@@ -7,10 +7,9 @@ public class Switchboard : MonoBehaviour
     //a call comes through --- need a list of all available callers
     //player clicks on lit up area
     //a wire connects lit up area to the switchboard
-    //player hits switch up to hear caller
     //Player selects where to place the call
     //Player connects wire to outgoing jack
-    //player hits switch down to connect the call
+    //player hits switch up to connect the call
     //both lights turn green as they are connected
     //when both lights turn off, the call has ended.
     //player turns switch down.
@@ -25,14 +24,15 @@ public class Switchboard : MonoBehaviour
     //--------------------------------
     //[SerializeField] private BellCall _bell;
     [SerializeField] private bool _callInitialize = false;
+    private OutgoingWire _outgoingWire;
+
     private void Start()
     {
+        _outgoingWire = GameObject.FindObjectOfType<OutgoingWire>();
         InitializeIncomingCalls();  //Initiate the calls on the list for that day
         InitializeAllSwitchboardLights();
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         if (_callInitialize)
@@ -105,20 +105,15 @@ public class Switchboard : MonoBehaviour
         {
             if (incomingCall == _incomingCaller)//if the incoming call matches the incoming Caller from the List
             {
-                //Debug.Log("setting _incoming caller location to " + _incomingCaller); //debug.log
-
                 foreach (SwitchboardLights light in _switchboardLights)
                 {
                     if (light.name == _incomingCaller) //if  switchboardLight name == _incoming caller
                     {
-                        light.TurnOnLight();//turn on switchboardLight
+                        light.TurnLightColor(Color.yellow);//turn on switchboardLight
                     }
                 }
             }
         }
-        //Assign a caller
-        //light up correct area based on the caller location
-
         _incomingCallCompleted = true;
         _callCount++;
         _incomingCallCompleted = false;
@@ -141,4 +136,13 @@ public class Switchboard : MonoBehaviour
                 }
         }
     }
+
+    //if incoming and outgoing on switchboard and jacks are occupied -->Done
+    //the lights at the incoming and outgoing switchboard locations turn green-->Done
+    //when the switches are flipped,
+    //the lights at the incoming and outgoing switchboard locations turn Blue
+    //the switch cannot be flipped again until the dialogue is exhausted or skipped
+    //then the switch can be flipped down and the lights go off.
+
+
 }

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
 {
     private IncomingWire _incomingWire;
-    //private PointerEventData _wireData;
+    private Color _color;
 
     private void Start()
     {
@@ -18,12 +18,19 @@ public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
     {
         gameObject.SetActive(false);
         _incomingWire.gameObject.SetActive(true);
-        _incomingWire.ConnectWireAtAnchor(transform.position);
+        _incomingWire.ConnectWireAtAnchor(this);
     }
 
-
-    public void TurnOnLight()
-    { 
+    public void TurnLightColor(Color color)
+    {
         gameObject.SetActive(true);
+        GetComponent<SpriteRenderer>().color = color;
     }
+
+    public float FindNearestLight(Vector3 position)
+    {
+        var distance = Vector3.Distance(transform.position, position);
+        return distance;
+    }
+
 }
