@@ -14,11 +14,12 @@ public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
             Debug.LogError("SwitchboardLights::Wires function is null");
         }
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         gameObject.SetActive(false);
         _incomingWire.gameObject.SetActive(true);
-        _incomingWire.ConnectWireAtAnchor(this);
+        //_incomingWire.ConnectWireAtAnchor(this);
     }
 
     public void TurnLightColor(Color color)
@@ -33,4 +34,8 @@ public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
         return distance;
     }
 
+    public void TurnOffLight()
+    {
+        gameObject.SetActive(false);
+    }
 }

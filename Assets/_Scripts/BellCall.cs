@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class BellCall : MonoBehaviour, IPointerClickHandler
 {
-    private Switchboard _switchboard;
+    private Switchboard2 _switchboard;
     
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -16,7 +16,7 @@ public class BellCall : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Start()
     {
-        _switchboard = GameObject.Find("Switchboard").GetComponent<Switchboard>();
+        _switchboard = GameObject.Find("Switchboard").GetComponent<Switchboard2>();
         if (_switchboard == null)
         {
             Debug.LogError("BellCall::Switchboard is null");

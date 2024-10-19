@@ -7,6 +7,7 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     private float _currentDistanceToJack;
     private Vector3 _currentPos;
 
+    private Switchboard2 _switchboard2;
     [SerializeField] private IncomingJack[] _incomingJacks;
     [SerializeField] private GameObject _incomingWireAnchor;
     [SerializeField] private GameObject _incomingWireEnd;
@@ -23,9 +24,17 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     {
         _incomingJacks = GameObject.Find("Call-Jacks-Container").GetComponentsInChildren<IncomingJack>();
     }
-
+    private void Start()
+    {
+        _switchboard2 = GameObject.Find("Switchboard").GetComponent<Switchboard2>();
+        if (_switchboard2 == null)
+        {
+            Debug.LogError("IncomingWire::Switchboard2 is null");
+        }
+    }
     public void OnPointerClick(PointerEventData eventData)
     {
+
         ConnectWireAtEnd();
         //Set up outgoing wire
         _outgoingWire.SetActive(true);
@@ -42,18 +51,17 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
             if (_oldDistanceToJack < _currentDistanceToJack)
             {
                 _currentDistanceToJack = _oldDistanceToJack;
-                _incomingWireEndAnchor.transform.position = jack.transform.position;
+                _incomingWireEndAnchor.transform.position = jack.transform.position;  
             }
+            //_switchboard2.SetIncomingJack(jack);
         }
+        
         _incomingWireEnd.transform.position = _incomingWireEndAnchor.transform.position + _wireOffsetAtEnd;
     }
 
-    public void ConnectWireAtAnchor(SwitchboardLights light)
+    public void ConnectWireAtAnchor(LightsSlot light)
     {
         _incomingWireAnchor.transform.position = light.transform.position + _wireOffsetAtLight;
         light.TurnLightColor(Color.green);
     }
-    //if switch is flipped, 
-    //turn corresponding light blue
-
 }
