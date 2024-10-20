@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementName: X0
   placementSwitch: 0
-  jackDirection: 1
+  jackDirection: 0
   currentState: 0
-  _vector3Location: {x: -0.65, y: 4.77, z: 0}
+  _vector3Location: {x: -0.6500005, y: 4.221, z: 0}
   light: {fileID: 0}

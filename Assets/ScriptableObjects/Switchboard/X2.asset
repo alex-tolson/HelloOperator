@@ -16,5 +16,5 @@ MonoBehaviour:
   placementSwitch: 0
   jackDirection: 0
   currentState: 0
-  _vector3Location: {x: 0.082, y: 4.77, z: 0}
+  _vector3Location: {x: 0.06799924, y: 4.221, z: 0}
   light: {fileID: 0}

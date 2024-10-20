@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UIElements;
 
 public class OutgoingWire : MonoBehaviour, IPointerClickHandler
 {
@@ -114,7 +112,7 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
                 }
             }
             _light.gameObject.SetActive(true);
-            _light.TurnLightColor(Color.green);
+            //_light.TurnLightColor(Color.green);
         }
         else
         {

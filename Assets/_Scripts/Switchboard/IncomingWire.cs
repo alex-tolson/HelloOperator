@@ -62,6 +62,5 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     public void ConnectWireAtAnchor(LightsSlot light)
     {
         _incomingWireAnchor.transform.position = light.transform.position + _wireOffsetAtLight;
-        light.TurnLightColor(Color.green);
     }
 }

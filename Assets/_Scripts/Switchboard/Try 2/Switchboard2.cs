@@ -1,17 +1,8 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Switchboard2 : MonoBehaviour
 {
-    //when bell is hit
-    //a call comes through --- need a list of all available callers
-    //player clicks on lit up area
-    //a wire connects lit up area to the switchboard
-    //Player selects where to place the call
-    //Player connects wire to outgoing jack
-    //player hits switch up to connect the call
-    //both lights turn green as they are connected
     //when both lights turn off, the call has ended.
     //player turns switch down.
 
@@ -58,23 +49,20 @@ public class Switchboard2 : MonoBehaviour
 
     void Update()
     {
-        if (_callInitialize)
-        {
-            IncomingCall();
-        }
+       
     }
 
     public void InitializeAllCallsDay1()
     {
         _incomingCalls.Add("A0");
-        _incomingCalls.Add("A1");
+        _incomingCalls.Add("A9");
         _incomingCalls.Add("C7");
         _incomingCalls.Add("C8");
         _incomingCalls.Add("Z1");
         _incomingCalls.Add("Z2");
         _incomingCalls.Add("Z2");
         _incomingCalls.Add("Y9");
-        _incomingCalls.Add("A9");
+        _incomingCalls.Add("A1");
 
     }
 
@@ -157,11 +145,8 @@ public class Switchboard2 : MonoBehaviour
 
     public void UpdateUI()
     {
-        //for (int i = 0; i < _slots.Count; i++)  
-        //{
-        //    _slots[i].AddLights(_switchboardInv._switchboardList[i]);
-        //}
-        for (int i = 0; i < 6; i++) //using this for-loop for testing the first 6 scriptableObj
+    
+        for (int i = 0; i < _slots.Count; i++)
         {
             _slots[i].AddLights(_switchboardInv._switchboardList[i]);
         }
@@ -181,7 +166,6 @@ public class Switchboard2 : MonoBehaviour
     //if incoming and outgoing on switchboard and jacks are occupied -->Done
     //the lights at the incoming and outgoing switchboard locations turn green-->Done
     //when the switches are flipped,
-    //the lights at the incoming and outgoing switchboard locations turn Blue
     //the switch cannot be flipped again until the dialogue is exhausted or skipped
     //then the switch can be flipped down and the lights go off.
 
