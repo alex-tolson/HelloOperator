@@ -17,7 +17,7 @@ public class JournalSlot : MonoBehaviour
 
     public void AddCaller(Caller caller)
     {
-        Debug.Log("adding new caller");
+        //Debug.Log("adding new caller");
 
         _newCaller = caller;
         _newCaller.callerID = caller.callerID;
@@ -40,7 +40,7 @@ public class JournalSlot : MonoBehaviour
 
     public void ClearSlot()
     {
-        Debug.Log("clearing slot");
+        //Debug.Log("clearing slot");
         _newCaller = null;
 
     }

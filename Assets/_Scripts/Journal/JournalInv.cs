@@ -41,7 +41,7 @@ public class JournalInv : MonoBehaviour
     {
         if (callers.Count == 0)
         {
-            Debug.Log("adding " + newCaller + " to journal called");
+            //Debug.Log("adding " + newCaller + " to journal called");
             callers.Add(newCaller);                 //add caller to callers list 
             if (onCallerAddedCallback != null)      //update UI Journal
             {
@@ -54,12 +54,12 @@ public class JournalInv : MonoBehaviour
             {
                 if (callers.Contains(newCaller))
                 {
-                    Debug.Log("Duplicate entry: " + newCaller);
+                    //Debug.Log("Duplicate entry: " + newCaller);
                     return;                           //return and don't add to journal again.
                 }
                 else
                 {
-                    Debug.Log("adding " + newCaller + " to journal called");
+                    //Debug.Log("adding " + newCaller + " to journal called");
                     callers.Add(newCaller);                 //add caller to journal 
                     if (onCallerAddedCallback != null)      //update UI Journal
                     {

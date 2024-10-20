@@ -9,7 +9,7 @@ public class TOCSlot : MonoBehaviour
 
     public void AddToTableOfContents(Caller caller)
     {
-        Debug.Log("adding name to table of contents");
+        //Debug.Log("adding name to table of contents");
         _name.text = caller.cName;
     }
     public void ClearTOCSlot()

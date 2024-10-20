@@ -19,6 +19,7 @@ public class JournalPage_Manager : MonoBehaviour
 
     public void RequestPage()
     {
+        _journalUI.ActivateJournalPages();
         _journalPages = _journalPages_container.GetComponentsInChildren<JournalSlot>();
         for (int i = 0; i < _journalPages.Length; i++) //go through all the journal pages
         {
@@ -43,13 +44,13 @@ public class JournalPage_Manager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Requesting Page update");
-            _journalUI.DeactivateTableOfContents();
-            _journalUI.ActivateJournalPages();
-            RequestPage();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Debug.Log("Requesting Page update");
+        //    _journalUI.DeactivateTableOfContents();
+        //    _journalUI.ActivateJournalPages();
+        //    RequestPage();
+        //}
     }
 
 }
