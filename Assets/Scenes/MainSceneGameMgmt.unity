@@ -36440,27 +36440,6 @@ PrefabInstance:
 --- !u!1001 &7998544379383713164
 PrefabInstance:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4788562177687983847}
-  - component: {fileID: 6572161033312507591}
-  - component: {fileID: 7597346877148630493}
-  - component: {fileID: 4089159441939970569}
-  m_Layer: 0
-  m_Name: Switches
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
-=======
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
@@ -36515,10 +36494,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-<<<<<<< HEAD
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
 --- !u!4 &8939621194111073446
 Transform:
   m_ObjectHideFlags: 0

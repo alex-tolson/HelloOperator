@@ -6,7 +6,7 @@ public class JournalUI : MonoBehaviour
 {
     [SerializeField] private Transform _slotsContainer;
     [SerializeField] private Transform _tocSlotsContainer;
-
+    //[SerializeField] private JournalSlot[] _pages;
     [SerializeField] private JournalSlot[] _slots;
     [SerializeField] private TOCSlot[] _tocSlots;
     
@@ -28,25 +28,6 @@ public class JournalUI : MonoBehaviour
 
     private void Start()
     {
-        _slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
-        _tocSlots = _tocSlotsContainer.GetComponentsInChildren<TOCSlot>();
-
-        _journalPage_manager = GameObject.Find("JournalPages_container").GetComponent<JournalPage_Manager>();
-        if (_journalPage_manager == null)
-        {
-            Debug.LogError("JournalUI::JournalPage_Manager is null");
-        }
-
-        journal.onCallerAddedCallback += UpdateUI;     //call update UI method
-
-
-        _tableOfContentsGO.SetActive(true);  //activate the table of contents page.
-        //DeactivateJournalPages();
-        //ActivateTableOfContents();
-        //UpdateUI();
-
-        Debug.Log("start method end");
-
         journal.onCallerAddedCallback += UpdateUI;     //call update UI method
         _slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
         if (_slots == null)
@@ -67,15 +48,6 @@ public class JournalUI : MonoBehaviour
     //table of contents or journal slots must be active to populate the array.
     public void UpdateUI()
     {
-        Debug.Log("Updating Journal UI");
-
-        _slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
-
-        _tocSlots = _tocSlotsContainer.GetComponentsInChildren<TOCSlot>();
-
-        //ActivateJournalPages();
-        //ActivateTableOfContents();
-
         for (int i = 0; i < _slots.Length; i++)
         {
             if (i < journal.callers.Count)              // go through the journal and 
@@ -93,12 +65,11 @@ public class JournalUI : MonoBehaviour
 
     public void JournalClicked()
     {
-
         if (_journalUIObject.activeSelf == false) //if journal is false
         {
             _journalUIObject.SetActive(true); //set turn on journal game object
-            //DeactivateJournalPages();   //turn off journal pages
-            //ActivateTableOfContents(); //activate table of contents
+            DeactivateJournalPages();   //turn off journal pages
+            ActivateTableOfContents(); //activate table of contents
         }
         else
         {
@@ -121,24 +92,26 @@ public class JournalUI : MonoBehaviour
 
     public void ExitJournalClicked()
     {
+        //close out journal
         _journalUIObject.SetActive(false);
         DeactivateJournalPages();
         _tableOfContentsGO.SetActive(false);
     }
 
     public void TableOfContentsClicked()
-    {
-        
-        DeactivateJournalPages();      //deactivate journal pages and
-        _tableOfContentsGO.SetActive(true); //show table of contents game object
-        ActivateTableOfContents();          //show the table of contents contents
-        
+    {   
+                 
+        if (!_tableOfContentsGO.activeInHierarchy) //if table of contents is false
+        {
+            DeactivateJournalPages();       //deactivate journal pages and
+            _tableOfContentsGO.SetActive(true); //show table of contents game object
+            ActivateTableOfContents();          //show the table of contents contents
+        }
         _goBackGO.SetActive(false);
     }
 
     public void DeactivateJournalPages() //Sets all pages in the journal to false
     {
-        //_slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
         foreach (JournalSlot slot in _slots)
         {       
             slot.gameObject.SetActive(false);
@@ -147,8 +120,6 @@ public class JournalUI : MonoBehaviour
 
     public void DeactivateTableOfContents()
     {
-       
-        _tocSlots = _tocSlotsContainer.GetComponentsInChildren<TOCSlot>();
         foreach (TOCSlot slot in _tocSlots)
         {
             slot.gameObject.SetActive(false);
@@ -174,7 +145,7 @@ public class JournalUI : MonoBehaviour
         Debug.Log("go back :: page number is " + pageNumber);
         pageNumber--;
 
-        if (pageNumber <=0)
+        if (pageNumber <= -1)
         {
             pageNumber = -1;
             _goBackGO.SetActive(false);
@@ -186,7 +157,6 @@ public class JournalUI : MonoBehaviour
 
     public void ActivateTableOfContents()
     {
-        _tocSlots = _tocSlotsContainer.GetComponentsInChildren<TOCSlot>();
         foreach (TOCSlot slot in _tocSlots)
         {
             slot.gameObject.SetActive(true);
