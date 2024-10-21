@@ -20,15 +20,6 @@ public class JournalUI : MonoBehaviour
     [SerializeField] private JournalPage_Manager _journalPage_manager;
     public int pageNumber = -1;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    JournalPage_Manager _journalPage_manager;
-
-
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
     private void OnEnable()
     {
         journal = JournalInv.Instance;
@@ -37,8 +28,6 @@ public class JournalUI : MonoBehaviour
 
     private void Start()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         _slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
         _tocSlots = _tocSlotsContainer.GetComponentsInChildren<TOCSlot>();
 
@@ -57,9 +46,7 @@ public class JournalUI : MonoBehaviour
         //UpdateUI();
 
         Debug.Log("start method end");
-=======
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
+
         journal.onCallerAddedCallback += UpdateUI;     //call update UI method
         _slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
         if (_slots == null)
@@ -76,16 +63,10 @@ public class JournalUI : MonoBehaviour
         //_tableOfContentsGO.SetActive(true);  //activate the table of contents page.
         DeactivateTableOfContents();
         
-<<<<<<< HEAD
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
     }
     //table of contents or journal slots must be active to populate the array.
     public void UpdateUI()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         Debug.Log("Updating Journal UI");
 
         _slots = _slotsContainer.GetComponentsInChildren<JournalSlot>();
@@ -95,10 +76,6 @@ public class JournalUI : MonoBehaviour
         //ActivateJournalPages();
         //ActivateTableOfContents();
 
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
-=======
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
         for (int i = 0; i < _slots.Length; i++)
         {
             if (i < journal.callers.Count)              // go through the journal and 
@@ -116,15 +93,8 @@ public class JournalUI : MonoBehaviour
 
     public void JournalClicked()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (!_journalUIObject.activeInHierarchy) //if journal is false
-=======
+
         if (_journalUIObject.activeSelf == false) //if journal is false
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
-=======
-        if (_journalUIObject.activeSelf == false) //if journal is false
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
         {
             _journalUIObject.SetActive(true); //set turn on journal game object
             //DeactivateJournalPages();   //turn off journal pages
@@ -152,16 +122,8 @@ public class JournalUI : MonoBehaviour
     public void ExitJournalClicked()
     {
         _journalUIObject.SetActive(false);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         DeactivateJournalPages();
         _tableOfContentsGO.SetActive(false);
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
-=======
-        DeactivateJournalPages();
-        _tableOfContentsGO.SetActive(false);
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
     }
 
     public void TableOfContentsClicked()
@@ -212,15 +174,7 @@ public class JournalUI : MonoBehaviour
         Debug.Log("go back :: page number is " + pageNumber);
         pageNumber--;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (pageNumber <=0)
-=======
-        if (pageNumber <= -1)
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
-=======
-        if (pageNumber <= -1)
->>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
         {
             pageNumber = -1;
             _goBackGO.SetActive(false);
