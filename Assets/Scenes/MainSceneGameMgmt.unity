@@ -36441,6 +36441,7 @@ PrefabInstance:
 PrefabInstance:
   m_ObjectHideFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -36458,6 +36459,8 @@ PrefabInstance:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 =======
+=======
+>>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
@@ -36512,6 +36515,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+<<<<<<< HEAD
+>>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
+=======
 >>>>>>> 473d901c541b5d8f8a30764fadd0d0c183de98c4
 --- !u!4 &8939621194111073446
 Transform:
