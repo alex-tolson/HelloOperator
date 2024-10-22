@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
   m_Name: Sabine Odiney
   m_EditorClassIdentifier: 
-  callerID: 24
+  callerID: 59
   cName: Sabine Odiney
-  callerOccupation: Office Worker
-  callerLocation: 
+  callerOccupation: Office Clerk
+  callerLocation: A2
   callerIcon: {fileID: 0}
-  description: 2nd generation immigrant.  She still speaks with a bit of an accent.
+  description: 
   callerActiveLight: {fileID: 0}
   callerSwitchState: {fileID: 0}
   incomingCallerPlug: {fileID: 0}

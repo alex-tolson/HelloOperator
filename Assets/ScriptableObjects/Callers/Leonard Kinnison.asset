@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
   m_Name: Leonard Kinnison
   m_EditorClassIdentifier: 
-  callerID: 15
+  callerID: 28
   cName: Leonard Kinnison
-  callerOccupation: Criminal
-  callerLocation: 
+  callerOccupation: Mine Worker
+  callerLocation: C5
   callerIcon: {fileID: 0}
   description: On the run from the Law.  Brother to Clergyman Tallehasse Kinnison.
   callerActiveLight: {fileID: 0}

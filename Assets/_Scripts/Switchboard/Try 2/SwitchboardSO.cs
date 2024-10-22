@@ -4,8 +4,6 @@ using UnityEngine;
 public class SwitchboardSO : ScriptableObject
 {
     public string placementName;
-    //public IncomingJack incomingLocation;
-    //public AnchorPlaceHolder outgoingLocation;
     public Switch placementSwitch;
     public JackDirection jackDirection;
     public CurrentState currentState;

@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
-  m_Name: Sharon Wonton
+  m_Name: Oliver Baas
   m_EditorClassIdentifier: 
-  callerID: 26
-  cName: Sharon Wonton
-  callerOccupation: Diner Owner and Server
-  callerLocation: A2
+  callerID: 39
+  cName: Oliver Baas
+  callerOccupation: Council Treasurer
+  callerLocation: X5
   callerIcon: {fileID: 0}
-  description: Owns the local diner and is one of the beloved servers.  Married to
-    Perry Wonton.  Has 3 Kids.
+  description: 
   callerActiveLight: {fileID: 0}
   callerSwitchState: {fileID: 0}
   incomingCallerPlug: {fileID: 0}

@@ -36,7 +36,6 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     {
 
         ConnectWireAtEnd();
-        //Set up outgoing wire
         _outgoingWire.SetActive(true);
         _outgoingWire.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_incomingWireEnd.transform.position);
     }
@@ -53,7 +52,6 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
                 _currentDistanceToJack = _oldDistanceToJack;
                 _incomingWireEndAnchor.transform.position = jack.transform.position;  
             }
-            //_switchboard2.SetIncomingJack(jack);
         }
         
         _incomingWireEnd.transform.position = _incomingWireEndAnchor.transform.position + _wireOffsetAtEnd;

@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,14 +6,30 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     [SerializeField] private SpriteRenderer _mainToggle;
     [SerializeField] private Sprite _toggleUp;
     [SerializeField] private Sprite _toggleDown;
+    private LightsSlot[] _lightsSlots;
     private Switch _currentSwitch;
     private int i = 0;
 
+    private void Start()
+    {
+        _lightsSlots = FindObjectsOfType<LightsSlot>(true);
+        if (_lightsSlots.Length == 0)
+        {
+            Debug.LogError("SwitchesAnim::LightsSlot array is empty");
+        }
+    }
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.pointerCurrentRaycast.gameObject.name == _mainToggle.name)
         {
-            OnToggleClicked();
+            foreach (LightsSlot light in _lightsSlots)
+            {
+                if (light.name == this.name)
+                {
+                    OnToggleClicked();
+                    light.Toggle(this);         
+                }
+            }
         }
     }
 
@@ -27,8 +42,6 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
             _mainToggle.sprite = _toggleUp;
             _currentSwitch = Switch.ToggleUp;
 
-            //initiated convo with operator.  do not continue until finished or skipped to finish
-            //if this switch is flipped
             //the corrresponding light will turn green
             //dialogue will play/appear
             //switch cannot be flipped until dialogue is complete or skipped.
@@ -38,7 +51,6 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
         {
             _mainToggle.sprite = _toggleDown;
             _currentSwitch = Switch.ToggleDown;
-            //turn off the light attached to the switches
             i = 0;
             //terminate call
         }

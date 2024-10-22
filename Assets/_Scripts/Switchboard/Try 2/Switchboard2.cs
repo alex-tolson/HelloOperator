@@ -95,27 +95,26 @@ public class Switchboard2 : MonoBehaviour
 
     private void IncomingCall()
     {
-        _incomingCallCompleted = false;               //set call to not yet completed
+        _incomingCallCompleted = false;
 
-        if (_incomingCallCompleted == false)      // if call not yet completed
+        if (_incomingCallCompleted == false)
         {
-            _incomingCaller = _incomingCalls[_callCount];  //set IncomingCaller to incomingCalls[_callCount]
-            Debug.Log("_incomingCaller name is " + _incomingCaller);
+            _incomingCaller = _incomingCalls[_callCount];
         }
 
-        foreach (SwitchboardSO placement in _switchboardInv._switchboardList) //go through switchboard placement list
+        foreach (SwitchboardSO placement in _switchboardInv._switchboardList)
         {
-            if (placement.placementName == _incomingCaller)//if the incoming call matches the incoming Caller from the List
+            if (placement.placementName == _incomingCaller)
             {
                 _incomingCall = placement;
                 _currentState = CurrentState.Ringing;
 
-                foreach (LightsSlot slot in _slots) //iterate through the light slot list
+                foreach (LightsSlot slot in _slots) 
                 {
-                    if (slot.name == _incomingCall.name) //if light slot name matches the incoming call
+                    if (slot.name == _incomingCall.name)
                     {
-                        slot._light.gameObject.SetActive(true);//turn on light
-                        slot._light.color = Color.yellow; //turn light yellow
+                        slot._light.gameObject.SetActive(true);
+                        slot._light.color = Color.yellow;
                     }
                 }
             }
@@ -157,14 +156,7 @@ public class Switchboard2 : MonoBehaviour
         _outgoingCall = outgoingCall;
 
     }
-    public void SetIncomingJack(IncomingJack jack)
-    {
-       // _incomingCall.incomingLocation = jack;
-       // _incomingCall.incomingLocation.transform.position = jack.transform.position;
-    }
 
-    //if incoming and outgoing on switchboard and jacks are occupied -->Done
-    //the lights at the incoming and outgoing switchboard locations turn green-->Done
     //when the switches are flipped,
     //the switch cannot be flipped again until the dialogue is exhausted or skipped
     //then the switch can be flipped down and the lights go off.
