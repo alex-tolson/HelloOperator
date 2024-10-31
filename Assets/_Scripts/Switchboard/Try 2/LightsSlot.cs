@@ -22,16 +22,11 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
             Debug.LogError("SwitchboardLights::Wires function is null");
         }
     }
-    private void Update()
-    {
-        
-    }
 
     public void AddLights(SwitchboardSO switchboardScriptableObj)
     {
         _switchboard = switchboardScriptableObj;
         _name = switchboardScriptableObj.placementName;
-
         _direction = switchboardScriptableObj.jackDirection;
         _currentState = switchboardScriptableObj.currentState;
         _light = gameObject.GetComponent<SpriteRenderer>();
@@ -53,6 +48,8 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
         {
             TurnLightColor(Color.green);
             //we want to turn light green
+            //if the switchboard2.incoming wire is not null
+            //
             //initiate dialoge coroutine
             //can skip but cannot flip toggle until dialogue is finished.
         }
@@ -68,11 +65,9 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
 
     public void AttachLightToSwitch(SwitchesAnim toggle)
     {
-        Debug.Log("switch has been flipped");
         TurnLightColor(Color.green);
-
-
     }
+
     public void TurnLightColor(Color color)
     {
         gameObject.SetActive(true);

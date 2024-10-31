@@ -8,29 +8,56 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     [SerializeField] private Sprite _toggleDown;
     private LightsSlot[] _lightsSlots;
     private Switch _currentSwitch;
+    private Switchboard2 _switchboard2;
+    private DialogueManager _dialogueManager;
     private int i = 0;
 
     private void Start()
     {
+        _dialogueManager = GameObject.Find("Canvas_WorldSpace").GetComponent<DialogueManager>();
+        if(_dialogueManager == null)
+        {
+            Debug.LogError("SwitchesAnim::Dialogue Manager is null");
+        }
+        _switchboard2 = GameObject.Find("Switchboard").GetComponent<Switchboard2>();
+        if (_switchboard2 == null)
+        {
+            Debug.LogError("SwitchesAnim::Switchboard2 is null");
+        }
         _lightsSlots = FindObjectsOfType<LightsSlot>(true);
         if (_lightsSlots.Length == 0)
         {
             Debug.LogError("SwitchesAnim::LightsSlot array is empty");
         }
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.pointerCurrentRaycast.gameObject.name == _mainToggle.name)
         {
+            OnToggleClicked();
+
             foreach (LightsSlot light in _lightsSlots)
             {
+
                 if (light.name == this.name)
                 {
-                    OnToggleClicked();
-                    light.Toggle(this);         
+                    light.Toggle(this);
                 }
             }
+
+            if (_currentSwitch == Switch.ToggleUp)
+            {
+                if (_switchboard2.WhoIsCalling() != null)
+                {
+                    _dialogueManager.DisplayDialogue();
+                }
+            }
+            
         }
+        //if toggle is up
+        //if switchboard2 incoming call is connected
+        //activate dialogue
     }
 
     public void OnToggleClicked()
@@ -41,8 +68,8 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
         {
             _mainToggle.sprite = _toggleUp;
             _currentSwitch = Switch.ToggleUp;
-
-            //the corrresponding light will turn green
+            //display diaglog and lock toggle in place
+            //if toggle is up and the call is initialized
             //dialogue will play/appear
             //switch cannot be flipped until dialogue is complete or skipped.
 
