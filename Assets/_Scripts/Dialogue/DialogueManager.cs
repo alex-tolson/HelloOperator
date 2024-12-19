@@ -4,6 +4,8 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text _dialogue;
+    [SerializeField] private GameObject _callerPanel;
+    [SerializeField] private GameObject _answererPanel;
     private Switchboard2 _switchboard2;
     private string _choice;
     private CallManager _callManager;
@@ -88,6 +90,7 @@ public class DialogueManager : MonoBehaviour
         {
             case 0:
                 {
+                    _callerPanel.gameObject.SetActive(true);
                     _dialogue.text = "Hello, Operator!  Whew, I'm sorry!  I'm a bit flustered.  " +
                         "I just had the strangest dream.  I was lucid, but I could feel it in my bones." +
                         "I need a dream interpreter..."+ "\n\n" +"Give me Ms. Minko, Leora, or even Father Kinnison!" +

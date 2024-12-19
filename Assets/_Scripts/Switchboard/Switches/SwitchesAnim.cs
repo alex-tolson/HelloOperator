@@ -10,10 +10,16 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     private Switch _currentSwitch;
     private Switchboard2 _switchboard2;
     private DialogueManager _dialogueManager;
+    private CallManager _callManager;
     private int i = 0;
 
     private void Start()
     {
+        _callManager = GameObject.Find("Switchboard").GetComponent<CallManager>();
+        if(_callManager == null)
+        {
+            Debug.LogError("SwitchesAnim::CallManager is null");
+        }
         _dialogueManager = GameObject.Find("Canvas_WorldSpace").GetComponent<DialogueManager>();
         if(_dialogueManager == null)
         {
@@ -51,6 +57,12 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
                 if (_switchboard2.WhoIsCalling() != null)
                 {
                     _dialogueManager.DisplayDialogue();
+                   
+
+                }
+                else if (_switchboard2.WhoIsAnswering() != null)
+                {
+                    _callManager.ContinueConvoCaller();
                 }
             }
             
