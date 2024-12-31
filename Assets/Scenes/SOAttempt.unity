@@ -353,7 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -1117,7 +1116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -2511,7 +2509,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -2729,7 +2726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -3141,7 +3137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -3711,7 +3706,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -4205,7 +4199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -4643,7 +4636,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -4781,7 +4773,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -4919,7 +4910,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -5639,7 +5629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -5874,7 +5863,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -6012,7 +6000,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -8165,7 +8152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -8577,7 +8563,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -8795,7 +8780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -9110,7 +9094,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -9759,7 +9742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -11643,7 +11625,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -11975,7 +11956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -12666,7 +12646,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -13697,7 +13676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -14752,7 +14730,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -16125,7 +16102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -16647,7 +16623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -17307,7 +17282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -17719,7 +17693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -18267,7 +18240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -19976,7 +19948,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -20211,7 +20182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -21141,7 +21111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -21279,7 +21248,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -22237,7 +22205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -22552,7 +22519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -23790,7 +23756,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -24871,7 +24836,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -25106,7 +25070,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -25829,7 +25792,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -25967,7 +25929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -26572,7 +26533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -26807,7 +26767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -27105,7 +27064,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -28126,7 +28084,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -28810,7 +28767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -29529,7 +29485,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -29958,7 +29913,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -30176,7 +30130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -30314,7 +30267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -30629,7 +30581,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -31359,7 +31310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -32247,7 +32197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -32567,7 +32516,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -33658,7 +33606,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -33796,7 +33743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -34438,7 +34384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -35997,7 +35942,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -36751,7 +36695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -37161,7 +37104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -37299,7 +37241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
@@ -38305,7 +38246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _currentSwitch: 0
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
