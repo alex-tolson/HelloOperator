@@ -4,8 +4,6 @@ using UnityEngine.EventSystems;
 
 public class OutgoingWire : MonoBehaviour, IPointerClickHandler
 {
-    //when the incoming wire is attached
-    //attach the 2nd wire into outgoing
     [SerializeField] private OutgoingJack[] _outgoingJacks;
     [SerializeField] private AnchorPlaceHolder[] _anchorPlaceholder;
     [SerializeField] private List<LightsSlot> _switchboardLights = new List<LightsSlot>();
@@ -112,7 +110,6 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
                 }
             }
             _light.gameObject.SetActive(true);
-            //_light.TurnLightColor(Color.green);
         }
         else
         {

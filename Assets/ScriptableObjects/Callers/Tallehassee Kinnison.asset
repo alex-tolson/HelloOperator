@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
   m_Name: Tallehassee Kinnison
   m_EditorClassIdentifier: 
-  callerID: 28
+  callerID: 49
   cName: Tallehassee Kinnison
-  callerOccupation: Clergy
-  callerLocation: 
+  callerOccupation: Priest
+  callerLocation: Y1
   callerIcon: {fileID: 0}
   description: Appoint to the parish of the local church.
   callerActiveLight: {fileID: 0}

@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,15 +6,70 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     [SerializeField] private SpriteRenderer _mainToggle;
     [SerializeField] private Sprite _toggleUp;
     [SerializeField] private Sprite _toggleDown;
+    private LightsSlot[] _lightsSlots;
     private Switch _currentSwitch;
+    private Switchboard2 _switchboard2;
+    private DialogueManager _dialogueManager;
+    private CallManager _callManager;
     private int i = 0;
+
+    private void Start()
+    {
+        _callManager = GameObject.Find("Switchboard").GetComponent<CallManager>();
+        if(_callManager == null)
+        {
+            Debug.LogError("SwitchesAnim::CallManager is null");
+        }
+        _dialogueManager = GameObject.Find("Canvas_WorldSpace").GetComponent<DialogueManager>();
+        if(_dialogueManager == null)
+        {
+            Debug.LogError("SwitchesAnim::Dialogue Manager is null");
+        }
+        _switchboard2 = GameObject.Find("Switchboard").GetComponent<Switchboard2>();
+        if (_switchboard2 == null)
+        {
+            Debug.LogError("SwitchesAnim::Switchboard2 is null");
+        }
+        _lightsSlots = FindObjectsOfType<LightsSlot>(true);
+        if (_lightsSlots.Length == 0)
+        {
+            Debug.LogError("SwitchesAnim::LightsSlot array is empty");
+        }
+    }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.pointerCurrentRaycast.gameObject.name == _mainToggle.name)
         {
             OnToggleClicked();
+
+            foreach (LightsSlot light in _lightsSlots)
+            {
+
+                if (light.name == this.name)
+                {
+                    light.Toggle(this);
+                }
+            }
+
+            if (_currentSwitch == Switch.ToggleUp)
+            {
+                if (_switchboard2.WhoIsCalling() != null)
+                {
+                    _dialogueManager.DisplayDialogue();
+                   
+
+                }
+                else if (_switchboard2.WhoIsAnswering() != null)
+                {
+                    _callManager.ContinueConvoCaller();
+                }
+            }
+            
         }
+        //if toggle is up
+        //if switchboard2 incoming call is connected
+        //activate dialogue
     }
 
     public void OnToggleClicked()
@@ -26,10 +80,8 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
         {
             _mainToggle.sprite = _toggleUp;
             _currentSwitch = Switch.ToggleUp;
-
-            //initiated convo with operator.  do not continue until finished or skipped to finish
-            //if this switch is flipped
-            //the corrresponding light will turn green
+            //display diaglog and lock toggle in place
+            //if toggle is up and the call is initialized
             //dialogue will play/appear
             //switch cannot be flipped until dialogue is complete or skipped.
 
@@ -38,7 +90,6 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
         {
             _mainToggle.sprite = _toggleDown;
             _currentSwitch = Switch.ToggleDown;
-            //turn off the light attached to the switches
             i = 0;
             //terminate call
         }

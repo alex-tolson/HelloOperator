@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Animations.Rigging;
 using UnityEngine.EventSystems;
 
 public class LightsSlot : MonoBehaviour, IPointerClickHandler
@@ -16,30 +12,21 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     //------------------------------------
     private IncomingWire _incomingWire;
     private Color _color;
-    private SwitchesAnim[] _switchesAnim;
+
 
     private void Start()
     {
-        _switchesAnim = GameObject.Find("Switch_Container").GetComponentsInChildren<SwitchesAnim>();
-        if (_switchesAnim.Length == 0)
-        {
-            Debug.LogError("LightsSlot::Switches Anim array is empty");
-        }
         _incomingWire = FindObjectOfType<IncomingWire>(true); //finds incoming wire even if it's inactive
         if (_incomingWire == null)
         {
             Debug.LogError("SwitchboardLights::Wires function is null");
         }
     }
-    private void Update()
-    {
-        Toggle();
-    }
+
     public void AddLights(SwitchboardSO switchboardScriptableObj)
     {
         _switchboard = switchboardScriptableObj;
         _name = switchboardScriptableObj.placementName;
-
         _direction = switchboardScriptableObj.jackDirection;
         _currentState = switchboardScriptableObj.currentState;
         _light = gameObject.GetComponent<SpriteRenderer>();
@@ -55,40 +42,32 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void Toggle()
+    public void Toggle(SwitchesAnim toggle)
     {
-        foreach (SwitchesAnim toggle in _switchesAnim)
+        if (toggle.ToggleStatus() == Switch.ToggleUp)
         {
-            if (toggle.name == _name)
-            {
-                if (toggle.ToggleStatus() == Switch.ToggleUp)
-                {
-                    //we want to do what?
-                    //IF toggle is up
-                    TurnLightColor(Color.green);
-                    //we want to turn light green
-                    //initiate dialoge coroutine
-                    //can skip but cannot flip toggle until dialogue is finished.
-                }
-                if (toggle.ToggleStatus() == Switch.ToggleDown)
-                {
-                    //if toggle is down
-                    //reset communications?
-                    //TurnOffLight();
-                    //turn light yellow/off
-                    //end dialogue.
-                }
-            }
+            TurnLightColor(Color.green);
+            //we want to turn light green
+            //if the switchboard2.incoming wire is not null
+            //
+            //initiate dialoge coroutine
+            //can skip but cannot flip toggle until dialogue is finished.
+        }
+        else if(toggle.ToggleStatus() == Switch.ToggleDown)
+        {
+            //if toggle is down
+            //reset communications?
+            TurnOffLight();
+            //turn light yellow/off
+            //end dialogue.
         }
     }
 
     public void AttachLightToSwitch(SwitchesAnim toggle)
     {
-        Debug.Log("switch has been flipped");
         TurnLightColor(Color.green);
-
-
     }
+
     public void TurnLightColor(Color color)
     {
         gameObject.SetActive(true);

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
   m_Name: Yasmine Rivera
   m_EditorClassIdentifier: 
-  callerID: 31
+  callerID: 56
   cName: Yasmine Rivera
   callerOccupation: Pagan Occultist
-  callerLocation: 
+  callerLocation: Y8
   callerIcon: {fileID: 0}
   description: Shrouded in mystery, Yasmine doesn't mingle much with with society
     unless absolutely necessary.
