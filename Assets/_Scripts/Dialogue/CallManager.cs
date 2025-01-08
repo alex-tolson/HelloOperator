@@ -23,7 +23,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day1Call0()
+    public void Day1Call0() //Alice Calling
     {
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
@@ -114,7 +114,7 @@ public class CallManager : MonoBehaviour
         } 
     }
 
-    public void Day1Call1()
+    public void Day1Call1() //Beatrice Templetone calling
     {
         Debug.Log("Day 1, call 1");
         switch(_switchboard2.WhoIsAnswering().placementName)
@@ -124,37 +124,37 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Clear();
                     _dialogueChatter.Add("Evelyn: Thank you for calling Porterhouse Vision." +
                         " How may I help you?");
-                    _dialogueChatter.Add("Taryn: I think I'm seeing things");
+                    _dialogueChatter.Add("Beatrice: I think I'm seeing things");
                     _dialogueChatter.Add("Evelyn: That's great.  I'm glad the updated prescription " +
                         "is helping you. There may be a period of adjustment but once it passes...");
-                    _dialogueChatter.Add("Taryn: No, I mean, yesterday.  I got a sudden migraine spike and " +
+                    _dialogueChatter.Add("Beatrice: No, I mean, yesterday.  I got a sudden migraine spike and " +
                         "I saw a black dot in my vision.  I was doubled over in pain so I couldn't really " +
                         "tell if it was a dog, or my vision going out because of the migraine.");
                     _dialogueChatter.Add("Evelyn: That changes things.  Why don't you come in so we can rule out " +
                         "the prescription, okay?");
-                    _dialogueChatter.Add("Taryn: Thanks, Evelyn.");
+                    _dialogueChatter.Add("Beatrice: Thanks, Evelyn.");
                     break;
                 }
             case "Y2"://calling Priest: Father Tallehasse Kinnison
                 {
                     _dialogueChatter.Clear();
                     _dialogueChatter.Add("Kinnison: 77th Parish: Father Tallehassee Kinnison at your service.");
-                    _dialogueChatter.Add("Taryn: Father Kinnison, I think I'm seeing things.");
+                    _dialogueChatter.Add("Beatrice: Father Kinnison, I think I'm seeing things.");
                     _dialogueChatter.Add("Kinnison: What kinds of things, say you?");
-                    _dialogueChatter.Add("Taryn: Yesterday.  I got a sudden migraine spike and " +
+                    _dialogueChatter.Add("Beatrice: Yesterday.  I got a sudden migraine spike and " +
                         "I saw a black dot in my vision.  I was doubled over in pain so I couldn't really " +
                         "tell if it was a dog, or my vision going out because of the migraine.");
                     _dialogueChatter.Add("Kinnison: What makes you think it was a dog?");
-                    _dialogueChatter.Add("Taryn:  Well I was outside, but I swear I heard something " +
+                    _dialogueChatter.Add("Beatrice:  Well I was outside, but I swear I heard something " +
                         "like a muffled or muted growling");
                     _dialogueChatter.Add("Kinnison: When did this happen?  About what time?");
-                    _dialogueChatter.Add("Taryn: It was about noon.  I left the gym early because of the migraine and " +
+                    _dialogueChatter.Add("Beatrice: It was about noon.  I left the gym early because of the migraine and " +
                         "I saw it as soon as I stepped out of my car.  I got a bad feeling about this Father.");
                     _dialogueChatter.Add("Kinnison: Well, I don't know what to make of it.  How are you feeling now.");
-                    _dialogueChatter.Add("Taryn: I'm fine but I've got a real bad feeling about everything right now");
+                    _dialogueChatter.Add("Beatrice: I'm fine but I've got a real bad feeling about everything right now");
                     _dialogueChatter.Add("Kinnison: Rest and take solice in the scriptures. That Revelations begins with the 4 " +
                         "horsemen... not dogs.  On the same note, you're  due for a confession, are you not?");
-                    _dialogueChatter.Add("Taryn: Yes Father.  I...");
+                    _dialogueChatter.Add("Beatrice: Yes Father.  I...");
                     _dialogueChatter.Add("Kinnison: Don't wait until the 11th hour, my child. ");
                     break;
                 }
@@ -162,58 +162,58 @@ public class CallManager : MonoBehaviour
                 {
                     _dialogueChatter.Clear();
                     _dialogueChatter.Add("Doris: Hello, this is Doris Minko.");
-                    _dialogueChatter.Add("Taryn: Hi, Doris.  This is Taryn.");
-                    _dialogueChatter.Add("Doris: I know, Taryn.  How can I help you?");
-                    _dialogueChatter.Add("Taryn: ...");
+                    _dialogueChatter.Add("Beatrice: Hi, Doris.  This is Beatrice.");
+                    _dialogueChatter.Add("Doris: I know, Beatrice.  How can I help you?");
+                    _dialogueChatter.Add("Beatrice: ...");
                     _dialogueChatter.Add("Doris: ... Caller ID.");
-                    _dialogueChatter.Add("Taryn: Oh! Right. Well, I'm calling because I think I saw " +
+                    _dialogueChatter.Add("Beatrice: Oh! Right. Well, I'm calling because I think I saw " +
                         "something and I have a real bad feeling about it.");
                     _dialogueChatter.Add("Doris: Go on.");
-                    _dialogueChatter.Add("Taryn: Yesterday, I got a sudden migraine at the gym.  I went home " +
+                    _dialogueChatter.Add("Beatrice: Yesterday, I got a sudden migraine at the gym.  I went home " +
                         "early.  As I got out of my car, I experienced a migraine spike and was practically bent " +
                         "over in pain.  I saw a black dot in my vision and I thought it was a dog, but it may " +
                         "have been a blind spot in my vision from the migraine.  But I swear I heard muted growling.");
                     _dialogueChatter.Add("Doris: Do you recall other sounds being muted or just the growling " +
                         "you heard?");
-                    _dialogueChatter.Add("Taryn: Just the growling ");
+                    _dialogueChatter.Add("Beatrice: Just the growling ");
                     _dialogueChatter.Add("Doris: What was the energy like?  What did you feel when you encountered this " +
                         "black dog.");
-                    _dialogueChatter.Add("Taryn: It felt ill.  Wrong.  I knew I was in pain, but I also felt absolute " +
+                    _dialogueChatter.Add("Beatrice: It felt ill.  Wrong.  I knew I was in pain, but I also felt absolute " +
                         "dread when I tried to focus on the dog.  I backed away from it, not turning my back on it, " +
                         "until I got to my door and made it inside.  But the feeling didn't go away.");
                     _dialogueChatter.Add("Doris: I'm not dog expert, but why would or what could cause a dog " +
                         "to mute it's growl?  It seems to me that perhaps you were having an auditory hallicination " +
                         "and it makes sense that it left you with a lingering feeling.");
-                    _dialogueChatter.Add("Taryn: Yeah. I suppose you're right.  It may have been due to the " +
+                    _dialogueChatter.Add("Beatrice: Yeah. I suppose you're right.  It may have been due to the " +
                         "migraine.  Thanks for your time Doris.");
-                    _dialogueChatter.Add("Doris: Anytime, Taryn. ");
+                    _dialogueChatter.Add("Doris: Anytime, Beatrice. ");
                     break;
                 }
             case "Z2"://calling Sheriff: Charlie Czerniak
                 {
                     _dialogueChatter.Clear();
                     _dialogueChatter.Add("Charlie: Sheriff Czerniak, what is it?");
-                    _dialogueChatter.Add("Taryn: Sheriff, it's Taryn.");
-                    _dialogueChatter.Add("Charlie: Alright, what is it... Taryn?");
-                    _dialogueChatter.Add("Taryn: I think I saw an aggressive unleashed big black dog yesterday.");
+                    _dialogueChatter.Add("Beatrice: Sheriff, it's Beatrice.");
+                    _dialogueChatter.Add("Charlie: Alright, what is it... Beatrice?");
+                    _dialogueChatter.Add("Beatrice: I think I saw an aggressive unleashed big black dog yesterday.");
                     _dialogueChatter.Add("Charlie: Okay. Why didn't you call me yesterday?");
-                    _dialogueChatter.Add("Taryn: I was nearly doubled over in pain from a sudden migraine that came on me. " +
+                    _dialogueChatter.Add("Beatrice: I was nearly doubled over in pain from a sudden migraine that came on me. " +
                         "I had to rest.  I couldn't hardly put words together because of the pain. " +
                         "I almost couldn't tell it if was a blind spot from the migraine but " +
                         "everything about it felt wrong.  And I heard it growl. ");
                     _dialogueChatter.Add("Charlie: How big was the dog?");
-                    _dialogueChatter.Add("Taryn: It was, like, large but not as big as a Great Dane.");
+                    _dialogueChatter.Add("Beatrice: It was, like, large but not as big as a Great Dane.");
                     _dialogueChatter.Add("Charlie: Any discernable features, color patterns? What did it sound like?");
-                    _dialogueChatter.Add("Taryn: I heard muted growling, real low.  I kept my distance from it.  I think it was " +
+                    _dialogueChatter.Add("Beatrice: I heard muted growling, real low.  I kept my distance from it.  I think it was " +
                         "all black");
                     _dialogueChatter.Add("Charlie: Where did you encounter this dog?");
-                    _dialogueChatter.Add("Taryn: Outside my residence.");
+                    _dialogueChatter.Add("Beatrice: Outside my residence.");
                     _dialogueChatter.Add("Charlie: And, are you on any medications?");
-                    _dialogueChatter.Add("Taryn: ... what does that have to do with anything?");
+                    _dialogueChatter.Add("Beatrice: ... what does that have to do with anything?");
                     _dialogueChatter.Add("Charlie: ... Well, you said, it could have been a blind spot due to the migraine " +
                         "instead of a dog.I'm just trying to rule out anything I can.  After the still birth, " +
-                        "did the Doc put you on any meds?  Please, Taryn?");
-                    _dialogueChatter.Add("Taryn:  You know what? Forget it.");
+                        "did the Doc put you on any meds?  Please, Beatrice?");
+                    _dialogueChatter.Add("Beatrice:  You know what? Forget it.");
                     //_dialogueChatter.Add("");
                     break;
                 }
@@ -226,7 +226,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day1Call2()
+    public void Day1Call2() //Lucas Porter calling
     {
         Debug.Log("Day 1, call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -273,7 +273,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day1Call3()
+    public void Day1Call3() //Jonah calling
     {
         Debug.Log("Day 1, call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -345,7 +345,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day1Call4()
+    public void Day1Call4()//Sheriff calling deputy Walskin
     {
         Debug.Log("Day 1, call 4");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -378,7 +378,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day1Call5()
+    public void Day1Call5() //Kinnison calling Rose
     {
         Debug.Log("Day 1, call 5");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -406,7 +406,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day1Call6()
+    public void Day1Call6() //Yasmine calling Smit
     {
         Debug.Log("Day 1, call 6");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -434,12 +434,12 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day1Call7()
+    public void Day1Call7() //Michael Walker calling Mine Supervisor: Theodore Walker
     {
         Debug.Log("Day 1, call 7");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
-            case "A2": ////calling Mine Supervisor: Theodore Walker
+            case "A2": //calling Mine Supervisor: Theodore Walker
                 {
                     _dialogueChatter.Clear();
                     //_dialogueChatter.Add("");
@@ -470,7 +470,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day2Call0()
+    public void Day2Call0() //Alice Calling Carter
     {
         Debug.Log("Day 2, call 0");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -498,7 +498,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day2Call1()
+    public void Day2Call1() //Frances Yareli calling
     {
         Debug.Log("Day 2, call 1");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -530,7 +530,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day2Call2()
+    public void Day2Call2() //Henry calling Christina of the motel
     {
         Debug.Log("Day 2, call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -567,7 +567,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day2Call3()
+    public void Day2Call3() //Doctor miles calling Leora
     {
         Debug.Log("Day 2, call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -637,7 +637,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day2Call4()
+    public void Day2Call4() //Carter calling Zoe
     {
         Debug.Log("Day 2, call 4");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -672,7 +672,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day2Call5()
+    public void Day2Call5() //Leonard calling Theo
     {
         Debug.Log("Day 2, call 5");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -734,7 +734,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day2Call6()
+    public void Day2Call6() //Zoe calling Tulip
     {
         Debug.Log("Day 2, call 6");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -747,29 +747,76 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Zoe: It's me...");
                     _dialogueChatter.Add("Tulip: Zoe! All I've heard are snippets here and there, but I gotta hear it from " +
                         "you! So what really happened?");
-                    _dialogueChatter.Add("Carter called me all shook up. He looked even worse when he got home!" +
+                    _dialogueChatter.Add("Zoe: Carter called me all shook up. He looked even worse when he got home!" +
                         "This morning, he wakes up at the crack of dawn to meet Alice. She has him jimmy the lock " +
                         "to the attic in that old house.  She says she hadn't been in there since Jeffers died " +
                         "and left it to her.");
                     _dialogueChatter.Add("Tulip: Giiiirl! go on.");
-                    _dialogueChatter.Add("There, inside the attic, is this ornate beautiful inlaid bronze " +
+                    _dialogueChatter.Add("Zoe: There, inside the attic, is this ornate beautiful inlaid bronze " +
                         "chest.  She goes to it like she knew it was there but she said she'd only seen " +
                         "it in her dreams.  So he jimmies the lock to the chest.  Inside are pictures " +
                         "of people she'd never met but...");
                     _dialogueChatter.Add("Tulip: Girl! What?!");
-                    _dialogueChatter.Add("BUT... they're all missing one eye.  Every. Single. Picture. " +
+                    _dialogueChatter.Add("Zoe: BUT... they're all missing one eye.  Every. Single. Picture. " +
                         "They're missing the left eye.  Carter said he got chills from looking at the " +
                         "pictures and when he looked up, Alice just plucked her own eye out like plucking " +
                         "an apple from an apple tree.");
                     _dialogueChatter.Add("Tulip: Girl, nooo");
-                    _dialogueChatter.Add("He screamed and got her to the hospital as so as he could. Blood " +
+                    _dialogueChatter.Add("Zoe: He screamed and got her to the hospital as so as he could. Blood " +
                         "running down her face. He said he'll never forget the way she smiled, right before they took" +
                         "her back to the Emergency Room. Blood got in her mouth, spilling over her lips.");
                     _dialogueChatter.Add("Tulip: Girl, nooo");
-                    _dialogueChatter.Add("Girl, yes.  That's what he said.  Anywho, what's your schedule look like?");
+                    _dialogueChatter.Add("Zoe: Girl, yes.  That's what he said.  Anywho, what's your schedule look like?");
                     _dialogueChatter.Add("Tulip: How about tomorrow at 2?");
-                    _dialogueChatter.Add("I'm just doing the usual with subtle highlights this time.");
-                    _dialogueChatter.Add("You got it.  See ya then, hun.");
+                    _dialogueChatter.Add("Zoe: I'm just doing the usual with subtle highlights this time.");
+                    _dialogueChatter.Add("Tulip: You got it.  See ya then, hun.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day2Call7() //Smit calling Ollie Jr.
+    {
+        Debug.Log("Day 2, call 7");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "C10": //Son: Ollie Jr.
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("H-hello?");
+                    _dialogueChatter.Add("This is Father Smit from 77th Parish. Is this Oliver Baas Jr.");
+                    _dialogueChatter.Add("Yes, Father.");
+                    _dialogueChatter.Add("I'm calling on you because you've been observed with bruises." +
+                        "Bruises up bruises. What's going on, Son?");
+                    _dialogueChatter.Add("It's nothing, Father.");
+                    _dialogueChatter.Add("If you wish to endure it in silence, you may.  But you need not." +
+                        "Now, is everything okay at home?");
+                    _dialogueChatter.Add("It's not my dad. Just some jerks at school. But everything I " +
+                        "do just makes it worse. I've told the teacher; I've told the principle. I've told " +
+                        "my dad.");
+                    _dialogueChatter.Add("But they do nothing?");
+                    _dialogueChatter.Add("Yes. I mean, no, Father.");
+                    _dialogueChatter.Add("Are you familiar with the story of Samson?");
+                    _dialogueChatter.Add("Yes father. He was dedicated to the church and then he was betrayed, " +
+                        "his long hair cut and his strength was gone when his hair was cut.");
+                    _dialogueChatter.Add("Do you remember how his story ended?");
+                    _dialogueChatter.Add("Not really.");
+                    _dialogueChatter.Add("Well, I'll tell you, he prayed and received his strength one last " +
+                        "time and used it to vanquish his enemies");
+                    _dialogueChatter.Add("Why are you telling me this");
+                    _dialogueChatter.Add("Because our God is a vengeful God. Where do these bullies hang out?");
+                    _dialogueChatter.Add("I don't know but I did hear there was a party happening in the " +
+                        "mines... several days from now.");
+                    _dialogueChatter.Add("Hmm, maybe we can use this to our advantage. Until then, have faith " +
+                        "and be patient.");
+
                     break;
                 }
             default:
@@ -784,7 +831,7 @@ public class CallManager : MonoBehaviour
     public void Day3Call0()
     {
         Debug.Log("Day 3, call 0");
-        if (_call_2_5_Sanford == false)
+        if (_call_2_5_Sanford == false) //Thomas Sanford calling Michael
         {
             switch (_switchboard2.WhoIsAnswering().placementName)
             {
@@ -812,7 +859,7 @@ public class CallManager : MonoBehaviour
                     }
             }
         }
-        else
+        else //Theo Calling Michael
         {
             switch (_switchboard2.WhoIsAnswering().placementName)
             {
@@ -852,7 +899,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day3Call1()
+    public void Day3Call1() //Oliver Baas calling
     {
         Debug.Log("Day 3, call 1");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -882,7 +929,41 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day3Call3()
+
+    public void Day3Call2() //Leo calling Frances.
+    {
+        Debug.Log("Day 3, call 2");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "C6": 
+                {
+                    //Runs into Smit in the Mines.  Smit says he was cleansing spirts
+
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("You'll never guess who I just ran into while leaving work.");
+                    _dialogueChatter.Add("Jesus.");
+                    _dialogueChatter.Add("Close enough. I nearly knocked heads with Father Smit");
+                    _dialogueChatter.Add("The Father. What was he doing in the mines?");
+                    _dialogueChatter.Add("He said he was doing a cleansing.");
+                    _dialogueChatter.Add("Oh?");
+                    _dialogueChatter.Add("From the looks of it, he was doing a helluva job. He was " +
+                        "covered in soot and had candles with him.");
+                    _dialogueChatter.Add("It had been feeling more and more uneasy in there.");
+                    _dialogueChatter.Add("Yeah, me and some of the other guys noticed too.");
+                    _dialogueChatter.Add("Lucky us, huh?  Gotta run.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day3Call3() //Luanne Bourne calling Tulip
     {
         Debug.Log("Day 3, call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -914,7 +995,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day3Call4()
+    public void Day3Call4() //Father Kinnision calling Rose
     {
         Debug.Log("Day 3, call 4");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -949,7 +1030,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day3Call5()
+    public void Day3Call5() //Yasmine calling Kinnison
     {
         Debug.Log("Day 3, call 5");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1000,7 +1081,38 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day4Call0()
+    public void Day3Call6() //Leora calling Templetons
+    {
+        Debug.Log("Day 3, call 6");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "Y5": //Entertainer: Robert Templeton
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Leora: Hi, this Leora. Brown. Is this Rob or Beatrice?");
+                    _dialogueChatter.Add("Robert: Hey Leora. My wife is in the kitchen.");
+                    _dialogueChatter.Add("Leora: You and Beatrice didn't show up for our session " +
+                        "this morning.  And you didn't call to say you couldn't make it so I thought " +
+                        "I'd reach out.");
+                    _dialogueChatter.Add("Robert: Yeah, sorry.");
+                    _dialogueChatter.Add("Leora: It's not like either of you to no call no show. Did you " +
+                        "want to reschedule your grief counseling? ");
+                    _dialogueChatter.Add("Robert: No. We'll just stick to the schedule and show for the next " +
+                        "appointment. Again, something came up and we just forgot to call. Sorry.");
+                    _dialogueChatter.Add("Leora: Very well. See you next week.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day4Call0() //Rob calling Oliver Sr.
     {
         Debug.Log("Day 4, call 0");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1009,7 +1121,7 @@ public class CallManager : MonoBehaviour
                 {
                     _dialogueChatter.Clear();
                     //_dialogueChatter.Add("");
-                    _dialogueChatter.Add("Hey Ollie, it's Rob.");
+                    _dialogueChatter.Add("Hey Oliver, it's Rob.");
                     _dialogueChatter.Add("Rob!  My main man.  That ritual really worked like a charm. I'm on the up " +
                         "and up again.  I can see it.  I can feel it!");
                     _dialogueChatter.Add("Good!  Good!  We want to channel that energy.  Manifest our destiny! " +
@@ -1032,7 +1144,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day4Call1()
+    public void Day4Call1() //Kinnison calling OBJ
     {
         Debug.Log("Day 4, call 1");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1070,39 +1182,9 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    //public void Day4Call2()
-    //{
-    //    Debug.Log("Day 4, call 2");
-    //    switch (_switchboard2.WhoIsAnswering().placementName)
-    //    {
-    //        case "Y4": //Calling Therapist: Leora Brown
-    //            {
-    //                _dialogueChatter.Clear();
-    //                //_dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                _dialogueChatter.Add("");
-    //                break;
-    //            }
-    //        default:
-    //            {
-    //                Debug.Log("There was no answer.");
-    //                //No answer
-    //                break;
-    //            }
-    //    }
-    //}
-
-    public void Day4Call3()
+    public void Day4Call2() //Amos Saxton caller Sheriff
     {
-        Debug.Log("Day 4, call 3");
+        Debug.Log("Day 4, call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
             case "Y1": //Calling Sheriff: Charles Czerniak
@@ -1110,7 +1192,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Clear();
                     //_dialogueChatter.Add("");
                     _dialogueChatter.Add("Sheriff Czerniak. ");
-                    _dialogueChatter.Add("We have a problem. An patient escaped the miniumum security complex. She" +
+                    _dialogueChatter.Add("Amos Saxton, here. We have a problem. An patient escaped the miniumum security complex. She" +
                         "will likely still be in the area.");
                     _dialogueChatter.Add("Uh-huh. What's her name? What does she look like?");
                     _dialogueChatter.Add("It's Alice O'Connell. Age: 29. She is white with medium-length " +
@@ -1132,16 +1214,16 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day4Call4()
+    public void Day4Call3() // Yasmine calling Emily
     {
-        Debug.Log("Day 4, call 4");
+        Debug.Log("Day 4, call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
-            case "Y9": //Calling Past President: Emily Rose
+            case "Y9": //Calling Past President: Emily Hanson
                 {
                     _dialogueChatter.Clear();
                     //_dialogueChatter.Add("");
-                    _dialogueChatter.Add("EmilY: Hi, this is Emily Rose.  Past President and Historian. What can I do for you?");
+                    _dialogueChatter.Add("EmilY: Hi, this is Emily Hanson.  Past President and Historian. What can I do for you?");
                     _dialogueChatter.Add("Yasmine: It has happened once before; this town's history will either lead to its" +
                         " future, or its doom.");
                     _dialogueChatter.Add("EmilY:History? Oh, I agree. While looking through archives, I found out that this " +
@@ -1170,9 +1252,9 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day4Call5()
+    public void Day4Call4() //Smit calling Robert
     {
-        Debug.Log("Day 4, call 5");
+        Debug.Log("Day 4, call4");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
             case "Y1": //Calling Entertainer: Robert Templeton
@@ -1203,27 +1285,67 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    //public void Day4Call6()
-    //{
-    //    Debug.Log("Day 4, call 6");
-    //    switch (_switchboard2.WhoIsAnswering().placementName)
-    //    {
-    //        case "Y1": //Calling Medium: Doris Minko
-    //            {
-    //                _dialogueChatter.Clear();
-    //                //_dialogueChatter.Add("");
-    //                break;
-    //            }
-    //        default:
-    //            {
-    //                Debug.Log("There was no answer.");
-    //                //No answer
-    //                break;
-    //            }
-    //    }
-    //}
+    public void Day4Call5()//Kinnison calls Rose Williams
+    {
+        Debug.Log("Day 4, call 5");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "Y1": //Calling Rose Williams
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Rose: Thank you for calling Rose Williams: Blissville Account Manager. " +
+                        "How may I help you?");
+                    _dialogueChatter.Add("Hi, Rose, it's Father Kinnison. I'm concerned about unauthorized " +
+                        "purchases on our account. Until I speak with Father Smit, I was wondering if you " +
+                        "could restrict his account?");
+                    _dialogueChatter.Add("I'm sorry Father, the treasurer of the 77th Parish is the signer " +
+                        "on the account. The request must come from him to be valid. I'm sorry Father.");
+                    _dialogueChatter.Add("No, that's alright. Have a blessed day.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
 
-    public void Day5Call0()
+    public void Day4Call6() //Rose calls Tulip
+    {
+        Debug.Log("Day 4, call 6");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "C10": //Calling Tulip Pattinson
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Tulip: It's Tulip, honey.");
+                    _dialogueChatter.Add("Hi, honey, it's Rose.");
+                    _dialogueChatter.Add("Girl, spill the beans.");
+                    _dialogueChatter.Add("Well, something weird is going on with the Parish.  I'm not sure what it's all about, " +
+                        "but one Priest was trying to restrict the others' account. He said he was worried about " +
+                        "unauthorized purchases.");
+                    _dialogueChatter.Add("Trouble in the Parish? What do you think could be going on?  Did you do it?");
+                    _dialogueChatter.Add("I can't without the proper credentials.");
+                    _dialogueChatter.Add("OOoh, girl, that is JUI---CY!!!");
+                    _dialogueChatter.Add("Anyways, can you pencil me in for a manicure?");
+                    _dialogueChatter.Add("Of course, honey what about tommorrow at 4pm?");
+                    _dialogueChatter.Add("Perfect!");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day5Call0() //Lucas calling Sheriff
     {
         Debug.Log("Day 5, call 0");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1282,7 +1404,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day5Call1()
+    public void Day5Call1() //Sheriff calling Deputy Walskin
     {
         Debug.Log("Day 5, call 1");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1315,7 +1437,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day5Call2()
+    public void Day5Call2() //Hazel more calling Aria
     {
         Debug.Log("Day 5, call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1351,7 +1473,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day5Call3()
+    public void Day5Call3() //Ophelia calling Francesca
     {
         Debug.Log("Day 5, call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1389,7 +1511,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day5Call4()
+    public void Day5Call4() //Evelyn Porter calls Aria
     {
         Debug.Log("Day 5, call 4");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1427,7 +1549,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day5Call5()
+    public void Day5Call5() //Aria calls Deputy
     {
         Debug.Log("Day 5 call 5");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1480,7 +1602,59 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day6Call0()
+    public void Day5Call6() //Alice Calling Operator
+    {
+        Debug.Log("Day 5, call 6");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "X10": //Calling Operator
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Hello Operator?");
+                    _dialogueChatter.Add("Hello?");
+                    _dialogueChatter.Add("You need to gather these people in the Mines:");
+                    _dialogueChatter.Add("How");
+                    _dialogueChatter.Add("Call them.");
+                    _dialogueChatter.Add("Helper, Taker, Ringer, Breaker...");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day5Call7() //Theodore calling Hugo Bourne
+    {
+        Debug.Log("Day 5, call 7");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "A10": //Calling Construction Worker: Hugo Bourne
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Hugo Bourne, what can I do ya for?");
+                    _dialogueChatter.Add("It's Theodore Walker. I'm in need of repairs in the mines and heard" +
+                        " you were the man for the job.");
+                    _dialogueChatter.Add("Alright, I can come by tomorrow to take a look at the repairs need and " +
+                        "draw you up a bid. Does that work for you?");
+                    _dialogueChatter.Add("Yes.  Thank you.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day6Call0() //Francesca calls Doris Minko
     {
         Debug.Log("Day 6, call 0");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1516,7 +1690,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day6Call1()
+    public void Day6Call1() //Doris calls Priest
     {
         Debug.Log("Day 6, call 1");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1573,7 +1747,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day6Call2()
+    public void Day6Call2() //Helen calls Sheriff
     {
         Debug.Log("Day 6, call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1608,7 +1782,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day6Call3()
+    public void Day6Call3() //Francesca calling Caroline
     {
         Debug.Log("Day 6, call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1642,7 +1816,95 @@ public class CallManager : MonoBehaviour
                 }
         }
     }
-    public void Day6Call7()
+
+    public void Day6Call4() //Hugo callling Theo
+    {
+        Debug.Log("Day 6, call 4");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "A2": //Calling Theo
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("It's Theo Walker, speak.");
+                    _dialogueChatter.Add("You certainly get straight to the point.  So will I.  It's Hugo Bourne." +
+                        "I received the signed contract on the bid and will begin working on the repairs tomorrow.");
+                    _dialogueChatter.Add("Perfect. We will have an audit, but it should not interfere with your " +
+                        "work.");
+                    _dialogueChatter.Add("Alright!  Thank you for that relief.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day6Call5() //Levi calling Michael
+    {
+        Debug.Log("Day 6, call 5");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "A1": //Calling Michael Walker
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Hi, is this Michael Walker");
+                    _dialogueChatter.Add("Yes.  How can I help you.");
+                    _dialogueChatter.Add("My name is Levi Johnson. I'm a local teacher. Many students have been " +
+                        "talking about a mine party where there is sure to be alcohol. I don't know if you heard " +
+                        "anything about it.");
+                    _dialogueChatter.Add("No, but that's the last thing we need is a bunch of teenagers getting " +
+                        "lost or hurt.");
+                    _dialogueChatter.Add("I'm relieved to hear you say that. I don't know what day they are " +
+                        "planning this.");
+                    _dialogueChatter.Add("Is doesn't matter.  I'll hire extra security to guard the mines. " +
+                        "Thanks for bringing this to my attention.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day6Call6() //Alice calling Father Kinnison
+    {
+        Debug.Log("Day 6, call 6");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "A1": //Calling Father Kinnison
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Father Kinnion of the 77th Parish.  How may I serve you?");
+                    _dialogueChatter.Add("I'm looking to schedule a confession. I apologize, but I've never met " +
+                        "with you. Is Father Smit available?");
+                    _dialogueChatter.Add("I apologize, my child. Father Smit is... has been gone missing.");
+                    _dialogueChatter.Add("Oh?");
+                    _dialogueChatter.Add("I'm afraid he isn't well. But never fear, God's grace can be ours. All " +
+                        "we need do is accept the blood of the lamb.");
+                    _dialogueChatter.Add("Yes, Father. ");
+                    _dialogueChatter.Add("Go in peace.");
+
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
+
+    public void Day6Call7() //Francesca calling Xena Pattinson
     { 
         Debug.Log("Day 6, call 7");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1680,7 +1942,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day6Call8()
+    public void Day6Call8() //Francesca calls Christina Mitchell
     {
         Debug.Log("Day 6, call 8");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1709,27 +1971,35 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    //public void Day7Call0()
-    //{
-    //    Debug.Log("Day 7, call 0");
-    //    switch (_switchboard2.WhoIsAnswering().placementName)
-    //    {
-    //        case "Y1": //Calling blank: Doris Minko
-    //            {
-    //                _dialogueChatter.Clear();
-    //                //_dialogueChatter.Add("");
-    //                break;
-    //            }
-    //        default:
-    //            {
-    //                Debug.Log("There was no answer.");
-    //                //No answer
-    //                break;
-    //            }
-    //    }
-    //}
+    public void Day7Call0() //Xena Pattinson calling Operator
+    {
+        Debug.Log("Day 7, call 0");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "": //Calling operator
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Hello Operator.");
+                    _dialogueChatter.Add("It must be hard to hear everything this town has to offer?");
+                    _dialogueChatter.Add("Do you feel helpless?");
+                    _dialogueChatter.Add("Well, you can help us find the people we need to bind our foe.");
+                    _dialogueChatter.Add("Will you help us?");
+                    _dialogueChatter.Add("We need to find the helper, taker, ringer, breaker, and the seer.");
+                    _dialogueChatter.Add("Call them and let them know they are needed in the mines. Call me back when " +
+                        "you have contacted them all.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
 
-    public void Day7Call1()
+    public void Day7Call1() //Xena calling Father Kinnison
     {
         Debug.Log("Day 7, call 1");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1758,7 +2028,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day7Call2()
+    public void Day7Call2() //Yasmine calling Smit
     {
         Debug.Log("Day 7, call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1784,7 +2054,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day7Call3()
+    public void Day7Call3() //Smit calling Luanne
     {
         Debug.Log("Day 7, call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1816,7 +2086,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day7Call4()
+    public void Day7Call4() //Hazel calling Porter, Evelyn
     {
         Debug.Log("Day 7, call 4");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1852,7 +2122,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day7Call5()
+    public void Day7Call5() //Smit calling Yasmine
     {
         Debug.Log("Day 7, call 5");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1898,7 +2168,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day7Call6()
+    public void Day7Call6() //Leonard calls Brother/Priest
     {
         Debug.Log("Day 7, call 6");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1909,7 +2179,7 @@ public class CallManager : MonoBehaviour
                     //_dialogueChatter.Add("");
                     _dialogueChatter.Add("Father Kinnison: Father Kinnison of the 77th Parish. How many I help you?");
                     _dialogueChatter.Add("Leonard: It's Leonard, brother.");
-                    _dialogueChatter.Add("Father Kinnison: That's Father to you. I don't see you mass" +
+                    _dialogueChatter.Add("Father Kinnison: That's Father to you. I don't see you at mass" +
                         "often enough. How are you?");
                     _dialogueChatter.Add("Leonard: I need prayers, Father. I got messed up working in those damned " +
                         "mines; I lost pay but I'm recovering.");
@@ -1931,7 +2201,7 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Day7Call7()
+    public void Day7Call7() //Christina calling Sheriff
     {
         Debug.Log("Day 7, call 7");
         switch (_switchboard2.WhoIsAnswering().placementName)
@@ -1956,27 +2226,37 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    //public void Day8Call0()
-    //{
-    //    Debug.Log("Day 8, call 0");
-    //    switch (_switchboard2.WhoIsAnswering().placementName)
-    //    {
-    //        case "Z3": //Calling blank: Doris Minko
-    //            {
-    //                _dialogueChatter.Clear();
-    //                //_dialogueChatter.Add("");
-    //                break;
-    //            }
-    //        default:
-    //            {
-    //                Debug.Log("There was no answer.");
-    //                //No answer
-    //                break;
-    //            }
-    //    }
-    //}
+    public void Day8Call0() //Michael calling Theo
+    {
+        Debug.Log("Day 8, call 0");
+        switch (_switchboard2.WhoIsAnswering().placementName)
+        {
+            case "Z3": //Calling Mine Supervisor: Theo Walker
+                {
+                    _dialogueChatter.Clear();
+                    //_dialogueChatter.Add("");
+                    _dialogueChatter.Add("Theo, it's me.");
+                    _dialogueChatter.Add("Right. I've got a contract to repair the beams and structual " +
+                        "integrity where needed.");
+                    _dialogueChatter.Add("That's not what I'm calling about. A teacher from the local high school " +
+                        "informed me that he's overheard these kids planning to sneak into the mines for a party." +
+                        "I told him we'd hire extra security to prevent this from happening.");
+                    _dialogueChatter.Add("The last thing we need is kids getting hurt or lost in the mines.");
+                    _dialogueChatter.Add("I said the same thing. I'm going to send a guy over to you. He already " +
+                        "has a team in place that can provide the security we need.");
+                    _dialogueChatter.Add("Thanks.");
+                    break;
+                }
+            default:
+                {
+                    Debug.Log("There was no answer.");
+                    //No answer
+                    break;
+                }
+        }
+    }
 
-    public void Day8Call1()
+    public void Day8Call1() //Amos Saxton return call to deputy...
     {
         Debug.Log("Day 8, call 1");
         if (_call_5_5_Walskin == true)
@@ -2065,30 +2345,9 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    //public void Day8Call2()
-    //{
-    //    Debug.Log("Day 8, call 2");
-
-    //    switch (_switchboard2.WhoIsAnswering().placementName)
-    //    {
-    //        case "A1": //Calling Mine Owner: Michael Walker
-    //            {
-    //                _dialogueChatter.Clear();
-    //                _dialogueChatter.Add("");
-    //                ;
-    //                break;
-    //            }
-    //        default:
-    //            {
-    //                Debug.Log("There was no answer.");
-    //                No answer
-    //                break;
-    //            }
-    //    }
-    //}
-    public void Day8Call3()
+    public void Day8Call2() //Beatrice calling Tulip
     {
-        Debug.Log("Day 8, call 3");
+        Debug.Log("Day 8, call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
             case "C10": //Calling Hairdresser: Tulip Pattinson
@@ -2125,9 +2384,9 @@ public class CallManager : MonoBehaviour
         }
 
     }
-    public void Day8Call6()
+    public void Day8Call3()
     {
-        Debug.Log("Day 8, call 6");
+        Debug.Log("Day 8, call 3");
         if (_call_5_6_Tauten == true)
         {
             switch (_switchboard2.WhoIsAnswering().placementName)
@@ -2195,73 +2454,9 @@ public class CallManager : MonoBehaviour
         }
 
     }
-
-    public void Day9Call0()
+    public void Day8Call4() //Henry calls Zachariah
     {
-        Debug.Log("Day 9, call 0");
-        switch (_switchboard2.WhoIsAnswering().placementName)
-        {
-            case "Y5": //Entertainer: Robert Templeton
-                {
-                    _dialogueChatter.Clear();
-                    //_dialogueChatter.Add("");
-                    _dialogueChatter.Add("Leora: Hi, this Leora. Brown. Is this Rob or Beatrice?");
-                    _dialogueChatter.Add("Robert: Hey Leora. My wife is in the kitchen.");
-                    _dialogueChatter.Add("Leora: You and Beatrice didn't show up for our session " +
-                        "this morning.  And you didn't call to say you couldn't make it so I thought " +
-                        "I'd reach out.");
-                    _dialogueChatter.Add("Robert: Yeah, sorry.");
-                    _dialogueChatter.Add("Leora: It's not like either of you to no call no show. Did you " +
-                        "want to reschedule your grief counseling? ");
-                    _dialogueChatter.Add("Robert: No. We'll just stick to the schedule and show for the next " +
-                        "appointment. Again, something came up and we just forgot to call. Sorry.");
-                    _dialogueChatter.Add("Leora: Very well. See you next week.");
-                    break;
-                }
-            default:
-                {
-                    Debug.Log("There was no answer.");
-                    //No answer
-                    break;
-                }
-        }
-    }
-
-    public void Day9Call1()
-    {
-        Debug.Log("Day 9, call 1");
-        switch (_switchboard2.WhoIsAnswering().placementName)
-        {
-            case "A1": //Mine Owner : Michael Walker 
-                {
-                    _dialogueChatter.Clear();
-                    //_dialogueChatter.Add("");
-                    _dialogueChatter.Add("Michael: This is Michael Walker.");
-                    _dialogueChatter.Add("Levi: Hi, this is Levi Johnson. I'm a teacher here in town.");
-                    _dialogueChatter.Add("Michael: Oh, I don't handle the hiring of miners. But I can " +
-                        "give you the name of the person in charge of that.");
-                    _dialogueChatter.Add("Levi: I'm not looking for work. I've heard talk of  " +
-                        "a party that's supposed to be happening in the mines sometime tomorrow " +
-                        "evening. I'm sure you knew nothing about it but now you know.");
-                    _dialogueChatter.Add("Michael: Yeah, that can't happen. We have it locked up for " +
-                        "repairs, but I'll hire security to ensure that nobody get in, ");
-                    _dialogueChatter.Add("Levi: Whew, thank you.");
-                    _dialogueChatter.Add("Michael: I'm grateful for you. I've got to get going.");
-                    _dialogueChatter.Add("Levi: Yeah. Take care. ");
-                    break;
-                }
-            default:
-                {
-                    Debug.Log("There was no answer.");
-                    //No answer
-                    break;
-                }
-        }
-    }
-
-    public void Day9Call2()
-    {
-        Debug.Log("Day 9, call 2");
+        Debug.Log("Day 8, call 4");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
             case "B7": //Miner:  Zachariah Lightfoot
@@ -2291,42 +2486,26 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    //public void Day9Call3()
-    //{
-    //    Debug.Log("Day 9, call 3");
-    //    switch (_switchboard2.WhoIsAnswering().placementName)
-    //    {
-    //        case "C2": //Server: Helen Wanton
-    //            {
-    //                _dialogueChatter.Clear();
-    //                //_dialogueChatter.Add("");
-    //                break;
-    //            }
-    //        default:
-    //            {
-    //                Debug.Log("There was no answer.");
-    //                //No answer
-    //                break;
-    //            }
-    //    }
-    //}
 
-    public void Day9Call4()
+    //------------Ending 4 - Bad Ending -------
+
+    public void Ending4Call0() //Liam calling Sheriff
     {
-        Debug.Log("Day 9, call 4");
+        Debug.Log("Ending 4, Call 0");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
-            case "A1": // Mine supervisor: Theodore Walker
+            case "Z2": // Sheriff: Charlie Czerniak
                 {
                     _dialogueChatter.Clear();
                     //_dialogueChatter.Add("");
-                    _dialogueChatter.Add("Theo, it's Dad. I got a call from a Levi Johnson.");
-                    _dialogueChatter.Add("What now?");
-                    _dialogueChatter.Add("He's a teacher. Said that some kids from school were " +
-                        "talking about sneaking in to the mines to have a party. I told him that I would " +
-                        "get extra security to secure the mines. I talked to a team and they will be onsite " +
-                        "till the repairs are finished on the mines.");
-                    _dialogueChatter.Add("Okay. Thank you. Bye");
+                    _dialogueChatter.Add("Sheriff, is Liam Brown. I own and run the bar downtown." +
+                        " Something has comeover the patrons, they've been fighting.  Physically throwing " +
+                        "punches and nothing will make it stop.  My bouncer is overwhelmed.  We need you.");
+                    _dialogueChatter.Add("I'm tied up at the moment but I'll send the deputies down there to " +
+                        "get a handle on things.");
+                    _dialogueChatter.Add("Please hurry. Someone may get seriously hurt.");
+                    _dialogueChatter.Add("Understood.  Over and out.");
+
                     break;
                 }
             default:
@@ -2337,27 +2516,6 @@ public class CallManager : MonoBehaviour
                 }
         }
     }
-    //------------Ending 4 - Bad Ending -------
-
-    //public void Ending4Call0()
-    //{
-    //    Debug.Log("Ending 4, Call 0");
-    //    switch (_switchboard2.WhoIsAnswering().placementName)
-    //    {
-    //        case "Z2": // Sheriff: Charlie Czerniak
-    //            {
-    //                _dialogueChatter.Clear();
-    //                _dialogueChatter.Add("");
-    //                break;
-    //            }
-    //        default:
-    //            {
-    //                Debug.Log("There was no answer.");
-    //                No answer
-    //                break;
-    //            }
-    //    }
-    //}
 
     public void Ending4Call1()
     {
@@ -2613,7 +2771,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Deputy Tauten: Deputy William Tauten");
                     _dialogueChatter.Add("Thomas: Tauten, This is Thomas Sanford. We have an county-wide " +
                         "official emergency that requires evacuation.");
-                    _dialogueChatter.Add("Deputy Tauten: I'll organize with Deputy Walskine and the Sheriff... ");
+                    _dialogueChatter.Add("Deputy Tauten: I'll organize with Deputy Walskin and the Sheriff... ");
                     _dialogueChatter.Add("Thomas: No. We are going to need you to step up, okay. You'll need to " +
                         "go door to door warning the citizens about the evacuation. Tell them to take only what " +
                         "they need and that the evacuation buses will arrive at 3pm to shuttle people to safety.");
@@ -2629,9 +2787,9 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    public void Ending1Call3()
+    public void Ending1Call2()
     {
-        Debug.Log("Ending 1, Call 3");
+        Debug.Log("Ending 1, Call 2");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
             case "C10": // Beatrice calls Tulip Pattinson
@@ -2656,11 +2814,9 @@ public class CallManager : MonoBehaviour
         }
     }
 
-    
-
-    public void Ending1Call4()
+    public void Ending1Call3()
     {
-        Debug.Log("Ending 1, Call 4");
+        Debug.Log("Ending 1, Call 3");
         switch (_switchboard2.WhoIsAnswering().placementName)
         {
             case "X10": // Operator
@@ -2679,8 +2835,6 @@ public class CallManager : MonoBehaviour
                 }
         }
     }
-
-
 
 
     public void ContinueConvoCaller()
