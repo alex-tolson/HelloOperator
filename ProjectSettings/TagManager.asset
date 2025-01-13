@@ -6,6 +6,8 @@ TagManager:
   tags:
   - IncomingJack
   - OutgoingJack
+  - IncomingToggle
+  - OutgoingToggle
   layers:
   - Default
   - TransparentFX

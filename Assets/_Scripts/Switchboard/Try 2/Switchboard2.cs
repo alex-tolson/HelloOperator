@@ -15,7 +15,7 @@ public class Switchboard2 : MonoBehaviour
     [SerializeField] private SwitchboardSO _outgoingCall;
     [SerializeField] private List<LightsSlot> _slots = new List<LightsSlot>();
     //
-    private int _day = 1;
+    [SerializeField] private int _day = 1;
     private string _incomingCaller;
     [SerializeField] private int _callCount = 0;
     [SerializeField] private bool _incomingCallCompleted;
@@ -46,14 +46,9 @@ public class Switchboard2 : MonoBehaviour
         UpdateUI();
     }
 
-    void Update()
-    {
-
-    }
-
     public void InitializeAllCallsDay1()
     {
-        _incomingCalls.Add("A9");
+        _incomingCalls.Add("A8");
         _incomingCalls.Add("C7");
         _incomingCalls.Add("C8");
         _incomingCalls.Add("Z1");

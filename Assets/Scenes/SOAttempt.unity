@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 45101913}
   m_Layer: 0
   m_Name: X2
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 58850268}
   m_Layer: 0
   m_Name: A9
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1457,7 +1457,7 @@ GameObject:
   - component: {fileID: 64675232}
   m_Layer: 0
   m_Name: C5
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1921,7 +1921,7 @@ GameObject:
   - component: {fileID: 90819299}
   m_Layer: 0
   m_Name: Z3
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2411,7 +2411,7 @@ GameObject:
   - component: {fileID: 129569466}
   m_Layer: 0
   m_Name: Z8
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3414,7 +3414,7 @@ GameObject:
   - component: {fileID: 184598673}
   m_Layer: 0
   m_Name: B0
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6561,7 +6561,7 @@ GameObject:
   - component: {fileID: 331456456}
   m_Layer: 0
   m_Name: Y0
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7739,7 +7739,7 @@ GameObject:
   - component: {fileID: 371156119}
   m_Layer: 0
   m_Name: A2
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7875,7 +7875,7 @@ GameObject:
   - component: {fileID: 374027278}
   m_Layer: 0
   m_Name: C4
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8287,7 +8287,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 395847906}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2134815791}
+        m_TargetAssemblyTypeName: CallManager, Assembly-CSharp
+        m_MethodName: ClearDialogueScreenButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &395847906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8420,7 +8432,7 @@ GameObject:
   - component: {fileID: 404335115}
   m_Layer: 0
   m_Name: Z7
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9635,7 +9647,7 @@ GameObject:
   - component: {fileID: 475438280}
   m_Layer: 0
   m_Name: Y6
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9771,7 +9783,7 @@ GameObject:
   - component: {fileID: 479806040}
   m_Layer: 0
   m_Name: C7
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10592,7 +10604,7 @@ GameObject:
   - component: {fileID: 514717499}
   m_Layer: 0
   m_Name: B7
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11036,7 +11048,7 @@ GameObject:
   - component: {fileID: 529962678}
   m_Layer: 0
   m_Name: Z5
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11349,7 +11361,7 @@ GameObject:
   - component: {fileID: 550332027}
   m_Layer: 0
   m_Name: Y4
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12515,7 +12527,7 @@ GameObject:
   - component: {fileID: 609582962}
   m_Layer: 0
   m_Name: X7
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13302,7 +13314,7 @@ GameObject:
   - component: {fileID: 672834552}
   m_Layer: 0
   m_Name: X1
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13438,7 +13450,7 @@ GameObject:
   - component: {fileID: 675489305}
   m_Layer: 0
   m_Name: Y5
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13962,7 +13974,7 @@ GameObject:
   - component: {fileID: 698589274}
   m_Layer: 0
   m_Name: Y9
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14332,7 +14344,7 @@ GameObject:
   - component: {fileID: 713170745}
   m_Layer: 0
   m_Name: C6
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14936,7 +14948,7 @@ GameObject:
   - component: {fileID: 761028797}
   m_Layer: 0
   m_Name: X8
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15289,7 +15301,7 @@ GameObject:
   - component: {fileID: 800364297}
   m_Layer: 0
   m_Name: C1
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15762,7 +15774,7 @@ GameObject:
   - component: {fileID: 835899449}
   m_Layer: 0
   m_Name: B6
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15978,7 +15990,7 @@ GameObject:
   - component: {fileID: 839085662}
   m_Layer: 0
   m_Name: C9
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16194,7 +16206,7 @@ GameObject:
   - component: {fileID: 863228084}
   m_Layer: 0
   m_Name: Z0
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16661,7 +16673,7 @@ GameObject:
   - component: {fileID: 871556377}
   m_Layer: 0
   m_Name: A4
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17182,7 +17194,7 @@ GameObject:
   - component: {fileID: 918788198}
   m_Layer: 0
   m_Name: X5
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18252,7 +18264,7 @@ GameObject:
   - component: {fileID: 977802307}
   m_Layer: 0
   m_Name: A7
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19190,7 +19202,7 @@ GameObject:
   - component: {fileID: 1066114820}
   m_Layer: 0
   m_Name: B4
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19326,7 +19338,7 @@ GameObject:
   - component: {fileID: 1075214158}
   m_Layer: 0
   m_Name: C3
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19830,7 +19842,7 @@ GameObject:
   - component: {fileID: 1101949104}
   m_Layer: 0
   m_Name: Y3
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20885,7 +20897,7 @@ GameObject:
   - component: {fileID: 1152951924}
   m_Layer: 0
   m_Name: B5
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21951,7 +21963,7 @@ GameObject:
   - component: {fileID: 1239553334}
   m_Layer: 0
   m_Name: A3
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22441,7 +22453,7 @@ GameObject:
   - component: {fileID: 1264866817}
   m_Layer: 0
   m_Name: Z1
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23487,7 +23499,7 @@ GameObject:
   - component: {fileID: 1323794178}
   m_Layer: 0
   m_Name: B9
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23623,7 +23635,7 @@ GameObject:
   - component: {fileID: 1324266487}
   m_Layer: 0
   m_Name: B3
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23953,7 +23965,7 @@ GameObject:
   - component: {fileID: 1348672802}
   m_Layer: 0
   m_Name: A5
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24089,7 +24101,7 @@ GameObject:
   - component: {fileID: 1349849937}
   m_Layer: 0
   m_Name: Z4
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25508,7 +25520,7 @@ GameObject:
   - component: {fileID: 1399381401}
   m_Layer: 0
   m_Name: C8
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26015,7 +26027,7 @@ GameObject:
   - component: {fileID: 1423674286}
   m_Layer: 0
   m_Name: Y8
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27473,7 +27485,7 @@ GameObject:
   - component: {fileID: 1484041330}
   m_Layer: 0
   m_Name: Y1
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28551,7 +28563,7 @@ GameObject:
   - component: {fileID: 1546678873}
   m_Layer: 0
   m_Name: A6
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28944,7 +28956,7 @@ GameObject:
   - component: {fileID: 1563936941}
   m_Layer: 0
   m_Name: A8
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29431,7 +29443,7 @@ GameObject:
   - component: {fileID: 1578460348}
   m_Layer: 0
   m_Name: X6
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29664,7 +29676,7 @@ GameObject:
   - component: {fileID: 1583210861}
   m_Layer: 0
   m_Name: A1
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29869,9 +29881,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2134815791}
-        m_TargetAssemblyTypeName: CallManager, Assembly-CSharp
-        m_MethodName: ClearDialogueScreenButton
+      - m_Target: {fileID: 553294323}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30538,7 +30550,7 @@ GameObject:
   - component: {fileID: 1617720419}
   m_Layer: 0
   m_Name: Z2
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30771,7 +30783,7 @@ GameObject:
   - component: {fileID: 1620055436}
   m_Layer: 0
   m_Name: C0
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32742,7 +32754,7 @@ GameObject:
   - component: {fileID: 1723918417}
   m_Layer: 0
   m_Name: Y7
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33218,7 +33230,7 @@ GameObject:
   - component: {fileID: 1745891586}
   m_Layer: 0
   m_Name: B1
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33463,7 +33475,7 @@ GameObject:
   - component: {fileID: 1764762082}
   m_Layer: 0
   m_Name: X9
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33599,7 +33611,7 @@ GameObject:
   - component: {fileID: 1765164254}
   m_Layer: 0
   m_Name: Y2
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33832,7 +33844,7 @@ GameObject:
   - component: {fileID: 1771733369}
   m_Layer: 0
   m_Name: B2
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36153,7 +36165,7 @@ GameObject:
   - component: {fileID: 1932009523}
   m_Layer: 0
   m_Name: X0
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37362,7 +37374,7 @@ GameObject:
   - component: {fileID: 2004206038}
   m_Layer: 0
   m_Name: X3
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37578,7 +37590,7 @@ GameObject:
   - component: {fileID: 2018801574}
   m_Layer: 0
   m_Name: X4
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38262,7 +38274,7 @@ GameObject:
   - component: {fileID: 2049142252}
   m_Layer: 0
   m_Name: A0
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38737,7 +38749,7 @@ GameObject:
   - component: {fileID: 2060701259}
   m_Layer: 0
   m_Name: Z9
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38873,7 +38885,7 @@ GameObject:
   - component: {fileID: 2060958661}
   m_Layer: 0
   m_Name: C2
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39283,7 +39295,7 @@ GameObject:
   - component: {fileID: 2077476472}
   m_Layer: 0
   m_Name: Z6
-  m_TagString: Untagged
+  m_TagString: OutgoingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40149,7 +40161,7 @@ GameObject:
   - component: {fileID: 2130745616}
   m_Layer: 0
   m_Name: B8
-  m_TagString: Untagged
+  m_TagString: IncomingToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40465,6 +40477,7 @@ MonoBehaviour:
   _incomingCall: {fileID: 0}
   _outgoingCall: {fileID: 0}
   _slots: []
+  _day: 1
   _callCount: 0
   _incomingCallCompleted: 0
   _callInitialize: 0
@@ -40483,6 +40496,11 @@ MonoBehaviour:
   _callerPanel: {fileID: 1613720247}
   _answererPanel: {fileID: 1684125884}
   _dialogue: {fileID: 1575207245}
+  _dialogueChatter: []
+  _dialogueIteration: -1
+  _call_2_5_Sanford: 0
+  _call_5_5_Walskin: 0
+  _call_5_6_Tauten: 0
 --- !u!1 &47464679848901471
 GameObject:
   m_ObjectHideFlags: 0

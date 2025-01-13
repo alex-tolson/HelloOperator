@@ -52,24 +52,27 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
                 }
             }
 
-            if (_currentSwitch == Switch.ToggleUp)
+            if (_currentSwitch == Switch.ToggleUp && gameObject.CompareTag("IncomingToggle"))
             {
                 if (_switchboard2.WhoIsCalling() != null)
                 {
-                    _dialogueManager.DisplayDialogue();
-                   
+                    _dialogueManager.CycleThroughDialogue();
 
+                    //if toggle is up
+                    //if switchboard2 incoming call is connected
+                    //activate dialogue
                 }
-                else if (_switchboard2.WhoIsAnswering() != null)
+            }
+            else if (_currentSwitch == Switch.ToggleUp && gameObject.CompareTag("OutgoingToggle"))
+            { 
+                if (_switchboard2.WhoIsAnswering() != null)
                 {
                     _callManager.ContinueConvoCaller();
                 }
             }
             
         }
-        //if toggle is up
-        //if switchboard2 incoming call is connected
-        //activate dialogue
+
     }
 
     public void OnToggleClicked()

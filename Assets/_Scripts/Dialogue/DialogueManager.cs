@@ -31,14 +31,65 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    //if it's day one, display dialog for call 1
     public void DisplayDialogue()
+    {
+        _callerPanel.SetActive(true);
+        _dialogue.text = _callManager.ReturnDialogueChatter();
+    }
+
+    //if it's day one, display dialog for call 1
+    public void CycleThroughDialogue()
     {
         switch (_switchboard2.WhatDayItIs())
         {
             case 1:
                 {
-                    DialogueTextDay1();
+                    switch (_switchboard2.CallCount())
+                    {
+                        case 0:
+                            {
+
+                                _callManager.Day1Call0();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 1:
+                            {
+                                _callManager.Day1Call1();
+                                break;
+                            }
+                        case 2:
+                            {
+                                _callManager.Day1Call2();
+                                break;
+                            }
+                        case 3:
+                            {
+                                _callManager.Day1Call3();
+                                break;
+                            }
+                        case 4:
+                            {
+                                _callManager.Day1Call4();
+                                break;
+                            }
+                        case 5:
+                            {
+                                _callManager.Day1Call5();
+                                break;
+                            }
+                        case 6:
+                            {
+                                _callManager.Day1Call6();
+                                break;
+                            }
+                        case 7:
+                            {
+                                _callManager.Day1Call7();
+                                break;
+                            }
+
+                    }
                     break;
                 }
             case 2:
@@ -93,8 +144,8 @@ public class DialogueManager : MonoBehaviour
                     _callerPanel.gameObject.SetActive(true);
                     _dialogue.text = "Hello, Operator!  Whew, I'm sorry!  I'm a bit flustered.  " +
                         "I just had the strangest dream.  I was lucid, but I could feel it in my bones." +
-                        "I need a dream interpreter..."+ "\n\n" +"Give me Ms. Minko, Leora, or even Father Kinnison!" +
-                        "\n\n"+"I just need somebody!";
+                        "I need a dream interpreter..." + "\n\n" + "Give me Ms. Minko, Leora, or even Father Kinnison!" +
+                        "\n\n" + "I just need somebody!";
                     //lock incoming toggle in up position until end of call
                     //check if the outgoingCaller is one of the 3 specified 
                     //if so, continue the conversation, if not
@@ -521,5 +572,9 @@ public class DialogueManager : MonoBehaviour
 
 
 }
-    
 
+
+//lock incoming toggle in up position until end of call
+//check if the outgoingCaller is one of the 3 specified 
+//if so, continue the conversation, if not
+//give player a cue to try again.
