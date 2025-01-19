@@ -13,6 +13,9 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     private CallManager _callManager;
     private int i = 0;
 
+    private GameObject _outgoingWireGO;
+    private GameObject _incomingWireGO;
+
     private void Start()
     {
         _callManager = GameObject.Find("Switchboard").GetComponent<CallManager>();
@@ -52,7 +55,7 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
                 }
             }
 
-            if (_currentSwitch == Switch.ToggleUp && gameObject.CompareTag("IncomingToggle"))
+            if (_currentSwitch == Switch.ToggleUp)
             {
                 if (_switchboard2.WhoIsCalling() != null)
                 {
@@ -62,9 +65,6 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
                     //if switchboard2 incoming call is connected
                     //activate dialogue
                 }
-            }
-            else if (_currentSwitch == Switch.ToggleUp && gameObject.CompareTag("OutgoingToggle"))
-            { 
                 if (_switchboard2.WhoIsAnswering() != null)
                 {
                     _callManager.ContinueConvoCaller();
@@ -94,7 +94,16 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
             _mainToggle.sprite = _toggleDown;
             _currentSwitch = Switch.ToggleDown;
             i = 0;
+            _incomingWireGO = GameObject.Find("Wire-Incoming(Clone)");
+            _outgoingWireGO = GameObject.Find("OutgoingWire(Clone)");
             //terminate call
+            //terminate incoming and outgoing wires
+  
+            if (_switchboard2.IsCallCompleted() && _incomingWireGO != null)
+            {
+                _outgoingWireGO.GetComponent<OutgoingWire>().DisconnectWire();
+                _incomingWireGO.GetComponent<IncomingWire>().DisconnectWire();
+            }
         }
     }
 

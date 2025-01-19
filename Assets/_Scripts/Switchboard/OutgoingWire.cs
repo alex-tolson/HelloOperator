@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class OutgoingWire : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private OutgoingJack[] _outgoingJacks;
-    [SerializeField] private AnchorPlaceHolder[] _anchorPlaceholder;
+    //[SerializeField] private AnchorPlaceHolder[] _anchorPlaceholder;
     [SerializeField] private List<LightsSlot> _switchboardLights = new List<LightsSlot>();
 
     private float _currentDistanceToJack;
@@ -32,9 +32,9 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
 
     private void OnEnable()
     {
-        _outgoingJacks = GameObject.Find("Call-Jacks-Container").GetComponentsInChildren<OutgoingJack>();
-        _anchorPlaceholder = GameObject.Find("AnchorPlaceHolders").GetComponentsInChildren<AnchorPlaceHolder>();
-        GameObject.Find("SwitchboardLights").GetComponentsInChildren<LightsSlot>(true, _switchboardLights);
+        //_outgoingJacks = GameObject.Find("Call-Jacks-Container").GetComponentsInChildren<OutgoingJack>();
+        //_anchorPlaceholder = GameObject.Find("AnchorPlaceHolders").GetComponentsInChildren<AnchorPlaceHolder>();
+        // GameObject.Find("SwitchboardLights").GetComponentsInChildren<LightsSlot>(true, _switchboardLights);
     }
     private void Start()
     {
@@ -43,8 +43,8 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
         {
             Debug.LogError("OutgoingWire::Switchboard2 is null");
         }
-
     }
+
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -79,6 +79,8 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
 
     public void ConnectOutgoingAnchorToJack(Vector3 position)
     {
+        _outgoingJacks = GameObject.Find("Call-Jacks-Container").GetComponentsInChildren<OutgoingJack>();
+
         _currentDistanceToJack = 3;
         for (int i = 0; i < _outgoingJacks.Length; i++)
         {
@@ -90,11 +92,13 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
                 _jack = _outgoingJacks[i];
             }
         }
-        _outgoingWireParent.transform.position = _jack.transform.position + _offsetOutWireAtBegin;
+        transform.position = _jack.transform.position + _offsetOutWireAtBegin;
     }
 
     public void EstablishConnection()
     {
+        GameObject.Find("SwitchboardLights").GetComponentsInChildren<LightsSlot>(true, _switchboardLights);
+
         if (_jack != null && _switchboardPosition != null)
         {
 
@@ -115,6 +119,15 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
         {
             Debug.LogError("OutgoingWire::EstablishConnection:: No connection established");
         }
+    }
+
+    //if switch is down or toggled off,
+    //disconnect wire
+
+
+    public void DisconnectWire()
+    {
+        Destroy(gameObject);
     }
 }
 

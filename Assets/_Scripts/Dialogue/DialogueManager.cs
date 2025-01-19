@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
         _dialogue.text = _callManager.ReturnDialogueChatter();
     }
 
-    //if it's day one, display dialog for call 1
+    //if it's day one, display dialog for call 0
     public void CycleThroughDialogue()
     {
         switch (_switchboard2.WhatDayItIs())
@@ -48,7 +48,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         case 0:
                             {
-
+                                Debug.Log("Cycling the dialogue Day 1, call 0");
                                 _callManager.Day1Call0();
                                 DisplayDialogue();
                                 break;
@@ -56,36 +56,43 @@ public class DialogueManager : MonoBehaviour
                         case 1:
                             {
                                 _callManager.Day1Call1();
+                                DisplayDialogue();
                                 break;
                             }
                         case 2:
                             {
                                 _callManager.Day1Call2();
+                                DisplayDialogue();
                                 break;
                             }
                         case 3:
                             {
                                 _callManager.Day1Call3();
+                                DisplayDialogue();
                                 break;
                             }
                         case 4:
                             {
                                 _callManager.Day1Call4();
+                                DisplayDialogue();
                                 break;
                             }
                         case 5:
                             {
                                 _callManager.Day1Call5();
+                                DisplayDialogue();
                                 break;
                             }
                         case 6:
                             {
                                 _callManager.Day1Call6();
+                                DisplayDialogue();
                                 break;
                             }
                         case 7:
                             {
                                 _callManager.Day1Call7();
+                                DisplayDialogue();
                                 break;
                             }
 

@@ -356,6 +356,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &27831493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1121,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &63823345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +2771,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &146938227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,6 +2990,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &169712464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3395,6 +3403,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!224 &184073795 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -3964,6 +3974,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &217465546
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,6 +4469,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &227402226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4894,6 +4908,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &245066763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,6 +5047,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &248524960
 GameObject:
   m_ObjectHideFlags: 0
@@ -5168,6 +5186,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &248837880
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,6 +6028,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &319313115
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,6 +6264,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &326943792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,6 +6403,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &329165043
 GameObject:
   m_ObjectHideFlags: 0
@@ -8691,6 +8717,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &430586058
 GameObject:
   m_ObjectHideFlags: 0
@@ -9102,6 +9130,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &440367461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9319,6 +9349,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &460893292
 GameObject:
   m_ObjectHideFlags: 0
@@ -9633,6 +9665,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &475438275
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,6 +10315,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &499256959
 GameObject:
   m_ObjectHideFlags: 0
@@ -12182,6 +12218,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &582125259
 GameObject:
   m_ObjectHideFlags: 0
@@ -12513,6 +12551,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &609582957
 GameObject:
   m_ObjectHideFlags: 0
@@ -13203,6 +13243,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &640891938
 GameObject:
   m_ObjectHideFlags: 0
@@ -14233,6 +14275,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &709930365
 GameObject:
   m_ObjectHideFlags: 0
@@ -15287,6 +15331,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &800364292
 GameObject:
   m_ObjectHideFlags: 0
@@ -16659,6 +16705,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &871556375
 GameObject:
   m_ObjectHideFlags: 0
@@ -17180,6 +17228,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &918788193
 GameObject:
   m_ObjectHideFlags: 0
@@ -17839,6 +17889,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &967156962
 GameObject:
   m_ObjectHideFlags: 0
@@ -18250,6 +18302,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &977802305
 GameObject:
   m_ObjectHideFlags: 0
@@ -18797,6 +18851,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!224 &1008155343 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -20649,6 +20705,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1145295826
 GameObject:
   m_ObjectHideFlags: 0
@@ -20883,6 +20941,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1152951922
 GameObject:
   m_ObjectHideFlags: 0
@@ -21812,6 +21872,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1233053137
 GameObject:
   m_ObjectHideFlags: 0
@@ -21949,6 +22011,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1239553332
 GameObject:
   m_ObjectHideFlags: 0
@@ -22906,6 +22970,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1284706896
 GameObject:
   m_ObjectHideFlags: 0
@@ -23220,6 +23286,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1300882395
 GameObject:
   m_ObjectHideFlags: 0
@@ -24457,6 +24525,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1371487546
 GameObject:
   m_ObjectHideFlags: 0
@@ -25779,6 +25849,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1409293692
 GameObject:
   m_ObjectHideFlags: 0
@@ -26013,6 +26085,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1423674281
 GameObject:
   m_ObjectHideFlags: 0
@@ -26869,6 +26943,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1464465661
 GameObject:
   m_ObjectHideFlags: 0
@@ -27006,6 +27082,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1469644099
 GameObject:
   m_ObjectHideFlags: 0
@@ -27744,6 +27822,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1484953315
 GameObject:
   m_ObjectHideFlags: 0
@@ -27978,6 +28058,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1505649298
 GameObject:
   m_ObjectHideFlags: 0
@@ -28275,6 +28357,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1517837303
 GameObject:
   m_ObjectHideFlags: 0
@@ -29295,6 +29379,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1575207243
 GameObject:
   m_ObjectHideFlags: 0
@@ -30245,6 +30331,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1001 &1608955774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31042,6 +31130,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1624125237
 GameObject:
   m_ObjectHideFlags: 0
@@ -31470,6 +31560,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1659662374
 GameObject:
   m_ObjectHideFlags: 0
@@ -31687,6 +31779,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1681517617
 GameObject:
   m_ObjectHideFlags: 0
@@ -31824,6 +31918,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1683818194
 GameObject:
   m_ObjectHideFlags: 0
@@ -32351,6 +32447,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1701792910
 GameObject:
   m_ObjectHideFlags: 0
@@ -33216,6 +33314,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1745891584
 GameObject:
   m_ObjectHideFlags: 0
@@ -34103,6 +34203,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1791366480
 GameObject:
   m_ObjectHideFlags: 0
@@ -34422,6 +34524,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1823172958
 GameObject:
   m_ObjectHideFlags: 0
@@ -35646,6 +35750,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1884795262
 GameObject:
   m_ObjectHideFlags: 0
@@ -35783,6 +35889,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1888937424
 GameObject:
   m_ObjectHideFlags: 0
@@ -36424,6 +36532,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &1945994918
 GameObject:
   m_ObjectHideFlags: 0
@@ -37982,6 +38092,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1001 &2033469535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38735,6 +38847,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &2060701254
 GameObject:
   m_ObjectHideFlags: 0
@@ -39144,6 +39258,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &2075671105
 GameObject:
   m_ObjectHideFlags: 0
@@ -39281,6 +39397,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &2077476467
 GameObject:
   m_ObjectHideFlags: 0
@@ -40420,6 +40538,8 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
+  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!1 &2134815786
 GameObject:
   m_ObjectHideFlags: 0
@@ -40455,8 +40575,6 @@ Transform:
   - {fileID: 633663706}
   - {fileID: 1179337077}
   - {fileID: 217465547}
-  - {fileID: 4384202362555785052}
-  - {fileID: 6977768791934967672}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2134815790
@@ -40750,11 +40868,6 @@ MonoBehaviour:
   m_Spacing: {x: -137.6, y: -11.7}
   m_Constraint: 2
   m_ConstraintCount: 10
---- !u!4 &4384202362555785052 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  m_PrefabInstance: {fileID: 6125544227562454286}
-  m_PrefabAsset: {fileID: 0}
 --- !u!212 &4774146601717516790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40886,81 +40999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cb79ca0f59fce4a8095b1432aca254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &6125544227562454286
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2134815788}
-    m_Modifications:
-    - target: {fileID: 5877642372292833561, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: _outgoingWire
-      value: 
-      objectReference: {fileID: 6914381651032336249}
-    - target: {fileID: 5877642372292833561, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: _switchboardParent
-      value: 
-      objectReference: {fileID: 2134815788}
-    - target: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_Name
-      value: Wire-Incoming
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.5736278
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.7020712
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8922203040310869917, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
---- !u!1 &6914381651032336249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6220058582010181980, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  m_PrefabInstance: {fileID: 7998544379383713164}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6977768791934967672 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  m_PrefabInstance: {fileID: 7998544379383713164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7104398391109686414 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -41063,63 +41101,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
---- !u!1001 &7998544379383713164
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2134815788}
-    m_Modifications:
-    - target: {fileID: 6220058582010181980, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_Name
-      value: OutgoingWire
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6732911486492761116, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!4 &8939621194111073446
 Transform:
   m_ObjectHideFlags: 0

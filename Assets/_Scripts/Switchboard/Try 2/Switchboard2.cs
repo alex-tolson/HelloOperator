@@ -72,17 +72,23 @@ public class Switchboard2 : MonoBehaviour
 
     public void InitiateCall()
     {
-        if (_callCount == _incomingCalls.Count)
+        _incomingCallCompleted = false;
+        if (_callCount > _incomingCalls.Count) //> greater than not == to
         {
             Debug.Log("End of Day");
             //restart the count
             //_callCount = 0; 
+            //advance day
+            //_day++;
+            //initialize new day's calls
+            //InitializeIncomingCalls();
         }
         else
         {
-            Debug.Log("Initating call");
+            //Debug.Log("Initating call");
             _callInitialize = true;
             IncomingCall();
+            //_callCount++;
         }
     }
 
@@ -110,9 +116,6 @@ public class Switchboard2 : MonoBehaviour
                 }
             }
         }
-        _incomingCallCompleted = true;
-        _incomingCallCompleted = false;
-        _callInitialize = false;
     }
 
     private void InitializeIncomingCalls()
@@ -173,6 +176,16 @@ public class Switchboard2 : MonoBehaviour
     public void AdvanceDay()
     {
         _day++;
+    }
+
+    public bool IsCallCompleted()
+    { 
+        return _incomingCallCompleted;
+    }
+    public void CallIsComplete()
+    {
+        _incomingCallCompleted = true;
+        _callInitialize = false;
     }
 }
 

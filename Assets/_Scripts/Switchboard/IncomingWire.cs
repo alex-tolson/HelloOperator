@@ -15,7 +15,7 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Vector3 _wireOffsetAtEnd;
     [SerializeField] private Vector3 _wireOffsetAtLight;
     [SerializeField] private GameObject _outgoingWire;
-    [SerializeField] private Transform _switchboardParent;
+   // [SerializeField] private Transform _switchboardParent;
 
     //have a dot or have mouse change shape when near clickable wire edge
 
@@ -36,8 +36,8 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     {
 
         ConnectWireAtEnd();
-        _outgoingWire.SetActive(true);
-        _outgoingWire.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_incomingWireEnd.transform.position);
+        //_outgoingWire.SetActive(true);
+        //_outgoingWire.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_incomingWireEnd.transform.position);
     }
 
     public void ConnectWireAtEnd()
@@ -60,5 +60,15 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     public void ConnectWireAtAnchor(LightsSlot light)
     {
         _incomingWireAnchor.transform.position = light.transform.position + _wireOffsetAtLight;
+    }
+
+    public Vector3 ReturnIncomingWireEnd()
+    {
+        return _incomingWireEnd.transform.position;
+    }
+
+    public void DisconnectWire()
+    {
+        Destroy(gameObject);
     }
 }
