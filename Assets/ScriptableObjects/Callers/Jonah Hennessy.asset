@@ -15,7 +15,7 @@ MonoBehaviour:
   callerID: 26
   cName: Jonah Hennessy
   callerOccupation: Teacher
-  callerLocation: Z1
+  callerLocation: Z0
   callerIcon: {fileID: 0}
   description: ' Fraternal Twin brother of Jackson Hennessy.'
   callerActiveLight: {fileID: 0}

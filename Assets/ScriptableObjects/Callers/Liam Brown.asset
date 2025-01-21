@@ -15,10 +15,12 @@ MonoBehaviour:
   callerID: 31
   cName: Liam Brown
   callerOccupation: Bar Keep
-  callerLocation: A8
+  callerLocation: C8
   callerIcon: {fileID: 0}
   description: 
-  callerActiveLight: {fileID: 0}
-  callerSwitchState: {fileID: 0}
-  incomingCallerPlug: {fileID: 0}
-  outgoingCalleePlug: {fileID: 0}
+  hairColor: 
+  eyeColor: 
+  faceHair: 0
+  maleSex: 0
+  tattoo: 0
+  piercings: 0

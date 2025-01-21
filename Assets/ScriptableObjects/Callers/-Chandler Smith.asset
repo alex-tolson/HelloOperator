@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d7405d227aada04e8d614e5ddc1d297, type: 3}
-  m_Name: Perry Wonton
+  m_Name: -Chandler Smith
   m_EditorClassIdentifier: 
-  callerID: 42
-  cName: Perry Wonton
-  callerOccupation: Cook
-  callerLocation: C0
+  callerID: 9
+  cName: Chandler Smith
+  callerOccupation: HouseKeeper
+  callerLocation: B0
   callerIcon: {fileID: 0}
-  description: Owns the local diner and is the cook.  Married to Sharon Wonton. 
-    Has 3 Kids.
+  description: 
   callerActiveLight: {fileID: 0}
   callerSwitchState: {fileID: 0}
   incomingCallerPlug: {fileID: 0}

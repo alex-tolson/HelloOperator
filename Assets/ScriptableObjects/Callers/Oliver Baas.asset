@@ -15,10 +15,12 @@ MonoBehaviour:
   callerID: 39
   cName: Oliver Baas
   callerOccupation: Council Treasurer
-  callerLocation: X5
+  callerLocation: X4
   callerIcon: {fileID: 0}
   description: 
-  callerActiveLight: {fileID: 0}
-  callerSwitchState: {fileID: 0}
-  incomingCallerPlug: {fileID: 0}
-  outgoingCalleePlug: {fileID: 0}
+  hairColor: 
+  eyeColor: 
+  faceHair: 0
+  maleSex: 0
+  tattoo: 0
+  piercings: 0

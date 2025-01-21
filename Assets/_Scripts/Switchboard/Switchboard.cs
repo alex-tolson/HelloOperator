@@ -14,130 +14,130 @@ public class Switchboard : MonoBehaviour
     //when both lights turn off, the call has ended.
     //player turns switch down.
 
-    [SerializeField] private List<SwitchboardLights> _switchboardLights = new List<SwitchboardLights>(); 
-    [SerializeField] private List<string> _incomingCalls = new List<string>();
+    //[SerializeField] private List<SwitchboardLights> _switchboardLights = new List<SwitchboardLights>();
+    //[SerializeField] private List<string> _incomingCalls = new List<string>();
 
-    private int _day = 1;
-    private string _incomingCaller;
-    [SerializeField] private int _callCount = 0;
-    [SerializeField] private bool _incomingCallCompleted;
+    //private int _day = 1;
+    //private string _incomingCaller;
+    //[SerializeField] private int _callCount = 0;
+    //[SerializeField] private bool _incomingCallCompleted;
     //--------------------------------
     //[SerializeField] private BellCall _bell;
-    [SerializeField] private bool _callInitialize = false;
-    private OutgoingWire _outgoingWire;
+    //[SerializeField] private bool _callInitialize = false;
+    //private OutgoingWire _outgoingWire;
 
-    private void Start()
-    {
-        _outgoingWire = GameObject.FindObjectOfType<OutgoingWire>();
-        InitializeIncomingCalls();  //Initiate the calls on the list for that day
-        InitializeAllSwitchboardLights();
-    }
+    //private void Start()
+    //{
+    //    _outgoingWire = GameObject.FindObjectOfType<OutgoingWire>();
+    //    InitializeIncomingCalls();  //Initiate the calls on the list for that day
+    //    InitializeAllSwitchboardLights();
+    //}
 
-    void Update()
-    {
-        if (_callInitialize)
-        {
-            IncomingCall();
-        }
-    }
+    //void Update()
+    //{
+    //    if (_callInitialize)
+    //    {
+    //        IncomingCall();
+    //    }
+    //}
 
-    public void InitializeAllCallsDay1()
-    {
-        _incomingCalls.Add("A0");
-        _incomingCalls.Add("A9");
-        _incomingCalls.Add("C7");
-        _incomingCalls.Add("C8");
-        _incomingCalls.Add("Z1");
-        _incomingCalls.Add("Z2");
-        _incomingCalls.Add("Z2");
-        _incomingCalls.Add("Y9");
-        _incomingCalls.Add("A1");
+    //public void InitializeAllCallsDay1()
+    //{
+    //    _incomingCalls.Add("A0");
+    //    _incomingCalls.Add("A9");
+    //    _incomingCalls.Add("C7");
+    //    _incomingCalls.Add("C8");
+    //    _incomingCalls.Add("Z1");
+    //    _incomingCalls.Add("Z2");
+    //    _incomingCalls.Add("Z2");
+    //    _incomingCalls.Add("Y9");
+    //    _incomingCalls.Add("A1");
 
-    }
+    //}
 
-    private void InitializeAllCallsDay2()
-    {
-        _incomingCalls.Add("A0");
-        _incomingCalls.Add("A9");
-        _incomingCalls.Add("C7");
-        _incomingCalls.Add("C8");
-        _incomingCalls.Add("Z1");
-        _incomingCalls.Add("Z2");
-        _incomingCalls.Add("Z2");
-        _incomingCalls.Add("Y9");
-        _incomingCalls.Add("A1");
-    }
+    //private void InitializeAllCallsDay2()
+    //{
+    //    _incomingCalls.Add("A0");
+    //    _incomingCalls.Add("A9");
+    //    _incomingCalls.Add("C7");
+    //    _incomingCalls.Add("C8");
+    //    _incomingCalls.Add("Z1");
+    //    _incomingCalls.Add("Z2");
+    //    _incomingCalls.Add("Z2");
+    //    _incomingCalls.Add("Y9");
+    //    _incomingCalls.Add("A1");
+    //}
 
-    private void InitializeAllSwitchboardLights()
-    {
-        //adds all lights to the switchboard lights List
-        GameObject.Find("SwitchboardLights").GetComponentsInChildren<SwitchboardLights>(true,_switchboardLights);
-        
-        //Debug.Log("switchboard count is " + _switchboardLights.Count);
-        if (_switchboardLights == null)
-        {
-            Debug.LogError("Switchboard::SwitchboardLights is null");
-        }
-    }
+    //private void InitializeAllSwitchboardLights()
+    //{
+    //    adds all lights to the switchboard lights List
+    //    GameObject.Find("SwitchboardLights").GetComponentsInChildren<SwitchboardLights>(true, _switchboardLights);
 
-    public void InitiateCall()
-    {
-        if (_callCount == _incomingCalls.Count)
-        {
-            Debug.Log("End of Day");
-            //_callCount = 0;
-        }
-        else
-        {
-            _callInitialize = true;
-            IncomingCall();
-        }
-    }
+    //    Debug.Log("switchboard count is " + _switchboardLights.Count);
+    //    if (_switchboardLights == null)
+    //    {
+    //        Debug.LogError("Switchboard::SwitchboardLights is null");
+    //    }
+    //}
 
-    private void IncomingCall()
-    {
-         _incomingCallCompleted = false;               //set call to not yet completed
+    //public void InitiateCall()
+    //{
+    //    if (_callCount == _incomingCalls.Count)
+    //    {
+    //        Debug.Log("End of Day");
+    //        _callCount = 0;
+    //    }
+    //    else
+    //    {
+    //        _callInitialize = true;
+    //        IncomingCall();
+    //    }
+    //}
 
-        if (_incomingCallCompleted == false)      // if call not yet completed
-        {
-            _incomingCaller = _incomingCalls[_callCount];  //set IncomingCaller to incomingCalls[_callCount]
-        }
+    //private void IncomingCall()
+    //{
+    //    _incomingCallCompleted = false;               //set call to not yet completed
 
-        foreach (string incomingCall in _incomingCalls)//go through call list
-        {
-            if (incomingCall == _incomingCaller)//if the incoming call matches the incoming Caller from the List
-            {
-                foreach (SwitchboardLights light in _switchboardLights)
-                {
-                    if (light.name == _incomingCaller) //if  switchboardLight name == _incoming caller
-                    {
-                        light.TurnLightColor(Color.yellow);//turn on switchboardLight
-                    }
-                }
-            }
-        }
-        _incomingCallCompleted = true;
-        _callCount++;
-        _incomingCallCompleted = false;
-        _callInitialize = false;
-    }
-        
-    private void InitializeIncomingCalls()
-    {
-        switch (_day)
-        {
-            case 1:
-                {
-                    InitializeAllCallsDay1();
-                    break;
-                }
-            case 2:
-                {
-                    InitializeAllCallsDay2();
-                    break;
-                }
-        }
-    }
+    //    if (_incomingCallCompleted == false)      // if call not yet completed
+    //    {
+    //        _incomingCaller = _incomingCalls[_callCount];  //set IncomingCaller to incomingCalls[_callCount]
+    //    }
+
+    //    foreach (string incomingCall in _incomingCalls)//go through call list
+    //    {
+    //        if (incomingCall == _incomingCaller)//if the incoming call matches the incoming Caller from the List
+    //        {
+    //            foreach (SwitchboardLights light in _switchboardLights)
+    //            {
+    //                if (light.name == _incomingCaller) //if  switchboardLight name == _incoming caller
+    //                {
+    //                    light.TurnLightColor(Color.yellow);//turn on switchboardLight
+    //                }
+    //            }
+    //        }
+    //    }
+    //    _incomingCallCompleted = true;
+    //    _callCount++;
+    //    _incomingCallCompleted = false;
+    //    _callInitialize = false;
+    //}
+
+    //private void InitializeIncomingCalls()
+    //{
+    //    switch (_day)
+    //    {
+    //        case 1:
+    //            {
+    //                InitializeAllCallsDay1();
+    //                break;
+    //            }
+    //        case 2:
+    //            {
+    //                InitializeAllCallsDay2();
+    //                break;
+    //            }
+    //    }
+    //}
 
     //if incoming and outgoing on switchboard and jacks are occupied -->Done
     //the lights at the incoming and outgoing switchboard locations turn green-->Done

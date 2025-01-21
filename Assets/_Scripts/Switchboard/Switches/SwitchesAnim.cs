@@ -79,20 +79,20 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     {
         ++i;
 
-        if (i == 1)
+        if (i == 1)//if toggle is up
         {
-            _mainToggle.sprite = _toggleUp;
-            _currentSwitch = Switch.ToggleUp;
+            _mainToggle.sprite = _toggleUp; //change sprite to toggle up
+            _currentSwitch = Switch.ToggleUp;// change Enum state Switch to toggle up
             //display diaglog and lock toggle in place
             //if toggle is up and the call is initialized
             //dialogue will play/appear
             //switch cannot be flipped until dialogue is complete or skipped.
 
         }
-        else if (i == 2)
+        else if (i == 2)//if toggle is down
         {
-            _mainToggle.sprite = _toggleDown;
-            _currentSwitch = Switch.ToggleDown;
+            _mainToggle.sprite = _toggleDown; //change sprite to toggle down
+            _currentSwitch = Switch.ToggleDown;// change Enum state Switch to toggle down
             i = 0;
             _incomingWireGO = GameObject.Find("Wire-Incoming(Clone)");
             _outgoingWireGO = GameObject.Find("OutgoingWire(Clone)");
@@ -100,9 +100,11 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
             //terminate incoming and outgoing wires
   
             if (_switchboard2.IsCallCompleted() && _incomingWireGO != null)
-            {
+            { 
+                //disconnect both wires
                 _outgoingWireGO.GetComponent<OutgoingWire>().DisconnectWire();
                 _incomingWireGO.GetComponent<IncomingWire>().DisconnectWire();
+                _switchboard2.ClearComingAndGoing();
             }
         }
     }

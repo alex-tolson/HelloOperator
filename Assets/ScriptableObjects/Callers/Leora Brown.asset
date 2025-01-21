@@ -15,10 +15,12 @@ MonoBehaviour:
   callerID: 29
   cName: Leora Brown
   callerOccupation: Therapist
-  callerLocation: Y5
+  callerLocation: Y3
   callerIcon: {fileID: 0}
   description: Widowed
-  callerActiveLight: {fileID: 0}
-  callerSwitchState: {fileID: 0}
-  incomingCallerPlug: {fileID: 0}
-  outgoingCalleePlug: {fileID: 0}
+  hairColor: 
+  eyeColor: 
+  faceHair: 0
+  maleSex: 0
+  tattoo: 0
+  piercings: 0

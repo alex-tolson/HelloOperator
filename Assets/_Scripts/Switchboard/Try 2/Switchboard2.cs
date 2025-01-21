@@ -49,25 +49,26 @@ public class Switchboard2 : MonoBehaviour
     public void InitializeAllCallsDay1()
     {
         _incomingCalls.Add("A8");
+        _incomingCalls.Add("C6");
         _incomingCalls.Add("C7");
-        _incomingCalls.Add("C8");
+        _incomingCalls.Add("Z0");
         _incomingCalls.Add("Z1");
-        _incomingCalls.Add("Z2");
-        _incomingCalls.Add("Z2");
-        _incomingCalls.Add("Y9");
-        _incomingCalls.Add("A1");
+        _incomingCalls.Add("Z1");
+        _incomingCalls.Add("Y8");
+        _incomingCalls.Add("A0");
 
     }
 
     private void InitializeAllCallsDay2()
     {
-        _incomingCalls.Add("A9");
         _incomingCalls.Add("A8");
-        _incomingCalls.Add("A5");
-        _incomingCalls.Add("X4");
-        _incomingCalls.Add("B9");
-        _incomingCalls.Add("C6");
-        _incomingCalls.Add("B3");
+        _incomingCalls.Add("A7");
+        _incomingCalls.Add("A4");
+        _incomingCalls.Add("X3");
+        _incomingCalls.Add("B8");
+        _incomingCalls.Add("C5");
+        _incomingCalls.Add("B2");
+        _incomingCalls.Add("Y2");
     }
 
     public void InitiateCall()
@@ -76,10 +77,12 @@ public class Switchboard2 : MonoBehaviour
         if (_callCount > _incomingCalls.Count) //> greater than not == to
         {
             Debug.Log("End of Day");
+            //Confirm End of Day button 
+            //Run the narration
             //restart the count
-            //_callCount = 0; 
-            //advance day
-            //_day++;
+            AdvanceDay();
+            AdvanceCallCount();
+            InitializeIncomingCalls();
             //initialize new day's calls
             //InitializeIncomingCalls();
         }
@@ -88,25 +91,24 @@ public class Switchboard2 : MonoBehaviour
             //Debug.Log("Initating call");
             _callInitialize = true;
             IncomingCall();
-            //_callCount++;
         }
     }
 
     private void IncomingCall()
     {
-        if (_incomingCallCompleted == false)
+        if (_incomingCallCompleted == false) //if the call is not completed
         {
-            _incomingCaller = _incomingCalls[_callCount];
+            _incomingCaller = _incomingCalls[_callCount];//incoming caller string equals _incoming calls[callCount]
         }
 
-        foreach (SwitchboardSO placement in _switchboardInv._switchboardList)
+        foreach (SwitchboardSO placement in _switchboardInv._switchboardList)//cycle through the switchboard list
         {
-            if (placement.placementName == _incomingCaller)
+            if (placement.placementName == _incomingCaller)//if switchboard list selection equals incoming caller
             {
-                _incomingCall = placement;
-                _currentState = CurrentState.Ringing;
+                _incomingCall = placement;   //set incoming call to switchboard selection
+                _currentState = CurrentState.Ringing; //current state of switchboard is ringing
 
-                foreach (LightsSlot slot in _slots)
+                foreach (LightsSlot slot in _slots) //set the light selection to switchboard incoming call name
                 {
                     if (slot.name == _incomingCall.name)
                     {
@@ -153,6 +155,14 @@ public class Switchboard2 : MonoBehaviour
     //when the switches are flipped,
     //the switch cannot be flipped again until the dialogue is exhausted or skipped
     //then the switch can be flipped down and the lights go off.
+
+    public bool IsOutgoingNull()
+    {
+        if (_outgoingCall != null)
+            return false;
+        else
+            return true;
+    }
     public int WhatDayItIs()
     {
         return _day;
@@ -186,6 +196,12 @@ public class Switchboard2 : MonoBehaviour
     {
         _incomingCallCompleted = true;
         _callInitialize = false;
+    }
+
+    public void ClearComingAndGoing()
+    {
+        _incomingCall = null;
+        _outgoingCall = null;
     }
 }
 

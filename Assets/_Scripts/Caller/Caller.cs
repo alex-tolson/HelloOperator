@@ -11,9 +11,12 @@ public class Caller : ScriptableObject
     public string callerLocation;
     public Sprite callerIcon;
     public string description;
-    public GameObject callerActiveLight;
-    public GameObject callerSwitchState;
-    public SpriteRenderer incomingCallerPlug;
-    public SpriteRenderer outgoingCalleePlug;
+    public string hairColor;
+    public string eyeColor;
+    public bool faceHair;
+    public bool maleSex;
+    public bool tattoo;
+    public bool piercings;
+
 
 }

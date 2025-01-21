@@ -3,31 +3,31 @@ using UnityEngine.EventSystems;
 
 public class LightsSlot : MonoBehaviour, IPointerClickHandler
 {
-    private SwitchboardSO _switchboard;
+    private SwitchboardSO _switchboardSO;
     public string _name;
-
+    
     public JackDirection _direction;
     public CurrentState _currentState;
     public SpriteRenderer _light;
     //------------------------------------
-    //private IncomingWire _incomingWire;
+    private Switchboard2 _switchboard2;
     [SerializeField] private GameObject _incomingWireGO;
     [SerializeField] private GameObject _outgoingWireGO;
-    private Color _color;
+    [SerializeField] private Vector3 _incomingWirePositionOffset;
 
 
     private void Start()
     {
-        //_incomingWire = FindObjectOfType<IncomingWire>(true); //finds incoming wire even if it's inactive
-        //if (_incomingWire == null)
-        //{
-        //    Debug.LogError("SwitchboardLights::Wires function is null");
-        //}
+        _switchboard2 = GameObject.Find("Switchboard").GetComponent<Switchboard2>();
+        if(_switchboard2 == null)
+        {
+            Debug.LogError("LightsSlot::Switchboard2 is null");
+        }
     }
 
     public void AddLights(SwitchboardSO switchboardScriptableObj)
     {
-        _switchboard = switchboardScriptableObj;
+        _switchboardSO = switchboardScriptableObj;
         _name = switchboardScriptableObj.placementName;
         _direction = switchboardScriptableObj.jackDirection;
         _currentState = switchboardScriptableObj.currentState;
@@ -36,49 +36,54 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (_switchboard != null)
+        if (_switchboardSO != null) //when light is clicked on
+                                  // if switchboard scriptable object is not null
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false); //turn off light
 
-            //introduce wire
+            //introduce incoming wire
             Instantiate(_incomingWireGO, eventData.pointerCurrentRaycast.worldPosition, Quaternion.identity);
-            _incomingWireGO.gameObject.SetActive(true);
+            _incomingWireGO.gameObject.SetActive(true); //instantiate incoming wire at pointer locatino
             //incomingWire.gameObject.SetActive(true);
             _incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);
+            //snap wire to position
         }
     }
 
     public void Toggle(SwitchesAnim toggle)
     {
-        if (toggle.ToggleStatus() == Switch.ToggleUp && toggle.gameObject.CompareTag("IncomingToggle"))
-        {
+        if (toggle.ToggleStatus() == Switch.ToggleUp && _switchboard2.IsOutgoingNull())
+        { 
             TurnLightColor(Color.green);
-            //we want to turn light green
-            //if the switchboard2.incoming wire is not null
-            //
             //initiate dialoge coroutine
             //can skip but cannot flip toggle until dialogue is finished.
-            if (_light != null)
+            if (_light != null) //if _light is null return color to yellow and deactivate
             {
                 TurnLightColor(Color.yellow);
                 _light.gameObject.SetActive(false);
             }
-            //instantiate outgoing when switch is flipped up
+            //instantiate outgoing when switch is flipped up and connect to jack
             Instantiate(_outgoingWireGO, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
             _outgoingWireGO.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_outgoingWireGO.transform.position);
         }
+        else if (toggle.ToggleStatus() == Switch.ToggleUp && !_switchboard2.IsOutgoingNull())
+        {
+            //switch is flipped and outgoing is not null
+            //do nothing
+            return;
+        }
 
-        else if (toggle.ToggleStatus() == Switch.ToggleDown )
+        if (toggle.ToggleStatus() == Switch.ToggleDown )
         {
             TurnOffLight();
 
         }
     }
 
-    public void AttachLightToSwitch(SwitchesAnim toggle)
-    {
-        TurnLightColor(Color.green);
-    }
+    //public void AttachLightToSwitch(SwitchesAnim toggle)
+    //{
+    //    TurnLightColor(Color.green);
+    //}
 
     public void TurnLightColor(Color color)
     {

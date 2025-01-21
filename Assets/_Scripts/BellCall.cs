@@ -6,13 +6,12 @@ public class BellCall : MonoBehaviour, IPointerClickHandler
     
     public void OnPointerClick(PointerEventData eventData)
     {
-        //Debug.Log("Bell clicked");
-        //if bell clicked = false
-        //then
         _switchboard2.InitiateCall();
-        //else if bell clicked == true
-        //message to resolve current call first
-        //before taking another
+        //if call not completed
+        //return
+        //else
+        //clear dialogue chatter and 
+        //advance count
     }
 
 
