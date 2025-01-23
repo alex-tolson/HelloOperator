@@ -13,6 +13,7 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     private Switchboard2 _switchboard2;
     [SerializeField] private GameObject _incomingWireGO;
     [SerializeField] private GameObject _outgoingWireGO;
+    [SerializeField] private bool _incomingInstantiated = false;
     [SerializeField] private Vector3 _incomingWirePositionOffset;
 
 
@@ -36,17 +37,20 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (_switchboardSO != null) //when light is clicked on
-                                  // if switchboard scriptable object is not null
+        if (_switchboardSO != null) // if switchboard scriptable object is not null
         {
-            gameObject.SetActive(false); //turn off light
+            if (_incomingInstantiated == false)
+            { 
+                gameObject.SetActive(false); //turn off light
 
-            //introduce incoming wire
-            Instantiate(_incomingWireGO, eventData.pointerCurrentRaycast.worldPosition, Quaternion.identity);
-            _incomingWireGO.gameObject.SetActive(true); //instantiate incoming wire at pointer locatino
-            //incomingWire.gameObject.SetActive(true);
-            _incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);
-            //snap wire to position
+                //introduce incoming wire
+                Instantiate(_incomingWireGO, eventData.pointerCurrentRaycast.worldPosition, Quaternion.identity);
+                _incomingWireGO.gameObject.SetActive(true); //instantiate incoming wire at pointer locatino
+                                                            //incomingWire.gameObject.SetActive(true);
+                _incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);//snap wire to position
+                _incomingInstantiated = true;
+            }
+            
         }
     }
 
@@ -73,10 +77,10 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        if (toggle.ToggleStatus() == Switch.ToggleDown )
+        if (toggle.ToggleStatus() == Switch.ToggleDown)
         {
             TurnOffLight();
-
+            IncomingInstantiatedReset();
         }
     }
 
@@ -84,6 +88,11 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     //{
     //    TurnLightColor(Color.green);
     //}
+
+    public void IncomingInstantiatedReset()
+    {
+        _incomingInstantiated = false;
+    }
 
     public void TurnLightColor(Color color)
     {

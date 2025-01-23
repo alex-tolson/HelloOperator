@@ -187,7 +187,6 @@ public class Switchboard2 : MonoBehaviour
     {
         _day++;
     }
-
     public bool IsCallCompleted()
     { 
         return _incomingCallCompleted;
@@ -197,7 +196,6 @@ public class Switchboard2 : MonoBehaviour
         _incomingCallCompleted = true;
         _callInitialize = false;
     }
-
     public void ClearComingAndGoing()
     {
         _incomingCall = null;

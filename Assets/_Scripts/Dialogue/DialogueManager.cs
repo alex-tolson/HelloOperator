@@ -48,7 +48,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         case 0:
                             {
-                                Debug.Log("Cycling the dialogue Day 1, call 0");
+                                
                                 _callManager.Day1Call0();
                                 DisplayDialogue();
                                 break;
@@ -101,7 +101,58 @@ public class DialogueManager : MonoBehaviour
                 }
             case 2:
                 {
-                    DialogueTextDay2();
+                    switch (_switchboard2.CallCount())
+                    {
+                        case 0:
+                            {
+
+                                _callManager.Day2Call0();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 1:
+                            {
+                                _callManager.Day2Call1();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 2:
+                            {
+                                _callManager.Day2Call2();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 3:
+                            {
+                                _callManager.Day2Call3();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 4:
+                            {
+                                _callManager.Day2Call4();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 5:
+                            {
+                                _callManager.Day2Call5();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 6:
+                            {
+                                _callManager.Day2Call6();
+                                DisplayDialogue();
+                                break;
+                            }
+                        case 7:
+                            {
+                                _callManager.Day2Call7();
+                                DisplayDialogue();
+                                break;
+                            }
+                    }
                     break;
                 }
             case 3:
