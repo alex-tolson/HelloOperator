@@ -29,6 +29,21 @@ public class CallManager : MonoBehaviour
             Debug.LogError("CallManager::_dialogueManager is null");
         }
     }
+
+    public bool Return_call_2_5_Sanford()
+    {
+        return _call_2_5_Sanford;
+    }
+
+    public bool Return_call_5_5_Walskin()
+    {
+        return _call_5_5_Walskin;
+    }
+
+    public bool Return_call_5_6_Tauten()
+    {
+        return _call_5_6_Tauten;
+    }
     public string ReturnDialogueChatter()
     {
         _dialogueIteration++;
@@ -3601,7 +3616,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Sheriff Czerniak: It's Lucas Porter again. This time he was raving " +
                         "on about larvae in the water supply. The last thing he said was that he needed fire " +
                         "to fight them.");
-                    _dialogueChatter.Add("Patrick: And what if he won't submit to an eval.");
+                    _dialogueChatter.Add("Patrick: And if he won't submit to an eval.");
                     _dialogueChatter.Add("Sheriff Czerniak: We won't know until we try. I think we may have " +
                         "actually found a case, haha.");
                     _dialogueChatter.Add("Patrick: It's more common than you think");
@@ -3643,7 +3658,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Patrick: It's on fire. I don't know if anyone is still " +
                         "in the house but it's ablaze!");
                     _dialogueChatter.Add("Sheriff Czerniak: I'm still at the station dealing with the situation. " +
-                        "Call Amos");
+                        "Let me call Amos.");
                     _dialogueChatter.Add("Patrick: Okay.");
                     break;
                 }
@@ -3750,14 +3765,11 @@ public class CallManager : MonoBehaviour
     }
     public void Ending4Answer7()
     {
-        if (_switchboard2.WhoIsCalling().placementName == "Y9") // THOMAS calling
+        if (_switchboard2.WhoIsCalling().placementName == "Y5") // Xena calling
         {
-            ResetDialogueIteration();
-            _dialogueChatter.Clear();
-            //_dialogueChatter.Add("");
-            _dialogueChatter.Add("Operator. The time to evacuate is now.");
-
+            //the people go into the mines 
         }
+
     }
 
     //-----------------Ending 1 - Good Ending -------
@@ -3834,7 +3846,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Thomas: No. In light of your prelimenary investigative work, we're going to " +
                         "handle them a different way.  We are going to need you to step up, okay? You'll need to " +
                         "go door to door warning the citizens about the evacuation. Tell them to take only what " +
-                        "they need and that the evacuation buses will arrive at 3pm to shuttle people to safety.");
+                        "they need and that the evacuation buses will arrive at 2pm to shuttle people to safety.");
                     _dialogueChatter.Add("Deputy Tauten: I'll get started.");
                     break;
                 }
@@ -3895,8 +3907,8 @@ public class CallManager : MonoBehaviour
 
         }
     }
-    
-    
+
+
 
     public void ContinueConvoCaller()
     {
@@ -3907,7 +3919,7 @@ public class CallManager : MonoBehaviour
                     switch (_switchboard2.CallCount())
                     {
                         case 0:
-                            {                                
+                            {
                                 Day1Answer0();
                                 _dialogueManager.DisplayDialogue();
                                 break;
@@ -4110,6 +4122,196 @@ public class CallManager : MonoBehaviour
                         case 7:
                             {
                                 Day4Answer7();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                    }
+                    break;
+                }
+            case 5:
+                {
+                    switch (_switchboard2.CallCount())
+                    {
+                        case 0:
+                            {
+                                Day5Answer0();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 1:
+                            {
+                                Day5Answer1();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 2:
+                            {
+                                Day5Answer2();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 3:
+                            {
+                                Day5Answer3();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 4:
+                            {
+                                Day5Answer4();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 5:
+                            {
+                                Day5Answer5();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 6:
+                            {
+                                Day5Answer6();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                    }
+                    break;
+                }
+            case 6:
+                {
+                    switch (_switchboard2.CallCount())
+                    {
+                        case 0:
+                            {
+                                Day6Answer0();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 1:
+                            {
+                                Day6Answer1();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 2:
+                            {
+                                Day4Answer2();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 3:
+                            {
+                                Day6Answer3();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 4:
+                            {
+                                Day6Answer4();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 5:
+                            {
+                                Day6Answer5();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 6:
+                            {
+                                Day6Answer6();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 7:
+                            {
+                                Day6Answer7();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 8:
+                            {
+                                Day6Answer8();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                    }
+                    break;
+                }
+            case 7:
+                {
+                    switch (_switchboard2.CallCount())
+                    {
+                        case 0:
+                            {
+                                Day5Answer0();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 1:
+                            {
+                                Day4Answer1();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 2:
+                            {
+                                Day5Answer2();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 3:
+                            {
+                                Day5Answer3();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 4:
+                            {
+                                Day5Answer4();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 5:
+                            {
+                                Day5Answer5();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                    }
+                    break;
+                }
+            case 8:
+                {
+                    switch (_switchboard2.CallCount())
+                    {
+                        case 0:
+                            {
+                                Day8Answer0();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 1:
+                            {
+                                Day8Answer1();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 2:
+                            {
+                                Day8Answer2();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 3:
+                            {
+                                Day8Answer3();
+                                _dialogueManager.DisplayDialogue();
+                                break;
+                            }
+                        case 4:
+                            {
+                                Day8Answer4();
                                 _dialogueManager.DisplayDialogue();
                                 break;
                             }

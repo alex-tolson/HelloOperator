@@ -8,6 +8,7 @@ public class Switchboard2 : MonoBehaviour
 
     //-----Switchboard-----------------
     [SerializeField] private SwitchboardInv _switchboardInv; //--->try this instead of the singleton
+    private CallManager _callManager;
     [SerializeField] CurrentState _currentState;
     [SerializeField] private List<string> _incomingCalls = new List<string>();
     //
@@ -22,8 +23,8 @@ public class Switchboard2 : MonoBehaviour
 
     //--------End Switchboard ---------
     //[SerializeField] private BellCall _bell;
-    [SerializeField] private bool _callInitialize = false;
-    private OutgoingWire _outgoingWire;
+     [SerializeField] private bool _callInitialize = false;
+    // private OutgoingWire _outgoingWire;
 
     private void Start()
     {
@@ -39,52 +40,160 @@ public class Switchboard2 : MonoBehaviour
         {
             Debug.LogError("Switchboard2::_switchboardInv is null");
         }
+        _callManager = GameObject.Find("Switchboard").GetComponent<CallManager>();
         //-----------------------------
-        _outgoingWire = GameObject.FindObjectOfType<OutgoingWire>();
 
-        InitializeAllCallsDay1();
+        InitializedCalls(1);
         UpdateUI();
     }
 
-    public void InitializeAllCallsDay1()
+    private void Update()
     {
-        _incomingCalls.Add("A8");
-        _incomingCalls.Add("C6");
-        _incomingCalls.Add("C7");
-        _incomingCalls.Add("Z0");
-        _incomingCalls.Add("Z1");
-        _incomingCalls.Add("Z1");
-        _incomingCalls.Add("Y8");
-        _incomingCalls.Add("A0");
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ResetDay();
+            Debug.Log("Advancing day to " + _day + " and call " + _callCount);
+        }
+            
     }
-
-    private void InitializeAllCallsDay2()
+    public void InitializedCalls(int day)
     {
-        _incomingCalls.Add("A8");
-        _incomingCalls.Add("A7");
-        _incomingCalls.Add("A4");
-        _incomingCalls.Add("X3");
-        _incomingCalls.Add("B8");
-        _incomingCalls.Add("C5");
-        _incomingCalls.Add("B2");
-        _incomingCalls.Add("Y2");
+        switch (day)
+        { 
+            case 1:
+                {
+                    _incomingCalls.Add("A8");
+                    _incomingCalls.Add("C6");
+                    _incomingCalls.Add("C7");
+                    _incomingCalls.Add("Z0");
+                    _incomingCalls.Add("Z1");
+                    _incomingCalls.Add("Z1");
+                    _incomingCalls.Add("Y8");
+                    _incomingCalls.Add("A0");
+                    break;
+                }
+            case 2:
+                {
+                    _incomingCalls.Clear();
+                    _incomingCalls.Add("A8");
+                    _incomingCalls.Add("A7");
+                    _incomingCalls.Add("A4");
+                    _incomingCalls.Add("X3");
+                    _incomingCalls.Add("B8");
+                    _incomingCalls.Add("C5");
+                    _incomingCalls.Add("B2");
+                    _incomingCalls.Add("Y2");
+                    break;
+                }
+            case 3:
+                {
+                    _incomingCalls.Clear();
+                    if (_callManager.Return_call_2_5_Sanford()==true)
+                    {
+                        _incomingCalls.Add("Y9");
+                    }
+                    else
+                    {
+                        _incomingCalls.Add("A1");
+                    }
+
+                    _incomingCalls.Add("X4");
+                    _incomingCalls.Add("C5");
+                    _incomingCalls.Add("A3");
+                    _incomingCalls.Add("Y1");
+                    _incomingCalls.Add("Y5");
+                    _incomingCalls.Add("Y3");
+                    break;
+                }
+            case 4:
+                {
+                    _incomingCalls.Clear();
+                    _incomingCalls.Add("Y4");
+                    _incomingCalls.Add("Y1");
+                    _incomingCalls.Add("A2");
+                    _incomingCalls.Add("Y8");
+                    _incomingCalls.Add("Y1");
+                    _incomingCalls.Add("Y1");
+                    _incomingCalls.Add("A5");
+                    _incomingCalls.Add("Y1");
+                    break;
+                }
+            case 5:
+                {
+                    _incomingCalls.Clear();
+                    _incomingCalls.Add("C7");
+                    _incomingCalls.Add("Z1");
+                    _incomingCalls.Add("X0");
+                    _incomingCalls.Add("B6");
+                    _incomingCalls.Add("X5");
+                    _incomingCalls.Add("X7");
+                    _incomingCalls.Add("A1");
+                    _incomingCalls.Add("A8");
+
+                    break;
+                }
+            case 6:
+                {
+                    _incomingCalls.Clear();
+                    _incomingCalls.Add("Z3");
+                    _incomingCalls.Add("Y0");
+                    _incomingCalls.Add("C1");
+                    _incomingCalls.Add("Z3");
+                    _incomingCalls.Add("A9");
+                    _incomingCalls.Add("Z9");
+                    _incomingCalls.Add("A8");
+                    _incomingCalls.Add("Z3");
+                    _incomingCalls.Add("Z3");
+                    _incomingCalls.Add("A8");
+                    break;
+                }
+            case 7:
+                {
+                    _incomingCalls.Clear();
+                    _incomingCalls.Add("Y5");
+                    _incomingCalls.Add("Y2");
+                    _incomingCalls.Add("X0");
+                    _incomingCalls.Add("Y2");
+                    _incomingCalls.Add("C5");
+                    _incomingCalls.Add("B1");
+                    break;
+                }
+            case 8:
+                {
+                    _incomingCalls.Clear();
+                    _incomingCalls.Add("A0");
+                    _incomingCalls.Add("A2");
+                    _incomingCalls.Add("C6");
+                    if (_callManager.Return_call_5_5_Walskin() == true)
+                    {
+                        _incomingCalls.Add("Z2");
+                    }
+                    else
+                    {
+                        _incomingCalls.Add("Z8");
+                    }
+                    _incomingCalls.Add("A4");
+                    break;
+                }
+
+        }
+
+
     }
 
     public void InitiateCall()
     {
+        Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count+ " _incomingCalls.Count");
         _incomingCallCompleted = false;
-        if (_callCount > _incomingCalls.Count) //> greater than not == to
+        if (_callCount == _incomingCalls.Count) //> greater than not == to
         {
+
             Debug.Log("End of Day");
-            //Confirm End of Day button 
-            //Run the narration
-            //restart the count
-            AdvanceDay();
-            AdvanceCallCount();
-            InitializeIncomingCalls();
-            //initialize new day's calls
-            //InitializeIncomingCalls();
+            //hide text in text box
+            //hide continue and skip buttons
+            //display next day button
+            //play animatic
+            ResetDay();
         }
         else
         {
@@ -120,23 +229,6 @@ public class Switchboard2 : MonoBehaviour
         }
     }
 
-    private void InitializeIncomingCalls()
-    {
-        switch (_day)
-        {
-            case 1:
-                {
-                    InitializeAllCallsDay1();
-                    break;
-                }
-            case 2:
-                {
-                    InitializeAllCallsDay2();
-                    break;
-                }
-        }
-    }
-
     public void UpdateUI()
     {
 
@@ -152,9 +244,13 @@ public class Switchboard2 : MonoBehaviour
 
     }
 
-    //when the switches are flipped,
-    //the switch cannot be flipped again until the dialogue is exhausted or skipped
-    //then the switch can be flipped down and the lights go off.
+
+    public void ResetDay()
+    {
+        AdvanceDay();
+        ResetCallCount();
+        InitializedCalls(_day);
+    }
 
     public bool IsOutgoingNull()
     {
@@ -200,6 +296,10 @@ public class Switchboard2 : MonoBehaviour
     {
         _incomingCall = null;
         _outgoingCall = null;
+    }
+    private void ResetCallCount()
+    {
+        _callCount = 0;
     }
 }
 
