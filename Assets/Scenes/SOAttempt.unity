@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 6053648}
   - component: {fileID: 6053649}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a7
+  m_Name: A7
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,6 +360,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &27831493
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +534,7 @@ GameObject:
   - component: {fileID: 44041162}
   - component: {fileID: 44041161}
   m_Layer: 0
-  m_Name: call-jack-incoming-c6
+  m_Name: C6
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -666,6 +668,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 45101912}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &45101912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -765,7 +770,7 @@ GameObject:
   - component: {fileID: 50377577}
   - component: {fileID: 50377578}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a3
+  m_Name: A3
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,6 +939,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 58850270}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &58850270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1127,6 +1135,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &63823345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1270,7 @@ GameObject:
   - component: {fileID: 63959498}
   - component: {fileID: 63959499}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z6
+  m_Name: Z6
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1500,6 +1510,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 64675231}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &64675231
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1599,7 +1612,7 @@ GameObject:
   - component: {fileID: 72972808}
   - component: {fileID: 72972807}
   m_Layer: 0
-  m_Name: call-jack-incoming-y0
+  m_Name: Y0
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1696,7 +1709,7 @@ GameObject:
   - component: {fileID: 77999676}
   - component: {fileID: 77999677}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x2
+  m_Name: X2
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1964,6 +1977,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 90819298}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &90819298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2143,7 +2159,7 @@ GameObject:
   - component: {fileID: 100607406}
   - component: {fileID: 100607405}
   m_Layer: 0
-  m_Name: call-jack-incoming-b7
+  m_Name: B7
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2240,7 +2256,7 @@ GameObject:
   - component: {fileID: 115829913}
   - component: {fileID: 115829914}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z2
+  m_Name: Z2
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2454,6 +2470,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 129569465}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &129569465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2553,7 +2572,7 @@ GameObject:
   - component: {fileID: 136976891}
   - component: {fileID: 136976892}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x7
+  m_Name: X7
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2779,6 +2798,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &146938227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,6 +3021,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &169712464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,7 +3035,7 @@ GameObject:
   - component: {fileID: 169712467}
   - component: {fileID: 169712466}
   m_Layer: 0
-  m_Name: call-jack-incoming-b4
+  m_Name: B4
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3189,7 +3212,7 @@ GameObject:
   - component: {fileID: 179618546}
   - component: {fileID: 179618547}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y7
+  m_Name: Y7
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3415,6 +3438,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!224 &184073795 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -3504,6 +3529,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 184598675}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &184598675
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3568,7 +3596,7 @@ GameObject:
   - component: {fileID: 188985798}
   - component: {fileID: 188985797}
   m_Layer: 0
-  m_Name: call-jack-incoming-z4
+  m_Name: Z4
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3665,7 +3693,7 @@ GameObject:
   - component: {fileID: 196653791}
   - component: {fileID: 196653792}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x0
+  m_Name: X0
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3762,7 +3790,7 @@ GameObject:
   - component: {fileID: 206693067}
   - component: {fileID: 206693068}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x9
+  m_Name: X9
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3988,6 +4016,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &217465546
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,7 +4121,7 @@ GameObject:
   - component: {fileID: 219094925}
   - component: {fileID: 219094924}
   m_Layer: 0
-  m_Name: call-jack-incoming-z7
+  m_Name: Z7
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4485,6 +4515,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &227402226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4497,7 +4529,7 @@ GameObject:
   - component: {fileID: 227402229}
   - component: {fileID: 227402228}
   m_Layer: 0
-  m_Name: call-jack-incoming-z2
+  m_Name: Z2
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4594,7 +4626,7 @@ GameObject:
   - component: {fileID: 227639855}
   - component: {fileID: 227639856}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y6
+  m_Name: Y6
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4926,6 +4958,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &245066763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5067,6 +5101,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &248524960
 GameObject:
   m_ObjectHideFlags: 0
@@ -5208,6 +5244,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &248837880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,7 +5258,7 @@ GameObject:
   - component: {fileID: 248837882}
   - component: {fileID: 248837883}
   m_Layer: 0
-  m_Name: call-jack-incoming-a9
+  m_Name: A9
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5632,7 +5670,7 @@ GameObject:
   - component: {fileID: 266596461}
   - component: {fileID: 266596462}
   m_Layer: 0
-  m_Name: call-jack-incoming-z4
+  m_Name: Z4
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6052,6 +6090,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &319313115
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,7 +6104,7 @@ GameObject:
   - component: {fileID: 319313118}
   - component: {fileID: 319313117}
   m_Layer: 0
-  m_Name: call-jack-incoming-y1
+  m_Name: Y1
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6290,6 +6330,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &326943792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6431,6 +6473,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &329165043
 GameObject:
   m_ObjectHideFlags: 0
@@ -6648,6 +6692,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 331456455}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &331456455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6747,7 +6794,7 @@ GameObject:
   - component: {fileID: 333837441}
   - component: {fileID: 333837442}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c5
+  m_Name: C5
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7144,7 +7191,7 @@ GameObject:
   - component: {fileID: 351803835}
   - component: {fileID: 351803834}
   m_Layer: 0
-  m_Name: call-jack-incoming-y3
+  m_Name: Y3
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7861,6 +7908,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 371156121}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &371156121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7962,6 +8012,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 374027277}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &374027277
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8305,7 +8358,7 @@ GameObject:
   - component: {fileID: 389324949}
   - component: {fileID: 389324950}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b2
+  m_Name: B2
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8652,6 +8705,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 404335114}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &404335114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8880,6 +8936,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &430586058
 GameObject:
   m_ObjectHideFlags: 0
@@ -8892,7 +8950,7 @@ GameObject:
   - component: {fileID: 430586060}
   - component: {fileID: 430586061}
   m_Layer: 0
-  m_Name: call-jack-incoming-a6
+  m_Name: A6
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8989,7 +9047,7 @@ GameObject:
   - component: {fileID: 431232371}
   - component: {fileID: 431232372}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a2
+  m_Name: A2
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9295,6 +9353,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &440367461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9516,6 +9576,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &460893292
 GameObject:
   m_ObjectHideFlags: 0
@@ -9528,7 +9590,7 @@ GameObject:
   - component: {fileID: 460893295}
   - component: {fileID: 460893296}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z4
+  m_Name: Z4
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9834,6 +9896,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &475438275
 GameObject:
   m_ObjectHideFlags: 0
@@ -9883,6 +9947,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 475438279}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &475438279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10019,6 +10086,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 479806039}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &479806039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10118,7 +10188,7 @@ GameObject:
   - component: {fileID: 481208428}
   - component: {fileID: 481208429}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z9
+  m_Name: Z9
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10215,7 +10285,7 @@ GameObject:
   - component: {fileID: 486472815}
   - component: {fileID: 486472816}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x4
+  m_Name: X4
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10486,6 +10556,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &499256959
 GameObject:
   m_ObjectHideFlags: 0
@@ -10710,7 +10782,7 @@ GameObject:
   - component: {fileID: 502536793}
   - component: {fileID: 502536794}
   m_Layer: 0
-  m_Name: call-jack-incoming-a4
+  m_Name: A4
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10879,6 +10951,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 514717501}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &514717501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10943,7 +11018,7 @@ GameObject:
   - component: {fileID: 516677754}
   - component: {fileID: 516677755}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a9
+  m_Name: A9
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11149,7 +11224,7 @@ GameObject:
   - component: {fileID: 520227657}
   - component: {fileID: 520227658}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c4
+  m_Name: C4
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11288,6 +11363,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 529962677}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &529962677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11387,7 +11465,7 @@ GameObject:
   - component: {fileID: 544613683}
   - component: {fileID: 544613684}
   m_Layer: 0
-  m_Name: call-jack-incoming-z9
+  m_Name: Z9
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11601,6 +11679,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 550332026}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &550332026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11820,7 +11901,7 @@ GameObject:
   - component: {fileID: 554034456}
   - component: {fileID: 554034457}
   m_Layer: 0
-  m_Name: call-jack-incoming-z2
+  m_Name: Z2
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12165,7 +12246,7 @@ GameObject:
   - component: {fileID: 578447120}
   - component: {fileID: 578447121}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z8
+  m_Name: Z8
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12391,6 +12472,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &582125259
 GameObject:
   m_ObjectHideFlags: 0
@@ -12403,7 +12486,7 @@ GameObject:
   - component: {fileID: 582125261}
   - component: {fileID: 582125262}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a1
+  m_Name: A1
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12500,7 +12583,7 @@ GameObject:
   - component: {fileID: 596882061}
   - component: {fileID: 596882062}
   m_Layer: 0
-  m_Name: call-jack-incoming-z6
+  m_Name: Z6
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12726,6 +12809,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &609582957
 GameObject:
   m_ObjectHideFlags: 0
@@ -12775,6 +12860,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 609582961}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &609582961
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12963,7 +13051,7 @@ GameObject:
   - component: {fileID: 615486132}
   - component: {fileID: 615486133}
   m_Layer: 0
-  m_Name: call-jack-incoming-a2
+  m_Name: A2
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13420,6 +13508,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &640891938
 GameObject:
   m_ObjectHideFlags: 0
@@ -13432,7 +13522,7 @@ GameObject:
   - component: {fileID: 640891941}
   - component: {fileID: 640891940}
   m_Layer: 0
-  m_Name: call-jack-incoming-y6
+  m_Name: Y6
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13566,6 +13656,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 672834551}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &672834551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13702,6 +13795,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 675489304}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &675489304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13801,7 +13897,7 @@ GameObject:
   - component: {fileID: 683194466}
   - component: {fileID: 683194465}
   m_Layer: 0
-  m_Name: call-jack-incoming-c0
+  m_Name: C0
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14092,7 +14188,7 @@ GameObject:
   - component: {fileID: 689310413}
   - component: {fileID: 689310414}
   m_Layer: 0
-  m_Name: call-jack-incoming-a7
+  m_Name: A7
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14226,6 +14322,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 698589273}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &698589273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14454,6 +14553,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &709930365
 GameObject:
   m_ObjectHideFlags: 0
@@ -14466,7 +14567,7 @@ GameObject:
   - component: {fileID: 709930368}
   - component: {fileID: 709930369}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b7
+  m_Name: B7
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14600,6 +14701,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 713170744}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &713170744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14699,7 +14803,7 @@ GameObject:
   - component: {fileID: 722855212}
   - component: {fileID: 722855211}
   m_Layer: 0
-  m_Name: call-jack-incoming-y2
+  m_Name: Y2
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14796,7 +14900,7 @@ GameObject:
   - component: {fileID: 724322910}
   - component: {fileID: 724322909}
   m_Layer: 0
-  m_Name: call-jack-incoming-z8
+  m_Name: Z8
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14893,7 +14997,7 @@ GameObject:
   - component: {fileID: 750366538}
   - component: {fileID: 750366539}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z7
+  m_Name: Z7
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14990,7 +15094,7 @@ GameObject:
   - component: {fileID: 756574148}
   - component: {fileID: 756574147}
   m_Layer: 0
-  m_Name: call-jack-incoming-c9
+  m_Name: C9
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15204,6 +15308,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 761028796}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &761028796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15512,6 +15619,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &800364292
 GameObject:
   m_ObjectHideFlags: 0
@@ -15561,6 +15670,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 800364296}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &800364296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15660,7 +15772,7 @@ GameObject:
   - component: {fileID: 801114248}
   - component: {fileID: 801114249}
   m_Layer: 0
-  m_Name: call-jack-incoming-z0
+  m_Name: Z0
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16069,6 +16181,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 835899451}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &835899451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16250,6 +16365,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 839085661}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &839085661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16466,6 +16584,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 863228083}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &863228083
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16565,7 +16686,7 @@ GameObject:
   - component: {fileID: 863535660}
   - component: {fileID: 863535661}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z1
+  m_Name: Z1
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16662,7 +16783,7 @@ GameObject:
   - component: {fileID: 864212530}
   - component: {fileID: 864212531}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c3
+  m_Name: C3
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16888,6 +17009,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &871556375
 GameObject:
   m_ObjectHideFlags: 0
@@ -16972,6 +17095,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 871556379}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &871556379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17187,7 +17313,7 @@ GameObject:
   - component: {fileID: 903103064}
   - component: {fileID: 903103063}
   m_Layer: 0
-  m_Name: call-jack-incoming-y4
+  m_Name: Y4
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17413,6 +17539,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &918788193
 GameObject:
   m_ObjectHideFlags: 0
@@ -17462,6 +17590,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 918788197}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &918788197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18076,6 +18207,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &967156962
 GameObject:
   m_ObjectHideFlags: 0
@@ -18088,7 +18221,7 @@ GameObject:
   - component: {fileID: 967156965}
   - component: {fileID: 967156964}
   m_Layer: 0
-  m_Name: call-jack-incoming-b1
+  m_Name: B1
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18185,7 +18318,7 @@ GameObject:
   - component: {fileID: 970013389}
   - component: {fileID: 970013390}
   m_Layer: 0
-  m_Name: call-jack-incoming-z1
+  m_Name: Z1
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18491,6 +18624,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &977802305
 GameObject:
   m_ObjectHideFlags: 0
@@ -18575,6 +18710,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 977802309}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &977802309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18719,7 +18857,7 @@ GameObject:
   - component: {fileID: 991647949}
   - component: {fileID: 991647950}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c6
+  m_Name: C6
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18816,7 +18954,7 @@ GameObject:
   - component: {fileID: 995795164}
   - component: {fileID: 995795165}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b5
+  m_Name: B5
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19042,6 +19180,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!224 &1008155343 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -19059,7 +19199,7 @@ GameObject:
   - component: {fileID: 1013136314}
   - component: {fileID: 1013136313}
   m_Layer: 0
-  m_Name: call-jack-incoming-c7
+  m_Name: C7
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19517,6 +19657,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1066114822}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1066114822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19618,6 +19761,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1075214157}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1075214157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19722,7 +19868,7 @@ GameObject:
   - component: {fileID: 1083451876}
   - component: {fileID: 1083451877}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y9
+  m_Name: Y9
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19819,7 +19965,7 @@ GameObject:
   - component: {fileID: 1085506998}
   - component: {fileID: 1085506997}
   m_Layer: 0
-  m_Name: call-jack-incoming-c2
+  m_Name: C2
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19988,7 +20134,7 @@ GameObject:
   - component: {fileID: 1096134526}
   - component: {fileID: 1096134527}
   m_Layer: 0
-  m_Name: call-jack-incoming-a8
+  m_Name: A8
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20122,6 +20268,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1101949103}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1101949103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20221,7 +20370,7 @@ GameObject:
   - component: {fileID: 1113230791}
   - component: {fileID: 1113230792}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y4
+  m_Name: Y4
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20318,7 +20467,7 @@ GameObject:
   - component: {fileID: 1114916167}
   - component: {fileID: 1114916166}
   m_Layer: 0
-  m_Name: call-jack-incoming-z5
+  m_Name: Z5
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20495,7 +20644,7 @@ GameObject:
   - component: {fileID: 1116674081}
   - component: {fileID: 1116674080}
   m_Layer: 0
-  m_Name: call-jack-incoming-c3
+  m_Name: C3
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20672,7 +20821,7 @@ GameObject:
   - component: {fileID: 1141220009}
   - component: {fileID: 1141220010}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b9
+  m_Name: B9
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20898,6 +21047,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1145295826
 GameObject:
   m_ObjectHideFlags: 0
@@ -20910,7 +21061,7 @@ GameObject:
   - component: {fileID: 1145295829}
   - component: {fileID: 1145295830}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x3
+  m_Name: X3
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21136,6 +21287,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1152951922
 GameObject:
   m_ObjectHideFlags: 0
@@ -21220,6 +21373,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1152951926}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1152951926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21284,7 +21440,7 @@ GameObject:
   - component: {fileID: 1154726418}
   - component: {fileID: 1154726419}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x8
+  m_Name: X8
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21461,7 +21617,7 @@ GameObject:
   - component: {fileID: 1168385304}
   - component: {fileID: 1168385305}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x5
+  m_Name: X5
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21558,7 +21714,7 @@ GameObject:
   - component: {fileID: 1172838869}
   - component: {fileID: 1172838870}
   m_Layer: 0
-  m_Name: call-jack-incoming-z5
+  m_Name: Z5
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21746,7 +21902,7 @@ GameObject:
   - component: {fileID: 1189140646}
   - component: {fileID: 1189140647}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x6
+  m_Name: X6
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21843,7 +21999,7 @@ GameObject:
   - component: {fileID: 1221025147}
   - component: {fileID: 1221025146}
   m_Layer: 0
-  m_Name: call-jack-incoming-y9
+  m_Name: Y9
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22069,6 +22225,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1233053137
 GameObject:
   m_ObjectHideFlags: 0
@@ -22210,6 +22368,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1239553332
 GameObject:
   m_ObjectHideFlags: 0
@@ -22294,6 +22454,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1239553336}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1239553336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22358,7 +22521,7 @@ GameObject:
   - component: {fileID: 1245310534}
   - component: {fileID: 1245310533}
   m_Layer: 0
-  m_Name: call-jack-incoming-b6
+  m_Name: B6
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22455,7 +22618,7 @@ GameObject:
   - component: {fileID: 1246586890}
   - component: {fileID: 1246586889}
   m_Layer: 0
-  m_Name: call-jack-incoming-y7
+  m_Name: Y7
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22749,6 +22912,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1264866816}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1264866816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23171,6 +23337,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1284706896
 GameObject:
   m_ObjectHideFlags: 0
@@ -23183,7 +23351,7 @@ GameObject:
   - component: {fileID: 1284706898}
   - component: {fileID: 1284706899}
   m_Layer: 0
-  m_Name: call-jack-incoming-a3
+  m_Name: A3
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23489,6 +23657,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1300882395
 GameObject:
   m_ObjectHideFlags: 0
@@ -23669,7 +23839,7 @@ GameObject:
   - component: {fileID: 1319113885}
   - component: {fileID: 1319113886}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y0
+  m_Name: Y0
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23838,6 +24008,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1323794180}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1323794180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23974,6 +24147,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1324266489}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1324266489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24038,7 +24214,7 @@ GameObject:
   - component: {fileID: 1341686244}
   - component: {fileID: 1341686243}
   m_Layer: 0
-  m_Name: call-jack-incoming-c8
+  m_Name: C8
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24135,7 +24311,7 @@ GameObject:
   - component: {fileID: 1343693277}
   - component: {fileID: 1343693278}
   m_Layer: 0
-  m_Name: call-jack-incoming-z3
+  m_Name: Z3
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24304,6 +24480,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1348672804}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1348672804
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24405,6 +24584,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1349849936}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1349849936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24504,7 +24686,7 @@ GameObject:
   - component: {fileID: 1354270450}
   - component: {fileID: 1354270449}
   m_Layer: 0
-  m_Name: call-jack-incoming-b9
+  m_Name: B9
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24730,6 +24912,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1371487546
 GameObject:
   m_ObjectHideFlags: 0
@@ -24742,7 +24926,7 @@ GameObject:
   - component: {fileID: 1371487549}
   - component: {fileID: 1371487550}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c9
+  m_Name: C9
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25248,7 +25432,7 @@ GameObject:
   - component: {fileID: 1379800480}
   - component: {fileID: 1379800481}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c2
+  m_Name: C2
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25345,7 +25529,7 @@ GameObject:
   - component: {fileID: 1386428604}
   - component: {fileID: 1386428605}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b6
+  m_Name: B6
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25684,7 +25868,7 @@ GameObject:
   - component: {fileID: 1396701856}
   - component: {fileID: 1396701855}
   m_Layer: 0
-  m_Name: call-jack-incoming-z9
+  m_Name: Z9
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25818,6 +26002,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1399381400}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1399381400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26046,6 +26233,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1409293692
 GameObject:
   m_ObjectHideFlags: 0
@@ -26058,7 +26247,7 @@ GameObject:
   - component: {fileID: 1409293695}
   - component: {fileID: 1409293694}
   m_Layer: 0
-  m_Name: call-jack-incoming-b8
+  m_Name: B8
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26284,6 +26473,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1423674281
 GameObject:
   m_ObjectHideFlags: 0
@@ -26333,6 +26524,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1423674285}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1423674285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26432,7 +26626,7 @@ GameObject:
   - component: {fileID: 1424857348}
   - component: {fileID: 1424857347}
   m_Layer: 0
-  m_Name: call-jack-incoming-y5
+  m_Name: Y5
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26529,7 +26723,7 @@ GameObject:
   - component: {fileID: 1431311457}
   - component: {fileID: 1431311458}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a4
+  m_Name: A4
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26838,7 +27032,7 @@ GameObject:
   - component: {fileID: 1457690724}
   - component: {fileID: 1457690725}
   m_Layer: 0
-  m_Name: call-jack-incoming-z7
+  m_Name: Z7
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27144,6 +27338,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1464465661
 GameObject:
   m_ObjectHideFlags: 0
@@ -27285,6 +27481,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1469644099
 GameObject:
   m_ObjectHideFlags: 0
@@ -27799,6 +27997,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1484041329}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1484041329
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28027,6 +28228,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1484953315
 GameObject:
   m_ObjectHideFlags: 0
@@ -28039,7 +28242,7 @@ GameObject:
   - component: {fileID: 1484953318}
   - component: {fileID: 1484953319}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y1
+  m_Name: Y1
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28265,6 +28468,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1505649298
 GameObject:
   m_ObjectHideFlags: 0
@@ -28566,6 +28771,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1517837303
 GameObject:
   m_ObjectHideFlags: 0
@@ -28924,6 +29131,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1546678875}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1546678875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28988,7 +29198,7 @@ GameObject:
   - component: {fileID: 1553542475}
   - component: {fileID: 1553542476}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b3
+  m_Name: B3
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29317,6 +29527,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1563936943}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1563936943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29590,6 +29803,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1575207243
 GameObject:
   m_ObjectHideFlags: 0
@@ -29773,6 +29988,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1578460347}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1578460347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29872,7 +30090,7 @@ GameObject:
   - component: {fileID: 1579320856}
   - component: {fileID: 1579320855}
   m_Layer: 0
-  m_Name: call-jack-incoming-b5
+  m_Name: B5
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30041,6 +30259,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1583210863}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1583210863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30318,7 +30539,7 @@ GameObject:
   - component: {fileID: 1594126240}
   - component: {fileID: 1594126239}
   m_Layer: 0
-  m_Name: call-jack-incoming-b0
+  m_Name: B0
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30544,6 +30765,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1001 &1608955774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30884,6 +31107,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1617720418}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1617720418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30983,7 +31209,7 @@ GameObject:
   - component: {fileID: 1618655540}
   - component: {fileID: 1618655541}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b0
+  m_Name: B0
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31117,6 +31343,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1620055435}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1620055435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31345,6 +31574,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1624125237
 GameObject:
   m_ObjectHideFlags: 0
@@ -31357,7 +31588,7 @@ GameObject:
   - component: {fileID: 1624125240}
   - component: {fileID: 1624125241}
   m_Layer: 0
-  m_Name: call-jack-outgoing-x1
+  m_Name: X1
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31454,7 +31685,7 @@ GameObject:
   - component: {fileID: 1637036824}
   - component: {fileID: 1637036825}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c0
+  m_Name: C0
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31551,7 +31782,7 @@ GameObject:
   - component: {fileID: 1647689020}
   - component: {fileID: 1647689021}
   m_Layer: 0
-  m_Name: call-jack-incoming-a5
+  m_Name: A5
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31777,6 +32008,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1659662374
 GameObject:
   m_ObjectHideFlags: 0
@@ -31998,6 +32231,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1681517617
 GameObject:
   m_ObjectHideFlags: 0
@@ -32139,6 +32374,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1683818194
 GameObject:
   m_ObjectHideFlags: 0
@@ -32151,7 +32388,7 @@ GameObject:
   - component: {fileID: 1683818197}
   - component: {fileID: 1683818198}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c8
+  m_Name: C8
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32670,6 +32907,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1701792910
 GameObject:
   m_ObjectHideFlags: 0
@@ -32975,7 +33214,7 @@ GameObject:
   - component: {fileID: 1723192649}
   - component: {fileID: 1723192650}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b8
+  m_Name: B8
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33109,6 +33348,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1723918416}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1723918416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33208,7 +33450,7 @@ GameObject:
   - component: {fileID: 1729378763}
   - component: {fileID: 1729378762}
   m_Layer: 0
-  m_Name: call-jack-incoming-c4
+  m_Name: C4
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33540,6 +33782,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1745891584
 GameObject:
   m_ObjectHideFlags: 0
@@ -33624,6 +33868,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1745891588}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1745891588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33834,6 +34081,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1764762081}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1764762081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33970,6 +34220,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1765164253}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1765164253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34069,7 +34322,7 @@ GameObject:
   - component: {fileID: 1765870256}
   - component: {fileID: 1765870257}
   m_Layer: 0
-  m_Name: call-jack-incoming-z8
+  m_Name: Z8
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34238,6 +34491,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1771733371}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1771733371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34431,6 +34687,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1791366480
 GameObject:
   m_ObjectHideFlags: 0
@@ -34523,7 +34781,7 @@ GameObject:
   - component: {fileID: 1791749178}
   - component: {fileID: 1791749179}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z5
+  m_Name: Z5
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34754,6 +35012,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1823172958
 GameObject:
   m_ObjectHideFlags: 0
@@ -34766,7 +35026,7 @@ GameObject:
   - component: {fileID: 1823172961}
   - component: {fileID: 1823172962}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y5
+  m_Name: Y5
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34863,7 +35123,7 @@ GameObject:
   - component: {fileID: 1827166784}
   - component: {fileID: 1827166783}
   m_Layer: 0
-  m_Name: call-jack-incoming-c5
+  m_Name: C5
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34960,7 +35220,7 @@ GameObject:
   - component: {fileID: 1832731625}
   - component: {fileID: 1832731626}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z0
+  m_Name: Z0
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35057,7 +35317,7 @@ GameObject:
   - component: {fileID: 1840503653}
   - component: {fileID: 1840503652}
   m_Layer: 0
-  m_Name: call-jack-incoming-z1
+  m_Name: Z1
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35234,7 +35494,7 @@ GameObject:
   - component: {fileID: 1847854637}
   - component: {fileID: 1847854636}
   m_Layer: 0
-  m_Name: call-jack-incoming-c1
+  m_Name: C1
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35331,7 +35591,7 @@ GameObject:
   - component: {fileID: 1849970083}
   - component: {fileID: 1849970084}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c1
+  m_Name: C1
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35428,7 +35688,7 @@ GameObject:
   - component: {fileID: 1857265952}
   - component: {fileID: 1857265951}
   m_Layer: 0
-  m_Name: call-jack-incoming-z6
+  m_Name: Z6
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35525,7 +35785,7 @@ GameObject:
   - component: {fileID: 1859488989}
   - component: {fileID: 1859488990}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y3
+  m_Name: Y3
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35622,7 +35882,7 @@ GameObject:
   - component: {fileID: 1867838417}
   - component: {fileID: 1867838418}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y2
+  m_Name: Y2
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35982,6 +36242,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1884795262
 GameObject:
   m_ObjectHideFlags: 0
@@ -36123,6 +36385,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1888937424
 GameObject:
   m_ObjectHideFlags: 0
@@ -36406,7 +36670,7 @@ GameObject:
   - component: {fileID: 1930255636}
   - component: {fileID: 1930255637}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b4
+  m_Name: B4
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36540,6 +36804,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 1932009522}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &1932009522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36768,6 +37035,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &1945994918
 GameObject:
   m_ObjectHideFlags: 0
@@ -36780,7 +37049,7 @@ GameObject:
   - component: {fileID: 1945994921}
   - component: {fileID: 1945994920}
   m_Layer: 0
-  m_Name: call-jack-incoming-b2
+  m_Name: B2
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37071,7 +37340,7 @@ GameObject:
   - component: {fileID: 1964149059}
   - component: {fileID: 1964149058}
   m_Layer: 0
-  m_Name: call-jack-incoming-y8
+  m_Name: Y8
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37168,7 +37437,7 @@ GameObject:
   - component: {fileID: 1971010286}
   - component: {fileID: 1971010287}
   m_Layer: 0
-  m_Name: call-jack-outgoing-c7
+  m_Name: C7
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37345,7 +37614,7 @@ GameObject:
   - component: {fileID: 1978156870}
   - component: {fileID: 1978156871}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a6
+  m_Name: A6
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37442,7 +37711,7 @@ GameObject:
   - component: {fileID: 1991452104}
   - component: {fileID: 1991452103}
   m_Layer: 0
-  m_Name: call-jack-incoming-b3
+  m_Name: B3
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37539,7 +37808,7 @@ GameObject:
   - component: {fileID: 1994850657}
   - component: {fileID: 1994850658}
   m_Layer: 0
-  m_Name: call-jack-incoming-a1
+  m_Name: A1
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37753,6 +38022,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 2004206037}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &2004206037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37969,6 +38241,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 2018801573}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &2018801573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38330,6 +38605,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1001 &2033469535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38443,7 +38720,7 @@ GameObject:
   - component: {fileID: 2038863560}
   - component: {fileID: 2038863561}
   m_Layer: 0
-  m_Name: call-jack-outgoing-b1
+  m_Name: B1
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38692,6 +38969,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 2049142254}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &2049142254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38890,7 +39170,7 @@ GameObject:
   - component: {fileID: 2052778966}
   - component: {fileID: 2052778967}
   m_Layer: 0
-  m_Name: call-jack-outgoing-z3
+  m_Name: Z3
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39221,6 +39501,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &2060701254
 GameObject:
   m_ObjectHideFlags: 0
@@ -39270,6 +39552,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 2060701258}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &2060701258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39406,6 +39691,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 2060958660}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &2060958660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39634,6 +39922,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &2075671105
 GameObject:
   m_ObjectHideFlags: 0
@@ -39775,6 +40065,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &2077476467
 GameObject:
   m_ObjectHideFlags: 0
@@ -39824,6 +40116,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 2077476471}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &2077476471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39923,7 +40218,7 @@ GameObject:
   - component: {fileID: 2078847681}
   - component: {fileID: 2078847680}
   m_Layer: 0
-  m_Name: call-jack-incoming-z0
+  m_Name: Z0
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40020,7 +40315,7 @@ GameObject:
   - component: {fileID: 2079105248}
   - component: {fileID: 2079105249}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a5
+  m_Name: A5
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40331,7 +40626,7 @@ GameObject:
   - component: {fileID: 2108325564}
   - component: {fileID: 2108325565}
   m_Layer: 0
-  m_Name: call-jack-outgoing-y8
+  m_Name: Y8
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40459,7 +40754,7 @@ GameObject:
   - component: {fileID: 2118458481}
   - component: {fileID: 2118458480}
   m_Layer: 0
-  m_Name: call-jack-incoming-z3
+  m_Name: Z3
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40556,7 +40851,7 @@ GameObject:
   - component: {fileID: 2125746889}
   - component: {fileID: 2125746890}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a8
+  m_Name: A8
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40725,6 +41020,9 @@ MonoBehaviour:
   _mainToggle: {fileID: 2130745618}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
+  _incomingWire: {fileID: 0}
+  _jack: {fileID: 0}
+  _incomingCall: {fileID: 0}
 --- !u!212 &2130745618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40918,6 +41216,8 @@ MonoBehaviour:
   _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingJack: {fileID: 0}
+  gameObj: {fileID: 0}
 --- !u!1 &2134815786
 GameObject:
   m_ObjectHideFlags: 0
@@ -41009,7 +41309,7 @@ GameObject:
   - component: {fileID: 5407499107153922907}
   - component: {fileID: 5407499107153922908}
   m_Layer: 0
-  m_Name: call-jack-incoming-a0
+  m_Name: A0
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41198,7 +41498,7 @@ GameObject:
   - component: {fileID: 4774146601717516790}
   - component: {fileID: 8939621194111073447}
   m_Layer: 0
-  m_Name: call-jack-outgoing-a0
+  m_Name: A0
   m_TagString: OutgoingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

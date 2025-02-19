@@ -25,12 +25,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void DisplayDialogue()
     {
         _callerPanel.SetActive(true);

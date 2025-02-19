@@ -54,14 +54,35 @@ public class Switchboard2 : MonoBehaviour
             ResetDay();
             Debug.Log("Advancing day to " + _day + " and call " + _callCount);
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+
+            AdvanceCallCount();
+            CallIsComplete();
+            Debug.Log("Advancing day to " + _day + " and call " + _callCount);
+        }
             
     }
+
+    public void CallComingThru()
+    {
+        foreach (LightsSlot slot in _slots)
+        {
+            if (slot.name == _incomingCalls[_callCount])
+            {
+                slot.TurnLightColor(Color.yellow);
+                slot.gameObject.SetActive(true);
+            }
+        }
+    }
+
     public void InitializedCalls(int day)
     {
         switch (day)
         { 
             case 1:
                 {
+                    _incomingCalls.Clear();
                     _incomingCalls.Add("A8");
                     _incomingCalls.Add("C6");
                     _incomingCalls.Add("C7");
@@ -144,7 +165,6 @@ public class Switchboard2 : MonoBehaviour
                     _incomingCalls.Add("A8");
                     _incomingCalls.Add("Z3");
                     _incomingCalls.Add("Z3");
-                    _incomingCalls.Add("A8");
                     break;
                 }
             case 7:
@@ -185,15 +205,14 @@ public class Switchboard2 : MonoBehaviour
     {
         Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count+ " _incomingCalls.Count");
         _incomingCallCompleted = false;
-        if (_callCount == _incomingCalls.Count) //> greater than not == to
+        if (_callCount == _incomingCalls.Count)
         {
-
-            Debug.Log("End of Day");
             //hide text in text box
             //hide continue and skip buttons
             //display next day button
             //play animatic
             ResetDay();
+            //
         }
         else
         {
@@ -205,6 +224,7 @@ public class Switchboard2 : MonoBehaviour
 
     private void IncomingCall()
     {
+
         if (_incomingCallCompleted == false) //if the call is not completed
         {
             _incomingCaller = _incomingCalls[_callCount];//incoming caller string equals _incoming calls[callCount]
@@ -217,14 +237,14 @@ public class Switchboard2 : MonoBehaviour
                 _incomingCall = placement;   //set incoming call to switchboard selection
                 _currentState = CurrentState.Ringing; //current state of switchboard is ringing
 
-                foreach (LightsSlot slot in _slots) //set the light selection to switchboard incoming call name
-                {
-                    if (slot.name == _incomingCall.name)
-                    {
-                        slot._light.gameObject.SetActive(true);
-                        slot._light.color = Color.yellow;
-                    }
-                }
+                //foreach (LightsSlot slot in _slots) //set the light selection to switchboard incoming call name
+                //{
+                //    if (slot.name == _incomingCall.name)
+                //    {
+                //        slot._light.gameObject.SetActive(true);
+                //        slot._light.color = Color.yellow;
+                //    }
+                //}
             }
         }
     }
@@ -244,12 +264,20 @@ public class Switchboard2 : MonoBehaviour
 
     }
 
-
     public void ResetDay()
     {
+        Debug.Log("End of day.  Resetting values");
         AdvanceDay();
         ResetCallCount();
         InitializedCalls(_day);
+        //have End the Day button pop up
+        //clicking the End the Day button triggers cut scene
+
+    }
+
+    public SwitchboardSO ReturnIncomingCall()
+    {
+        return _incomingCall;
     }
 
     public bool IsOutgoingNull()
@@ -259,47 +287,58 @@ public class Switchboard2 : MonoBehaviour
         else
             return true;
     }
+
     public int WhatDayItIs()
     {
         return _day;
     }
+
     public int CallCount()
     {
         return _callCount;
     }
+
     public SwitchboardSO WhoIsCalling()
     {
         return _incomingCall;
     }
+
     public SwitchboardSO WhoIsAnswering()
     {
         return _outgoingCall;
     }
+
     public void AdvanceCallCount()
     {
         _callCount++;
     }
+
     public void AdvanceDay()
     {
         _day++;
     }
+
     public bool IsCallCompleted()
     { 
         return _incomingCallCompleted;
     }
+
     public void CallIsComplete()
     {
         _incomingCallCompleted = true;
         _callInitialize = false;
     }
+
     public void ClearComingAndGoing()
     {
         _incomingCall = null;
         _outgoingCall = null;
     }
+
     private void ResetCallCount()
     {
         _callCount = 0;
     }
+
 }
 
