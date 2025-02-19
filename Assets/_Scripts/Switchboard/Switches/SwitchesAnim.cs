@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,13 +7,16 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     [SerializeField] private SpriteRenderer _mainToggle;
     [SerializeField] private Sprite _toggleUp;
     [SerializeField] private Sprite _toggleDown;
+    [SerializeField] private IncomingWire _incomingWire;
+    [SerializeField] private IncomingJack _jack;
+    [SerializeField] private SwitchboardSO _incomingCall;
     private LightsSlot[] _lightsSlots;
     private Switch _currentSwitch;
     private Switchboard2 _switchboard2;
     private DialogueManager _dialogueManager;
     private CallManager _callManager;
     private int i = 0;
-
+    
     private GameObject _outgoingWireGO;
     private GameObject _incomingWireGO;
 
@@ -57,51 +61,68 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
 
             if (_currentSwitch == Switch.ToggleUp)
             {
-                if (_switchboard2.WhoIsCalling() != null)
+                
+                if (_switchboard2.WhoIsCalling() != null && 
+                    _switchboard2.WhoIsCalling().name == this.gameObject.name)
                 {
+                    Debug.Log("starting dialog");
                     _dialogueManager.CycleThroughDialogue();
 
-                    //if toggle is up
-                    //if switchboard2 incoming call is connected
-                    //activate dialogue
+
+                    //lock toggle into up position till convo is done
                 }
-                if (_switchboard2.WhoIsAnswering() != null)
+                if (_switchboard2.WhoIsAnswering() != null && _switchboard2.WhoIsAnswering().name == this.gameObject.name)
                 {
                     _callManager.ContinueConvoCaller();
                 }
             }
-            
         }
+    }
 
+
+    public String WhichSwitchFlipped()
+    {
+        return this.gameObject.name;
+    }
+
+    public void MakeConnection()
+    {
+        _switchboard2.InitiateCall();
     }
 
     public void OnToggleClicked()
     {
         ++i;
 
-        if (i == 1)//if toggle is up
+        if (i == 1)
         {
-            _mainToggle.sprite = _toggleUp; //change sprite to toggle up
-            _currentSwitch = Switch.ToggleUp;// change Enum state Switch to toggle up
-            //display diaglog and lock toggle in place
-            //if toggle is up and the call is initialized
-            //dialogue will play/appear
-            //switch cannot be flipped until dialogue is complete or skipped.
+            _mainToggle.sprite = _toggleUp;
+            _currentSwitch = Switch.ToggleUp;
+            _incomingWire = FindObjectOfType<IncomingWire>(true); //finds incoming wire even if it's inactive
+            if (_incomingWire == null)
+            {
+                Debug.LogError("SwitchesAnim::IncomingWire function is null");
+            }
+            _jack = _incomingWire.ReturnJack();
 
+            if (_jack.name == this.gameObject.name)
+            {
+                Debug.Log("_jack's name is " + _jack);
+
+                MakeConnection();
+            }
         }
-        else if (i == 2)//if toggle is down
+        
+        else if (i == 2)
         {
-            _mainToggle.sprite = _toggleDown; //change sprite to toggle down
-            _currentSwitch = Switch.ToggleDown;// change Enum state Switch to toggle down
+            _mainToggle.sprite = _toggleDown;
+            _currentSwitch = Switch.ToggleDown;
             i = 0;
             _incomingWireGO = GameObject.Find("Wire-Incoming(Clone)");
             _outgoingWireGO = GameObject.Find("OutgoingWire(Clone)");
-            //terminate call
-            //terminate incoming and outgoing wires
   
             if (_switchboard2.IsCallCompleted() && _incomingWireGO != null)
             { 
-                //disconnect both wires
                 _outgoingWireGO.GetComponent<OutgoingWire>().DisconnectWire();
                 _incomingWireGO.GetComponent<IncomingWire>().DisconnectWire();
                 _switchboard2.ClearComingAndGoing();

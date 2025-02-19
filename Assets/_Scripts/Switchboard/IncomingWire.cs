@@ -5,7 +5,7 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
 {
     private float _oldDistanceToJack;
     private float _currentDistanceToJack;
-    private Vector3 _currentPos;
+    //private Vector3 _currentPos;
 
     private Switchboard2 _switchboard2;
     [SerializeField] private IncomingJack[] _incomingJacks;
@@ -15,6 +15,7 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Vector3 _wireOffsetAtEnd;
     [SerializeField] private Vector3 _wireOffsetAtLight;
     [SerializeField] private GameObject _outgoingWire;
+    [SerializeField] private IncomingJack _jack;
    // [SerializeField] private Transform _switchboardParent;
 
     //have a dot or have mouse change shape when near clickable wire edge
@@ -34,10 +35,9 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-
         ConnectWireAtEnd();
-        //_outgoingWire.SetActive(true);
-        //_outgoingWire.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_incomingWireEnd.transform.position);
+        //when this happens, 
+        //populate the scriptableSO with the appropriate name A8( for example0
     }
 
     public void ConnectWireAtEnd()
@@ -50,11 +50,16 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
             if (_oldDistanceToJack < _currentDistanceToJack)
             {
                 _currentDistanceToJack = _oldDistanceToJack;
-                _incomingWireEndAnchor.transform.position = jack.transform.position;  
+                _incomingWireEndAnchor.transform.position = jack.transform.position;
+                _jack = jack;
             }
         }
-        
         _incomingWireEnd.transform.position = _incomingWireEndAnchor.transform.position + _wireOffsetAtEnd;
+    }
+
+    public IncomingJack ReturnJack()
+    {
+        return _jack;
     }
 
     public void ConnectWireAtAnchor(LightsSlot light)

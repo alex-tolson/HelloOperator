@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System;
 
 public class LightsSlot : MonoBehaviour, IPointerClickHandler
 {
@@ -15,7 +16,8 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject _outgoingWireGO;
     [SerializeField] private bool _incomingInstantiated = false;
     [SerializeField] private Vector3 _incomingWirePositionOffset;
-
+    [SerializeField] private IncomingJack _incomingJack;
+    [SerializeField] private GameObject gameObj;
 
     private void Start()
     {
@@ -39,48 +41,55 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     {
         if (_switchboardSO != null) // if switchboard scriptable object is not null
         {
-            if (_incomingInstantiated == false)
-            { 
-                gameObject.SetActive(false); //turn off light
 
-                //introduce incoming wire
+            if (_incomingInstantiated == false)
+            {
                 Instantiate(_incomingWireGO, eventData.pointerCurrentRaycast.worldPosition, Quaternion.identity);
-                _incomingWireGO.gameObject.SetActive(true); //instantiate incoming wire at pointer locatino
-                                                            //incomingWire.gameObject.SetActive(true);
-                _incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);//snap wire to position
-                _incomingInstantiated = true;
+                _incomingWireGO.gameObject.SetActive(true);
+                _incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);
+                _incomingInstantiated = true;  
             }
-            
         }
     }
 
     public void Toggle(SwitchesAnim toggle)
     {
-        if (toggle.ToggleStatus() == Switch.ToggleUp && _switchboard2.IsOutgoingNull())
-        { 
-            TurnLightColor(Color.green);
-            //initiate dialoge coroutine
-            //can skip but cannot flip toggle until dialogue is finished.
-            if (_light != null) //if _light is null return color to yellow and deactivate
+        try // change code so that who is calling is based on where the incoming wire snaps to
+        {
+            //if (toggle.ToggleStatus() == Switch.ToggleUp && _switchboard2.ReturnIncomingCall().name
+            //    == _switchboard2.WhoIsCalling().name)
+            if (toggle.ToggleStatus() == Switch.ToggleUp)
             {
-                TurnLightColor(Color.yellow);
-                _light.gameObject.SetActive(false);
-            }
-            //instantiate outgoing when switch is flipped up and connect to jack
-            Instantiate(_outgoingWireGO, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
-            _outgoingWireGO.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_outgoingWireGO.transform.position);
-        }
-        else if (toggle.ToggleStatus() == Switch.ToggleUp && !_switchboard2.IsOutgoingNull())
-        {
-            //switch is flipped and outgoing is not null
-            //do nothing
-            return;
-        }
+                TurnLightColor(Color.green);
+                //initiate dialoge coroutine
+                //can skip but cannot flip toggle until dialogue is finished.
 
-        if (toggle.ToggleStatus() == Switch.ToggleDown)
+                if (_light != null) //if _light is null return color to yellow and deactivate
+                {
+                    TurnLightColor(Color.yellow);
+                    _light.gameObject.SetActive(false);
+                }
+                if (gameObj == null)
+                {
+                    //instantiate outgoing when switch is flipped up and connect to jack
+                    gameObj = Instantiate(_outgoingWireGO, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
+                    _outgoingWireGO.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_outgoingWireGO.transform.position);
+                }
+                else
+                {
+                    return;
+                }
+            }
+
+            if (toggle.ToggleStatus() == Switch.ToggleDown)
+            {
+                TurnOffLight();
+                IncomingInstantiatedReset();
+            }
+        }
+        catch (Exception e)
         {
-            TurnOffLight();
-            IncomingInstantiatedReset();
+            Debug.Log("exception" + e);
         }
     }
 
