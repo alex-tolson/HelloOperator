@@ -17,7 +17,7 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     [SerializeField] private bool _incomingInstantiated = false;
     [SerializeField] private Vector3 _incomingWirePositionOffset;
     [SerializeField] private IncomingJack _incomingJack;
-    [SerializeField] private GameObject gameObj;
+
 
     private void Start()
     {
@@ -56,12 +56,9 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     {
         try // change code so that who is calling is based on where the incoming wire snaps to
         {
-            //if (toggle.ToggleStatus() == Switch.ToggleUp && _switchboard2.ReturnIncomingCall().name
-            //    == _switchboard2.WhoIsCalling().name)
             if (toggle.ToggleStatus() == Switch.ToggleUp)
             {
                 TurnLightColor(Color.green);
-                //initiate dialoge coroutine
                 //can skip but cannot flip toggle until dialogue is finished.
 
                 if (_light != null) //if _light is null return color to yellow and deactivate
@@ -69,10 +66,10 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
                     TurnLightColor(Color.yellow);
                     _light.gameObject.SetActive(false);
                 }
-                if (gameObj == null)
+                if (_switchboard2.gameObj == null)
                 {
                     //instantiate outgoing when switch is flipped up and connect to jack
-                    gameObj = Instantiate(_outgoingWireGO, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
+                    _switchboard2.gameObj = Instantiate(_outgoingWireGO, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
                     _outgoingWireGO.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_outgoingWireGO.transform.position);
                 }
                 else

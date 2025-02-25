@@ -251,7 +251,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &756645615456503339
 GameObject:
@@ -372,7 +372,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &996741544996899896
 GameObject:
@@ -493,7 +493,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &1645125028216914405
 GameObject:
@@ -731,7 +731,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &2966412584521232324
 GameObject:
@@ -852,7 +852,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &3763735726187027284
 GameObject:
@@ -973,7 +973,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &4279565252380070877
 GameObject:
@@ -1002,7 +1002,7 @@ Transform:
   m_GameObject: {fileID: 4279565252380070877}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: -1.2334876, y: -0.66659546, z: -10}
+  m_LocalPosition: {x: 0.052, y: -1.413, z: -10}
   m_LocalScale: {x: 1.0631793, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1051,7 +1051,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.1834877, y: -2.6565955}
+  m_ConnectedAnchor: {x: 0.22819948, y: -3.8682723}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1136,7 +1136,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.015437078, y: -0.268646}
+  m_ConnectedAnchor: {x: 0.1107624, y: -0.7339184}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1264,7 +1264,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &5342980933236128321
 GameObject:
@@ -1343,7 +1343,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.32188728, y: 0.00000029616052}
+  m_ConnectedAnchor: {x: 0.32188728, y: 0.00000029988578}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1385,7 +1385,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &5654126281462324261
 GameObject:
@@ -1506,7 +1506,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &6407241355487871250
 GameObject:
@@ -1627,7 +1627,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1
 --- !u!1 &8053101913763928741
 GameObject:
@@ -1884,6 +1884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98f155a10609444eb32d3d818fe5b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cursorTexture: {fileID: 2800000, guid: 936d049d82c00b647b48d8861c2dc75d, type: 3}
 --- !u!1 &9026769032555611608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,5 +2004,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.0001, y: 0.32}
+  m_Size: {x: 0.0001, y: 0.28}
   m_Direction: 1

@@ -87,7 +87,7 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
 
     public void MakeConnection()
     {
-        _switchboard2.InitiateCall();
+        _switchboard2.IncomingCall();
     }
 
     public void OnToggleClicked()

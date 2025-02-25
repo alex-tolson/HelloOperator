@@ -361,7 +361,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &27831493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,7 +1135,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &63823345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2799,7 +2797,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &146938227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3022,7 +3019,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &169712464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,7 +3435,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!224 &184073795 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -4017,7 +4012,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &217465546
 GameObject:
   m_ObjectHideFlags: 0
@@ -4516,7 +4510,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &227402226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4959,7 +4952,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &245066763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,7 +5094,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &248524960
 GameObject:
   m_ObjectHideFlags: 0
@@ -5245,7 +5236,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &248837880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5670,7 +5660,7 @@ GameObject:
   - component: {fileID: 266596461}
   - component: {fileID: 266596462}
   m_Layer: 0
-  m_Name: Z4
+  m_Name: X4
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6091,7 +6081,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &319313115
 GameObject:
   m_ObjectHideFlags: 0
@@ -6331,7 +6320,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &326943792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6474,7 +6462,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &329165043
 GameObject:
   m_ObjectHideFlags: 0
@@ -8937,7 +8924,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &430586058
 GameObject:
   m_ObjectHideFlags: 0
@@ -9354,7 +9340,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &440367461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9577,7 +9562,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &460893292
 GameObject:
   m_ObjectHideFlags: 0
@@ -9897,7 +9881,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &475438275
 GameObject:
   m_ObjectHideFlags: 0
@@ -10557,7 +10540,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &499256959
 GameObject:
   m_ObjectHideFlags: 0
@@ -11465,7 +11447,7 @@ GameObject:
   - component: {fileID: 544613683}
   - component: {fileID: 544613684}
   m_Layer: 0
-  m_Name: Z9
+  m_Name: X9
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11901,7 +11883,7 @@ GameObject:
   - component: {fileID: 554034456}
   - component: {fileID: 554034457}
   m_Layer: 0
-  m_Name: Z2
+  m_Name: X2
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12473,7 +12455,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &582125259
 GameObject:
   m_ObjectHideFlags: 0
@@ -12583,7 +12564,7 @@ GameObject:
   - component: {fileID: 596882061}
   - component: {fileID: 596882062}
   m_Layer: 0
-  m_Name: Z6
+  m_Name: X6
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12810,7 +12791,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &609582957
 GameObject:
   m_ObjectHideFlags: 0
@@ -13509,7 +13489,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &640891938
 GameObject:
   m_ObjectHideFlags: 0
@@ -14554,7 +14533,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &709930365
 GameObject:
   m_ObjectHideFlags: 0
@@ -15620,7 +15598,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &800364292
 GameObject:
   m_ObjectHideFlags: 0
@@ -15772,7 +15749,7 @@ GameObject:
   - component: {fileID: 801114248}
   - component: {fileID: 801114249}
   m_Layer: 0
-  m_Name: Z0
+  m_Name: X0
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17010,7 +16987,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &871556375
 GameObject:
   m_ObjectHideFlags: 0
@@ -17540,7 +17516,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &918788193
 GameObject:
   m_ObjectHideFlags: 0
@@ -18208,7 +18183,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &967156962
 GameObject:
   m_ObjectHideFlags: 0
@@ -18318,7 +18292,7 @@ GameObject:
   - component: {fileID: 970013389}
   - component: {fileID: 970013390}
   m_Layer: 0
-  m_Name: Z1
+  m_Name: X1
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18625,7 +18599,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &977802305
 GameObject:
   m_ObjectHideFlags: 0
@@ -19181,7 +19154,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!224 &1008155343 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -21048,7 +21020,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1145295826
 GameObject:
   m_ObjectHideFlags: 0
@@ -21288,7 +21259,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1152951922
 GameObject:
   m_ObjectHideFlags: 0
@@ -21714,7 +21684,7 @@ GameObject:
   - component: {fileID: 1172838869}
   - component: {fileID: 1172838870}
   m_Layer: 0
-  m_Name: Z5
+  m_Name: X5
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22226,7 +22196,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1233053137
 GameObject:
   m_ObjectHideFlags: 0
@@ -22369,7 +22338,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1239553332
 GameObject:
   m_ObjectHideFlags: 0
@@ -23338,7 +23306,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1284706896
 GameObject:
   m_ObjectHideFlags: 0
@@ -23658,7 +23625,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1300882395
 GameObject:
   m_ObjectHideFlags: 0
@@ -24311,7 +24277,7 @@ GameObject:
   - component: {fileID: 1343693277}
   - component: {fileID: 1343693278}
   m_Layer: 0
-  m_Name: Z3
+  m_Name: X3
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24913,7 +24879,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1371487546
 GameObject:
   m_ObjectHideFlags: 0
@@ -26234,7 +26199,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1409293692
 GameObject:
   m_ObjectHideFlags: 0
@@ -26474,7 +26438,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1423674281
 GameObject:
   m_ObjectHideFlags: 0
@@ -27032,7 +26995,7 @@ GameObject:
   - component: {fileID: 1457690724}
   - component: {fileID: 1457690725}
   m_Layer: 0
-  m_Name: Z7
+  m_Name: X7
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27339,7 +27302,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1464465661
 GameObject:
   m_ObjectHideFlags: 0
@@ -27482,7 +27444,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1469644099
 GameObject:
   m_ObjectHideFlags: 0
@@ -28229,7 +28190,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1484953315
 GameObject:
   m_ObjectHideFlags: 0
@@ -28469,7 +28429,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1505649298
 GameObject:
   m_ObjectHideFlags: 0
@@ -28772,7 +28731,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1517837303
 GameObject:
   m_ObjectHideFlags: 0
@@ -29804,7 +29762,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1575207243
 GameObject:
   m_ObjectHideFlags: 0
@@ -30766,7 +30723,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1001 &1608955774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31575,7 +31531,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1624125237
 GameObject:
   m_ObjectHideFlags: 0
@@ -32009,7 +31964,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1659662374
 GameObject:
   m_ObjectHideFlags: 0
@@ -32232,7 +32186,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1681517617
 GameObject:
   m_ObjectHideFlags: 0
@@ -32375,7 +32328,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1683818194
 GameObject:
   m_ObjectHideFlags: 0
@@ -32908,7 +32860,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1701792910
 GameObject:
   m_ObjectHideFlags: 0
@@ -33783,7 +33734,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1745891584
 GameObject:
   m_ObjectHideFlags: 0
@@ -34013,7 +33963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1763037289
 Transform:
   m_ObjectHideFlags: 0
@@ -34322,7 +34272,7 @@ GameObject:
   - component: {fileID: 1765870256}
   - component: {fileID: 1765870257}
   m_Layer: 0
-  m_Name: Z8
+  m_Name: X8
   m_TagString: IncomingJack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34688,7 +34638,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1791366480
 GameObject:
   m_ObjectHideFlags: 0
@@ -35013,7 +34962,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1823172958
 GameObject:
   m_ObjectHideFlags: 0
@@ -36243,7 +36191,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1884795262
 GameObject:
   m_ObjectHideFlags: 0
@@ -36386,7 +36333,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1888937424
 GameObject:
   m_ObjectHideFlags: 0
@@ -37036,7 +36982,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &1945994918
 GameObject:
   m_ObjectHideFlags: 0
@@ -38606,7 +38551,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1001 &2033469535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39502,7 +39446,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &2060701254
 GameObject:
   m_ObjectHideFlags: 0
@@ -39923,7 +39866,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &2075671105
 GameObject:
   m_ObjectHideFlags: 0
@@ -40066,7 +40008,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &2077476467
 GameObject:
   m_ObjectHideFlags: 0
@@ -41217,7 +41158,6 @@ MonoBehaviour:
   _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
   _incomingJack: {fileID: 0}
-  gameObj: {fileID: 0}
 --- !u!1 &2134815786
 GameObject:
   m_ObjectHideFlags: 0
@@ -41276,6 +41216,7 @@ MonoBehaviour:
   _day: 1
   _callCount: 0
   _incomingCallCompleted: 0
+  gameObj: {fileID: 0}
   _callInitialize: 0
 --- !u!114 &2134815791
 MonoBehaviour:
@@ -41293,10 +41234,9 @@ MonoBehaviour:
   _answererPanel: {fileID: 1684125884}
   _dialogue: {fileID: 1575207245}
   _dialogueChatter: []
-  _dialogueIteration: -1
-  _call_2_5_Sanford: 0
-  _call_5_5_Walskin: 0
-  _call_5_6_Tauten: 0
+  ending1Count: 0
+  ending2Count: 0
+  ending4Count: 0
 --- !u!1 &47464679848901471
 GameObject:
   m_ObjectHideFlags: 0

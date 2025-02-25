@@ -10,11 +10,13 @@ public class CallManager : MonoBehaviour
     [SerializeField] private GameObject _answererPanel;
     [SerializeField] private TMP_Text _dialogue;
     [SerializeField] private List<string> _dialogueChatter = new List<string>();
-    [SerializeField] private int _dialogueIteration = -1;
-    [SerializeField] private bool _call_2_5_Sanford;
-    [SerializeField] private bool _call_5_5_Walskin;
-    [SerializeField] private bool _call_5_6_Tauten;
-
+    private int _dialogueIteration = -1;
+    private bool _call_2_5_Sanford;
+    private bool _call_5_5_Walskin;
+    private bool _call_5_6_Tauten;
+    [SerializeField] private int ending1Count = 0;
+    [SerializeField] private int ending2Count = 0;
+    [SerializeField] private int ending4Count = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -107,6 +109,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Doris:  Alright.  Very interesting.  We will let the tarot " +
                         "guide us during our next session.  Okay?" +
                         "Try and get some rest for now");
+                    
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
                     break;
@@ -158,7 +161,7 @@ public class CallManager : MonoBehaviour
                         "I couldn't see what I was holding. But it didnt' matter, the Saver took the " +
                         "eyeball.  Then I could see... everything.  It started with me but then " +
                         "expanded out to where I could see my house, neighborhood, the mines, " +
-                        "the town.  Then my vision zoomed back in on me and I'm standing at my attic door" +
+                        "the town.  Then my vision zoomed back in on me and I'm standing at my attic door. " +
                         "It's closed and as soon as I try the handle, I wake up.");
                     _dialogueChatter.Add("Kinnison: And you believe this to be a premonition?");
                     _dialogueChatter.Add("Alice: I do, Father. I need to get into my attic and see what " +
@@ -205,7 +208,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Clear();
                     _dialogueChatter.Add("Evelyn: Thank you for calling Porterhouse Vision." +
                         " How may I help you?");
-                    _dialogueChatter.Add("Beatrice: I think I'm seeing things");
+                    _dialogueChatter.Add("Beatrice: It's Beatrice. I think I'm seeing things");
                     _dialogueChatter.Add("Evelyn: That's great.  I'm glad the updated prescription " +
                         "is helping you. There may be a period of adjustment but once it passes...");
                     _dialogueChatter.Add("Beatrice: No, I mean, yesterday.  I got a sudden migraine spike and " +
@@ -216,7 +219,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Beatrice: Thanks, Evelyn.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                    
+                    ending2Count++;
                     break;
                 }
             case "Y1"://calling Priest: Father Tallehasse Kinnison
@@ -242,7 +245,8 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Beatrice: Yes Father.  I...");
                     _dialogueChatter.Add("Kinnison: Don't wait until the 11th hour, my child. ");
                     _switchboard2.AdvanceCallCount();
-                    _switchboard2.CallIsComplete();                     
+                    _switchboard2.CallIsComplete();
+                    ending2Count++;
                     break;
                 }
             case "Y0"://calling Medium: Doris Minko
@@ -277,6 +281,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Doris: Anytime, Beatrice. ");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
             case "Z1"://calling Sheriff: Charlie Czerniak
@@ -307,7 +312,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Beatrice:  You know what? Forget it.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending4Count++;
                     break;
                 }
             default:
@@ -356,7 +361,7 @@ public class CallManager : MonoBehaviour
                        "complaints about poor taste. Use a filter. And Blissville City Council will be in touch.  Good day.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending2Count++;
                     break;
                 }
             case "Z1": //calling Sheriff: Charlie Czerniak
@@ -375,7 +380,7 @@ public class CallManager : MonoBehaviour
                         "I gotta run.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending4Count++;
                     break;
                 }
             default:
@@ -425,7 +430,7 @@ public class CallManager : MonoBehaviour
                         "you want. I'll keep you posted on my end.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending2Count++;
                     break;
                 }
             case "Z8": //calling Deputy: Willem Tauten
@@ -449,7 +454,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Okay.  Thanks.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending1Count++;
                     break;
                 }
             case "Z5": //calling House Doc: Eugene Franco
@@ -472,7 +477,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Jonah: Thanks, Doc.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending4Count++;
                     break;
                 }
             default:
@@ -865,7 +870,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Miles: Thank you so much Doctor.  I'll have the case ready.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending1Count++;
                     break;
                 }
             case "X5": //Calling Eye Doctor: Evelyn Porter
@@ -882,7 +887,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Miles: Thanks.  I'll have a tech ready with the case files upon your arrival.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-
+                    ending2Count++;
                     break;
                 }
             case "X1": //Psyche Doctor: Patrick Walskin
@@ -905,7 +910,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Patrick: Thank you.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
+                    ending4Count++;
                     break;
                 }
             default:
@@ -1009,9 +1014,9 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Leonard: Call us when the repairs are done.  Until then, it's too dangerous.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
-                     
-                
-                break;
+                    ending4Count++;
+
+                    break;
                 }
             case "Y9"://Calling Code Enforcement: Thomas Sanford
                 {
@@ -1039,8 +1044,8 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("You betcha.");
                 _switchboard2.AdvanceCallCount();
                 _switchboard2.CallIsComplete();
-                 
-                break;
+                    ending1Count++;
+                    break;
                 }
             default:
                 {
@@ -1512,6 +1517,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Have faith in Jesus Christ and let it be so.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
             case "Y3": //Calling Priest: Benjamin Smit
@@ -1533,6 +1539,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Smit: ...");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending4Count++;
                     break;
                 }
             default:
@@ -1998,6 +2005,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Sheriff: Okay. Lock the door. I'm on my way. I'll look for the animals.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending4Count++;
                     break;
                 }
             case "Y9": //Calling Code Enforcement: Thomas Sanford
@@ -2017,6 +2025,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Lucas: Okay.  Thank you.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
             case "X7": // City Council President: Aria Rodriguez
@@ -2036,6 +2045,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Aria: Right, let me get the Sheriff and send him your way.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending2Count++;
                     break;
                 }
             default:
@@ -2293,6 +2303,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Aria: Thanks, Harry.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending4Count++;
                     break;
                 }
             case "Z8": //Calling Deputy: Willem Tauten
@@ -2316,6 +2327,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Willem: Of course not; I'm a professional.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
             default:
@@ -2503,6 +2515,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Father Kinnison: And also with you, Doris.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
             case "Y2": //Calling Priest: Benjamin Smit
@@ -2529,6 +2542,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("I hope you're right, Father Smit.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending4Count++;
                     break;
                 }
             default:
@@ -2719,6 +2733,7 @@ public class CallManager : MonoBehaviour
                         "Thanks for bringing this to my attention.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
             case "Z1": //Calling Sheriff
@@ -2739,6 +2754,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Thank you, Sheriff");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending4Count++;
                     break;
                 }
             default:
@@ -3034,6 +3050,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Evelyn: Thank you.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending4Count++;
                     break;
                 }
             case "Y9": //Calling Eye Doctor: Thomas Sanford
@@ -3055,6 +3072,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Hazel: Thank you, Thom");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
                     default:
@@ -3101,6 +3119,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Father Smit: You know where.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending4Count++;
                     break;
                 }
             case "Y5": //Calling Occult Expert: Xena Pattinson
@@ -3120,6 +3139,7 @@ public class CallManager : MonoBehaviour
                     _dialogueChatter.Add("Smit: Nevermind. I don't need you.");
                     _switchboard2.AdvanceCallCount();
                     _switchboard2.CallIsComplete();
+                    ending1Count++;
                     break;
                 }
             default:

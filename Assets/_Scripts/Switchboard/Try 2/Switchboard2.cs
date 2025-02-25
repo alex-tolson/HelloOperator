@@ -20,10 +20,10 @@ public class Switchboard2 : MonoBehaviour
     private string _incomingCaller;
     [SerializeField] private int _callCount = 0;
     [SerializeField] private bool _incomingCallCompleted;
-
+    public GameObject gameObj;
     //--------End Switchboard ---------
     //[SerializeField] private BellCall _bell;
-     [SerializeField] private bool _callInitialize = false;
+    [SerializeField] private bool _callInitialize = false;
     // private OutgoingWire _outgoingWire;
 
     private void Start()
@@ -66,13 +66,30 @@ public class Switchboard2 : MonoBehaviour
 
     public void CallComingThru()
     {
-        foreach (LightsSlot slot in _slots)
+
+
+        Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count + " _incomingCalls.Count");
+        _incomingCallCompleted = false;
+        if (_callCount == _incomingCalls.Count)
         {
-            if (slot.name == _incomingCalls[_callCount])
+            //hide text in text box
+            //hide continue and skip buttons
+            //display next day button
+            //play animatic
+            ResetDay();
+            //
+        }
+        else
+        {
+            foreach (LightsSlot slot in _slots)
             {
-                slot.TurnLightColor(Color.yellow);
-                slot.gameObject.SetActive(true);
+                if (slot.name == _incomingCalls[_callCount])
+                {
+                    slot.TurnLightColor(Color.yellow);
+                    slot.gameObject.SetActive(true);
+                }
             }
+            _callInitialize = true;
         }
     }
 
@@ -201,28 +218,8 @@ public class Switchboard2 : MonoBehaviour
 
     }
 
-    public void InitiateCall()
-    {
-        Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count+ " _incomingCalls.Count");
-        _incomingCallCompleted = false;
-        if (_callCount == _incomingCalls.Count)
-        {
-            //hide text in text box
-            //hide continue and skip buttons
-            //display next day button
-            //play animatic
-            ResetDay();
-            //
-        }
-        else
-        {
-            //Debug.Log("Initating call");
-            _callInitialize = true;
-            IncomingCall();
-        }
-    }
 
-    private void IncomingCall()
+    public void IncomingCall()
     {
 
         if (_incomingCallCompleted == false) //if the call is not completed
