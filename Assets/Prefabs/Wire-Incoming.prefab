@@ -77,7 +77,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.22208656, y: -0.00043693805}
+  m_ConnectedAnchor: {x: 0.22208668, y: 0.00000043259928}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -198,7 +198,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.30695102, y: 0.00006744447}
+  m_ConnectedAnchor: {x: 0.306951, y: 0.00000019138679}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -319,7 +319,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.23242423, y: -0.0008957747}
+  m_ConnectedAnchor: {x: 0.23242404, y: 0.000000025145704}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -440,7 +440,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.2762283, y: -0.0009398407}
+  m_ConnectedAnchor: {x: 0.2762282, y: 0.00000035483387}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -561,7 +561,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.27630246, y: -0.0010239802}
+  m_ConnectedAnchor: {x: 0.27630255, y: -0.0000008288771}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -634,7 +634,7 @@ Transform:
   m_GameObject: {fileID: 2055749186920559960}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6943641, w: -0.719624}
-  m_LocalPosition: {x: 0.052360058, y: -3.177625, z: 0}
+  m_LocalPosition: {x: 0.052360058, y: -3.139563, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -683,7 +683,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.22989134, y: -0.0014253765}
+  m_ConnectedAnchor: {x: 0.40183502, y: 0.18219072}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -724,9 +724,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.21, y: 0}
-  m_Size: {x: 0.0001, y: 0.28}
-  m_Direction: 1
+  m_Offset: {x: 0.12760918, y: -0.001502334}
+  m_Size: {x: 0.70945984, y: 0.8739897}
+  m_Direction: 0
 --- !u!114 &4946207838341734321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +817,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.23665324, y: -0.00079622306}
+  m_ConnectedAnchor: {x: 0.23665318, y: 0.00000015273686}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -938,7 +938,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.21451446, y: -0.0003270559}
+  m_ConnectedAnchor: {x: 0.21451443, y: -0.0000002635643}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1059,7 +1059,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.25977188, y: -0.0005953867}
+  m_ConnectedAnchor: {x: 0.25977188, y: 0.00000010617076}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1301,7 +1301,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.28506157, y: -0.0004707888}
+  m_ConnectedAnchor: {x: 0.2850616, y: 0.00000001816079}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1373,7 +1373,7 @@ Transform:
   m_GameObject: {fileID: 6038412134640718885}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.67131275, w: 0.7411742}
-  m_LocalPosition: {x: 0.029674768, y: -2.9488556, z: 0}
+  m_LocalPosition: {x: 0.029674768, y: -2.8992884, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1422,7 +1422,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.29216427, y: -0.0003542118}
+  m_ConnectedAnchor: {x: 0.24260616, y: 0.00095188036}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1542,7 +1542,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.03829048, y: 0.005717048}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1627,7 +1627,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -2.2752407, y: 4.452878}
+  m_ConnectedAnchor: {x: 0.99920946, y: 4.4575872}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1713,7 +1713,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.27643192, y: -0.00053110684}
+  m_ConnectedAnchor: {x: 0.27643198, y: 0.0000003613532}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1785,8 +1785,8 @@ Transform:
   m_GameObject: {fileID: 8451467039979539355}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.205, y: 4.5300007, z: 0}
-  m_LocalScale: {x: 1, y: 1.0631789, z: 1}
+  m_LocalPosition: {x: 1.0694503, y: 4.530127, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3615742746230245691}
@@ -1846,7 +1846,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 581129011
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: f235fd9ede9dc8a47bb3126a97f574fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1906,7 +1906,7 @@ MonoBehaviour:
   _incomingWireAnchor: {fileID: 8451467039979539355}
   _incomingWireEnd: {fileID: 2055749186920559960}
   _incomingWireEndAnchor: {fileID: 6712194421791456272}
-  _wireOffsetAtEnd: {x: 0, y: 0.4, z: 0}
-  _wireOffsetAtLight: {x: 0.085, y: -0.26, z: 0}
+  _wireOffsetOutgoing: {x: 0, y: -1.1, z: 0}
+  _wireOffsetIncoming: {x: 0, y: 0.23, z: 0}
   _outgoingWire: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
   _jack: {fileID: 0}

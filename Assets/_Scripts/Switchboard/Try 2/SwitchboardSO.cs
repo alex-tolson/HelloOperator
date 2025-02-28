@@ -8,15 +8,12 @@ public class SwitchboardSO : ScriptableObject
     public JackDirection jackDirection;
     public CurrentState currentState;
     public Vector3 _vector3Location;
-    public SpriteRenderer light;
 }
 
 public enum CurrentState
 {
     Idle,
-    Ringing,
-    Answered,
-    Connected
+    OnCall
 }
 public enum JackDirection
 {

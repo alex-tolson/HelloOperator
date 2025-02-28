@@ -521,7 +521,7 @@ Transform:
   m_GameObject: {fileID: 1645125028216914405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12619948, y: -0.4652724, z: 0}
+  m_LocalPosition: {x: 0.107126, y: -0.19099998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1051,7 +1051,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.22819948, y: -3.8682723}
+  m_ConnectedAnchor: {x: 0.209126, y: -3.5939999}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1136,7 +1136,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.1107624, y: -0.7339184}
+  m_ConnectedAnchor: {x: 0.091688916, y: -0.459646}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1869,8 +1869,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15, y: 0}
-  m_Size: {x: 0.52, y: 0.52}
+  m_Offset: {x: 0.21616705, y: -0.000000029802322}
+  m_Size: {x: 0.6670376, y: 0.66703755}
   m_Direction: 1
 --- !u!114 &2739458501669496212
 MonoBehaviour:

@@ -20,7 +20,7 @@ public class Switchboard2 : MonoBehaviour
     private string _incomingCaller;
     [SerializeField] private int _callCount = 0;
     [SerializeField] private bool _incomingCallCompleted;
-    public GameObject gameObj;
+
     //--------End Switchboard ---------
     //[SerializeField] private BellCall _bell;
     [SerializeField] private bool _callInitialize = false;
@@ -85,8 +85,7 @@ public class Switchboard2 : MonoBehaviour
             {
                 if (slot.name == _incomingCalls[_callCount])
                 {
-                    slot.TurnLightColor(Color.yellow);
-                    slot.gameObject.SetActive(true);
+                    slot.TurnLightOn();
                 }
             }
             _callInitialize = true;
@@ -232,8 +231,7 @@ public class Switchboard2 : MonoBehaviour
             if (placement.placementName == _incomingCaller)//if switchboard list selection equals incoming caller
             {
                 _incomingCall = placement;   //set incoming call to switchboard selection
-                _currentState = CurrentState.Ringing; //current state of switchboard is ringing
-
+                StateMachineOnCall();
                 //foreach (LightsSlot slot in _slots) //set the light selection to switchboard incoming call name
                 //{
                 //    if (slot.name == _incomingCall.name)
@@ -267,11 +265,19 @@ public class Switchboard2 : MonoBehaviour
         AdvanceDay();
         ResetCallCount();
         InitializedCalls(_day);
+
         //have End the Day button pop up
         //clicking the End the Day button triggers cut scene
 
     }
-
+    public void StateMachineOnCall()
+    { 
+        _currentState = CurrentState.OnCall;
+    }
+    public void StateMachineIdle()
+    {
+        _currentState = CurrentState.Idle;
+    }
     public SwitchboardSO ReturnIncomingCall()
     {
         return _incomingCall;

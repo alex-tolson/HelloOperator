@@ -1,8 +1,9 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
+public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private SpriteRenderer _mainToggle;
     [SerializeField] private Sprite _toggleUp;
@@ -16,19 +17,19 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     private DialogueManager _dialogueManager;
     private CallManager _callManager;
     private int i = 0;
-    
+
     private GameObject _outgoingWireGO;
     private GameObject _incomingWireGO;
 
     private void Start()
     {
         _callManager = GameObject.Find("Switchboard").GetComponent<CallManager>();
-        if(_callManager == null)
+        if (_callManager == null)
         {
             Debug.LogError("SwitchesAnim::CallManager is null");
         }
         _dialogueManager = GameObject.Find("Canvas_WorldSpace").GetComponent<DialogueManager>();
-        if(_dialogueManager == null)
+        if (_dialogueManager == null)
         {
             Debug.LogError("SwitchesAnim::Dialogue Manager is null");
         }
@@ -37,7 +38,7 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
         {
             Debug.LogError("SwitchesAnim::Switchboard2 is null");
         }
-        _lightsSlots = FindObjectsOfType<LightsSlot>(true);
+        _lightsSlots = GameObject.Find("SwitchboardLights").GetComponentsInChildren<LightsSlot>();
         if (_lightsSlots.Length == 0)
         {
             Debug.LogError("SwitchesAnim::LightsSlot array is empty");
@@ -56,24 +57,28 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
                 if (light.name == this.name)
                 {
                     light.Toggle(this);
-                }
-            }
 
-            if (_currentSwitch == Switch.ToggleUp)
-            {
-                
-                if (_switchboard2.WhoIsCalling() != null && 
-                    _switchboard2.WhoIsCalling().name == this.gameObject.name)
-                {
-                    Debug.Log("starting dialog");
-                    _dialogueManager.CycleThroughDialogue();
+                    if (_currentSwitch == Switch.ToggleUp)
+                    {
+
+                        if (_switchboard2.WhoIsCalling() != null &&
+                            _switchboard2.WhoIsCalling().name == this.gameObject.name)
+                        {
+                            Debug.Log("starting dialog");
+                            _dialogueManager.CycleThroughDialogue();
 
 
-                    //lock toggle into up position till convo is done
-                }
-                if (_switchboard2.WhoIsAnswering() != null && _switchboard2.WhoIsAnswering().name == this.gameObject.name)
-                {
-                    _callManager.ContinueConvoCaller();
+                            //lock toggle into up position till convo is done
+                        }
+                        if (_switchboard2.WhoIsAnswering() != null && _switchboard2.WhoIsAnswering().name == this.gameObject.name)
+                        {
+                            _callManager.ContinueConvoCaller();
+                        }
+                    }
+                    else if (_currentSwitch == Switch.ToggleDown)
+                    {
+                        light.DisconnectWires();
+                    }
                 }
             }
         }
@@ -83,11 +88,6 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
     public String WhichSwitchFlipped()
     {
         return this.gameObject.name;
-    }
-
-    public void MakeConnection()
-    {
-        _switchboard2.IncomingCall();
     }
 
     public void OnToggleClicked()
@@ -101,18 +101,13 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
             _incomingWire = FindObjectOfType<IncomingWire>(true); //finds incoming wire even if it's inactive
             if (_incomingWire == null)
             {
-                Debug.LogError("SwitchesAnim::IncomingWire function is null");
+                //have popup saying "no answer" or "no one is on the line" and dial tone sound fx playing
             }
-            _jack = _incomingWire.ReturnJack();
-
-            if (_jack.name == this.gameObject.name)
+            else
             {
-                Debug.Log("_jack's name is " + _jack);
-
-                MakeConnection();
+                _switchboard2.IncomingCall();
             }
         }
-        
         else if (i == 2)
         {
             _mainToggle.sprite = _toggleDown;
@@ -122,11 +117,11 @@ public class SwitchesAnim : MonoBehaviour , IPointerClickHandler
             _outgoingWireGO = GameObject.Find("OutgoingWire(Clone)");
   
             if (_switchboard2.IsCallCompleted() && _incomingWireGO != null)
-            { 
-                _outgoingWireGO.GetComponent<OutgoingWire>().DisconnectWire();
-                _incomingWireGO.GetComponent<IncomingWire>().DisconnectWire();
+            {
                 _switchboard2.ClearComingAndGoing();
+
             }
+            _switchboard2.StateMachineIdle();
         }
     }
 

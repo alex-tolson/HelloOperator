@@ -7,7 +7,6 @@ public class BellCall : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         _switchboard2.CallComingThru();
-        //_switchboard2.InitiateCall();
     }
 
 

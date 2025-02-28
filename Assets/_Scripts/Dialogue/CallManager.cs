@@ -44,7 +44,7 @@ public class CallManager : MonoBehaviour
 
     public bool Return_call_5_6_Tauten()
     {
-        return _call_5_6_Tauten;
+        return _call_5_6_Tauten; ///this variable is never set to true: --investigate the logic ---todo
     }
     public string ReturnDialogueChatter()
     {

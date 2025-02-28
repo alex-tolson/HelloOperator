@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,8 +13,8 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject _incomingWireAnchor;
     [SerializeField] private GameObject _incomingWireEnd;
     [SerializeField] private GameObject _incomingWireEndAnchor;
-    [SerializeField] private Vector3 _wireOffsetAtEnd;
-    [SerializeField] private Vector3 _wireOffsetAtLight;
+    [SerializeField] private Vector3 _wireOffsetOutgoing;
+    [SerializeField] private Vector3 _wireOffsetIncoming;
     [SerializeField] private GameObject _outgoingWire;
     [SerializeField] private IncomingJack _jack;
    // [SerializeField] private Transform _switchboardParent;
@@ -33,11 +34,18 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
             Debug.LogError("IncomingWire::Switchboard2 is null");
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        { 
+
+        }
+    
+    }
     public void OnPointerClick(PointerEventData eventData)
     {
         ConnectWireAtEnd();
-        //when this happens, 
-        //populate the scriptableSO with the appropriate name A8( for example0
     }
 
     public void ConnectWireAtEnd()
@@ -50,11 +58,11 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
             if (_oldDistanceToJack < _currentDistanceToJack)
             {
                 _currentDistanceToJack = _oldDistanceToJack;
-                _incomingWireEndAnchor.transform.position = jack.transform.position;
+                _incomingWireEndAnchor.transform.position = jack.transform.position + _wireOffsetIncoming;
                 _jack = jack;
             }
         }
-        _incomingWireEnd.transform.position = _incomingWireEndAnchor.transform.position + _wireOffsetAtEnd;
+        _incomingWireEnd.transform.position = _incomingWireEndAnchor.transform.position ;
     }
 
     public IncomingJack ReturnJack()
@@ -64,16 +72,12 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
 
     public void ConnectWireAtAnchor(LightsSlot light)
     {
-        _incomingWireAnchor.transform.position = light.transform.position + _wireOffsetAtLight;
+        _incomingWireAnchor.transform.position = light.transform.position;
     }
 
     public Vector3 ReturnIncomingWireEnd()
     {
-        return _incomingWireEnd.transform.position;
+        return _incomingWireEnd.transform.position + _wireOffsetOutgoing;
     }
 
-    public void DisconnectWire()
-    {
-        Destroy(gameObject);
-    }
 }
