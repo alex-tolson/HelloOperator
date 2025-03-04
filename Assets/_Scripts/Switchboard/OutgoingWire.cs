@@ -6,7 +6,7 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private OutgoingJack[] _outgoingJacks;
     [SerializeField] private AnchorPlaceHolder[] _anchorPlaceholders;
-    [SerializeField] private List<LightsSlot> _switchboardLights = new List<LightsSlot>();
+    [SerializeField] private LightsSlot[] _switchboardLights;
 
     private float _currentDistanceToJack;
     private float _oldDistanceToJack;
@@ -41,8 +41,8 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
         {
             Debug.Log("OutgoingWire:: anchor placeholder array is empty");
         }
-        GameObject.Find("SwitchboardLights").GetComponentsInChildren<LightsSlot>(true, _switchboardLights);
-        if (_switchboardLights.Count == 0)
+        _switchboardLights = GameObject.Find("SwitchboardLights").GetComponentsInChildren<LightsSlot>();
+        if (_switchboardLights.Length == 0)
         {
             Debug.Log("OutgoingWire:: switchboard lights list is empty");
         }
@@ -77,7 +77,6 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
                 _currentDistToAnchor = _oldDistToAnchor;
                 _worldSpacePos = _anchorPlaceholders[i].transform.position;
 
-                Debug.Log(SwitchboardInv.Instance._switchboardList[i] + " is switchboardlist[i]");
                 _switchboardPosition = SwitchboardInv.Instance._switchboardList[i];
                 _switchboard2.OutgoingCallInitiate(SwitchboardInv.Instance._switchboardList[i]);
             }
@@ -110,7 +109,7 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
 
             _currentDistToLight = 3;
 
-            for (int i = 0; i < _switchboardLights.Count; i++)
+            for (int i = 0; i < _switchboardLights.Length; i++)
             {
                 _oldDistToLight = _switchboardLights[i].FindNearestLight(_outgoingWireEndAnchor.transform.position);
                 if (_oldDistToLight < _currentDistToLight)
@@ -125,6 +124,11 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
         {
             Debug.LogError("OutgoingWire::EstablishConnection:: No connection established");
         }
+    }
+
+    public void DisconnectOutgoing()
+    {
+        Destroy(this);
     }
 }
 

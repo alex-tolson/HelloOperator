@@ -5,11 +5,15 @@ using System;
 public class LightsSlot : MonoBehaviour, IPointerClickHandler
 {
     private SwitchboardSO _switchboardSO;
+    private SwitchboardSO _incomingCaller;
+    private SwitchboardSO _outgoingCallee;
     [SerializeField] private Sprite _lightOn;
     [SerializeField] private Sprite _lightOff;
     [SerializeField] private Sprite _lightGreen;
-    [SerializeField] private AnchorPlaceHolder[] _anchorPlaceHolders;
+    private AnchorPlaceHolder[] _anchorPlaceHolders;
+    private SwitchesAnim[] _switchesAnim;
     public string _name;
+    private string _nameOfThisLightslot;
     
     public JackDirection _direction;
     public CurrentState _currentState;
@@ -17,18 +21,23 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     //------------------------------------
     private Switchboard2 _switchboard2;
     [SerializeField] private GameObject _incomingWireGO;
-    [SerializeField] private GameObject _outgoingWireGO;
     private GameObject _incomingWire;
     private GameObject _outgoingWire;
-    [SerializeField] private bool _incomingInstantiated = false;
+    private bool _incomingInstantiated = false;
     [SerializeField] private Vector3 _incomingWirePositionOffset;
-    [SerializeField] private IncomingJack _incomingJack;
-    private GameObject _gameObjIncoming;
-    private GameObject _gameObjOutgoing;
+    [SerializeField] private GameObject _gameObjIncoming = null;
 
-
+    private void Awake()
+    {
+        _nameOfThisLightslot = this.name;
+    }
     private void Start()
     {
+        _switchesAnim = GameObject.Find("Switch_Container").GetComponentsInChildren<SwitchesAnim>();
+        if (_switchesAnim.Length == 0)
+        {
+            Debug.LogError("LightsSlot::Switches Anim array is empty.");
+        }
         _anchorPlaceHolders = GameObject.Find("AnchorPlaceHolders").GetComponentsInChildren<AnchorPlaceHolder>();
         if (_anchorPlaceHolders.Length == 0)
         {
@@ -55,76 +64,65 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     {
         if (_switchboardSO != null) // if switchboard scriptable object is not null
         {
+
             if (_incomingInstantiated == false)
             {
-                //if this name == anchorplaceholder name
-                //instantiate at position of anchor placeholder
-
                 foreach (AnchorPlaceHolder placeHolder in _anchorPlaceHolders)
                 {
-                    if (this.name == placeHolder.name)
+                    if (_nameOfThisLightslot == placeHolder.name)
                     {
-                         _gameObjIncoming = Instantiate(_incomingWireGO, placeHolder.transform.position, Quaternion.identity);
+                        _gameObjIncoming = Instantiate(_incomingWireGO, placeHolder.transform.position, Quaternion.identity);
 
-                        //_incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);
+                        _incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);
                         _incomingInstantiated = true;
                     }
                 }
-                //_switchboard2._gameObjIncoming.SetActive(!_switchboard2._gameObjIncoming.activeSelf);
-
             }
             else
             {
                 _switchboard2.ClearComingAndGoing();
                 _incomingInstantiated = false;
                 TurnOffLight();
-                Destroy(_gameObjIncoming);
+                _gameObjIncoming = null;
             }
         }
     }
 
-    public void Toggle(SwitchesAnim toggle)
+    public void Toggle(Switch toggle, SwitchesAnim _switch)
     {
-        try // change code so that who is calling is based on where the incoming wire snaps to
-        {
-            if (toggle.ToggleStatus() == Switch.ToggleUp)
-            {
-                //TurnLightColor(Color.green);
-                _light.sprite = _lightGreen;
-                //can skip but cannot flip toggle until dialogue is finished.
-
-                //if (_light != null) //if _light is null return color to yellow and deactivate
-                //{
-                //    _light.sprite = _lightOff;
-                //}
-
-                if (_gameObjIncoming != null) //(_switchboard2.gameObj == null)
-                {
-                    //instantiate outgoing when switch is flipped up and connect to jack
-                    _gameObjOutgoing = Instantiate(_outgoingWireGO, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
-                    _gameObjOutgoing.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_gameObjOutgoing.transform.position);
-                }
-                else
-                {
-                    return;
-                }
-            }
-
-            if (toggle.ToggleStatus() == Switch.ToggleDown)
-            {
-                TurnOffLight();
-                IncomingInstantiatedReset();
-            }
+        if (toggle == Switch.ToggleUp)
+        { 
+            _light.sprite = _lightGreen;
         }
-        catch (Exception e)
+        else if (toggle == Switch.ToggleDown)
         {
-            Debug.Log("exception" + e);
+            Destroy(_gameObjIncoming);
+            _switchboard2.NotReadyToCall();
         }
     }
 
-    //public void AttachLightToSwitch(SwitchesAnim toggle)
+    ////call this function PopulateIncomingCaller from Switchboard 2
+    //public void PopulateIncomingCaller(SwitchboardSO incomingCallerSwitchboard2)
     //{
-    //    TurnLightColor(Color.green);
+    //    _incomingCaller = incomingCallerSwitchboard2;
+    //    foreach (SwitchesAnim toggle in _switchesAnim)
+    //    {
+    //        if (toggle.name == _incomingCaller.name)
+    //        {
+    //            toggle.PopulateIncomingCaller(_incomingCaller);
+    //        }
+    //    }
+    //}
+    //public void PopulateOutgoingCallee(SwitchboardSO outgoingCalleeSwitchboard2)
+    //{
+    //    _outgoingCallee = outgoingCalleeSwitchboard2;
+    //    foreach (SwitchesAnim toggle in _switchesAnim)
+    //    {
+    //        if (toggle.name == _outgoingCallee.name)
+    //        {
+    //            toggle.PopulateOutgoingCallee(_outgoingCallee);
+    //        }
+    //    }
     //}
 
     public void IncomingInstantiatedReset()
@@ -136,6 +134,7 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     {
         _light.sprite = _lightOn;
     }
+
     public void TurnLightGreen()
     {
         _light.sprite = _lightGreen;
@@ -150,11 +149,8 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     public void TurnOffLight()
     {
         _light.sprite = _lightOff;
+        Destroy(_gameObjIncoming);
     }
 
-    public void DisconnectWires()
-    {
-        Destroy(_gameObjIncoming);
-        Destroy(_gameObjOutgoing);
-    }
+
 }

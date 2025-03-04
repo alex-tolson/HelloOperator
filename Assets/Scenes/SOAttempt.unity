@@ -320,16 +320,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &27681777
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -595,9 +592,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 45101912}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &45101912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -950,9 +948,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 58850270}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &58850270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1106,16 +1105,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &62601674
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1524,9 +1520,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 64675231}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &64675231
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2170,9 +2167,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 90819298}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &90819298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2587,9 +2585,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 129569465}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &129569465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2955,16 +2954,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &143799948
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3101,16 +3097,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &157355463
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3780,16 +3773,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 1.11, y: -3.87, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &182301674
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3914,9 +3904,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 184598675}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &184598675
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4613,16 +4604,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &212306246
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5115,16 +5103,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &226235347
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5641,16 +5626,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &242596418
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5787,16 +5769,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &245066769
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5933,16 +5912,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &248524966
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6946,16 +6922,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &277540841
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7509,16 +7482,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &321606927
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7655,16 +7625,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &326943798
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7917,9 +7884,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 331456455}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &331456455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8988,9 +8956,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 371156121}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &371156121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9092,9 +9061,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 374027277}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &374027277
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9869,9 +9839,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 404335114}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &404335114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10144,16 +10115,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &418097440
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10484,16 +10452,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &434969654
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10714,16 +10679,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &460161636
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10957,16 +10919,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &471606000
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11051,9 +11010,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 475438279}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &475438279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11190,9 +11150,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 479806039}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &479806039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11788,16 +11749,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &498360416
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -12390,9 +12348,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 514717501}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &514717501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12802,9 +12761,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 529962677}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &529962677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13118,9 +13078,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 550332026}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &550332026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13871,16 +13832,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &580001982
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -14390,16 +14348,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &602307013
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -14564,9 +14519,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 609582961}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &609582961
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15098,16 +15054,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &637104209
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15453,9 +15406,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 672834551}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &672834551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15592,9 +15546,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 675489304}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &675489304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16279,9 +16234,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 698589273}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &698589273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16554,16 +16510,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &708811666
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -16829,9 +16782,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 713170744}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &713170744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17852,9 +17806,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 761028796}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &761028796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18387,16 +18342,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &788055097
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -18641,9 +18593,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 800364296}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &800364296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19080,9 +19033,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 835899451}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &835899451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19264,9 +19218,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 839085661}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &839085661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19655,9 +19610,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 863228083}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &863228083
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20120,16 +20076,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &871387824
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -20249,9 +20202,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 871556379}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &871556379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20901,16 +20855,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &907682180
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -21079,9 +21030,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 918788197}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &918788197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21927,16 +21879,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &965483889
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -22435,16 +22384,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &975492081
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -22564,9 +22510,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 977802309}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &977802309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23158,16 +23105,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1007824654
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -23518,9 +23462,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1066114822}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1066114822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23706,9 +23651,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1075214157}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1075214157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24377,9 +24323,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1101949103}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1101949103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25036,16 +24983,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1143325739
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -25279,16 +25223,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1150329224
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -25488,9 +25429,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1152951926}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1152951926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26304,16 +26246,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1230217677
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -26530,16 +26469,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1233053143
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -26659,9 +26595,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1239553336}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1239553336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27037,9 +26974,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1264866816}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1264866816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27502,16 +27440,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1269124192
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -27993,16 +27928,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1299885538
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -28387,9 +28319,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1323794180}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1323794180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28526,9 +28459,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1324266489}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1324266489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29103,9 +29037,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1348672804}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1348672804
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29207,9 +29142,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1349849936}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1349849936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29495,16 +29431,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1360903331
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -30628,9 +30561,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1399381400}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1399381400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30819,16 +30753,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1408260400
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -31146,16 +31077,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1413622526
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -31240,9 +31168,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1423674285}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1423674285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32098,16 +32027,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1459779296
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -32244,16 +32170,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1464465667
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -32567,9 +32490,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1484041329}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1484041329
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32758,16 +32682,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1484544765
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -33165,16 +33086,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1498164176
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -33391,16 +33309,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1515364206
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -33794,9 +33709,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1546678875}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1546678875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34110,9 +34026,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1563936943}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1563936943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34266,16 +34183,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1571789501
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -34574,9 +34488,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1578460347}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1578460347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34845,9 +34760,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1583210863}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1583210863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35231,16 +35147,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1604164567
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -35696,9 +35609,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1617720418}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1617720418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35932,9 +35846,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1620055435}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1620055435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36203,16 +36118,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1621077661
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -36640,16 +36552,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1652643577
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -36870,16 +36779,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1676238041
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -37100,16 +37006,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1681517623
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -37636,16 +37539,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1697397603
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -38124,9 +38024,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1723918416}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1723918416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38602,16 +38503,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1737785548
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -38731,9 +38629,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1745891588}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1745891588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39024,9 +38923,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1764762081}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1764762081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39163,9 +39063,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1765164253}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1765164253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39518,9 +39419,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1771733371}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1771733371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39674,16 +39576,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1790734375
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -40170,16 +40069,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1822550243
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -41403,16 +41299,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1873024409
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -41549,16 +41442,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1884795268
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -42179,9 +42069,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 1932009522}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &1932009522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42370,16 +42261,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &1938024394
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -43652,9 +43540,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 2004206037}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &2004206037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44119,9 +44008,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 2018801573}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &2018801573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44443,16 +44333,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &2025547939
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -44934,9 +44821,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 2049142254}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &2049142254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45426,16 +45314,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &2060180219
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -45520,9 +45405,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 2060701258}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &2060701258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45659,9 +45545,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 2060958660}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &2060958660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45850,16 +45737,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &2074098340
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -45996,16 +45880,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &2075671111
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -46090,9 +45971,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 2077476471}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &2077476471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47162,9 +47044,10 @@ MonoBehaviour:
   _mainToggle: {fileID: 2130745618}
   _toggleUp: {fileID: 277190433, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
   _toggleDown: {fileID: -1240326732, guid: 3afc6ce8c954f2f418969335555b53eb, type: 3}
-  _incomingWire: {fileID: 0}
-  _jack: {fileID: 0}
   _incomingCall: {fileID: 0}
+  _slot: {fileID: 0}
+  _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
+  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
 --- !u!212 &2130745618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47318,16 +47201,13 @@ MonoBehaviour:
   _lightOn: {fileID: 1187926577, guid: 62ce5f161771d534ba7f5fb04d22b92d, type: 3}
   _lightOff: {fileID: 2116059961, guid: 8a5d419ba97028045a89e3b354347899, type: 3}
   _lightGreen: {fileID: 1512841394, guid: e9ce01967eb36c34c9fe4c1ae409688a, type: 3}
-  _anchorPlaceHolders: []
   _name: 
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
   _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _outgoingWireGO: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingInstantiated: 0
   _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
-  _incomingJack: {fileID: 0}
+  _gameObjIncoming: {fileID: 0}
 --- !u!70 &2132334266
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -47502,6 +47382,7 @@ MonoBehaviour:
   _incomingCall: {fileID: 0}
   _outgoingCall: {fileID: 0}
   _slots: []
+  _currentLightSlot: {fileID: 0}
   _day: 1
   _callCount: 0
   _incomingCallCompleted: 0
@@ -48069,307 +47950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cb79ca0f59fce4a8095b1432aca254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &5735641025559961163
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.107126
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.19099998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375683625129258837, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_Name
-      value: OutgoingWire
-      objectReference: {fileID: 0}
-    - target: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[0]
-      value: 
-      objectReference: {fileID: 8939621194111073447}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[1]
-      value: 
-      objectReference: {fileID: 582125262}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[2]
-      value: 
-      objectReference: {fileID: 431232372}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[3]
-      value: 
-      objectReference: {fileID: 50377578}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[4]
-      value: 
-      objectReference: {fileID: 1431311458}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[5]
-      value: 
-      objectReference: {fileID: 2079105249}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[6]
-      value: 
-      objectReference: {fileID: 1978156871}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[7]
-      value: 
-      objectReference: {fileID: 6053649}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[8]
-      value: 
-      objectReference: {fileID: 2125746890}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[9]
-      value: 
-      objectReference: {fileID: 516677755}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[10]
-      value: 
-      objectReference: {fileID: 1618655541}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[11]
-      value: 
-      objectReference: {fileID: 2038863561}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[12]
-      value: 
-      objectReference: {fileID: 389324950}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[13]
-      value: 
-      objectReference: {fileID: 1553542476}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[14]
-      value: 
-      objectReference: {fileID: 1930255637}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[15]
-      value: 
-      objectReference: {fileID: 995795165}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[16]
-      value: 
-      objectReference: {fileID: 1386428605}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[17]
-      value: 
-      objectReference: {fileID: 709930369}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[18]
-      value: 
-      objectReference: {fileID: 1723192650}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[19]
-      value: 
-      objectReference: {fileID: 1141220010}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[20]
-      value: 
-      objectReference: {fileID: 1637036825}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[21]
-      value: 
-      objectReference: {fileID: 1849970084}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[22]
-      value: 
-      objectReference: {fileID: 1379800481}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[23]
-      value: 
-      objectReference: {fileID: 864212531}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[24]
-      value: 
-      objectReference: {fileID: 520227658}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[25]
-      value: 
-      objectReference: {fileID: 333837442}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[26]
-      value: 
-      objectReference: {fileID: 991647950}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[27]
-      value: 
-      objectReference: {fileID: 1971010287}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[28]
-      value: 
-      objectReference: {fileID: 1683818198}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[29]
-      value: 
-      objectReference: {fileID: 1371487550}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[30]
-      value: 
-      objectReference: {fileID: 196653792}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[31]
-      value: 
-      objectReference: {fileID: 1624125241}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[32]
-      value: 
-      objectReference: {fileID: 77999677}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[33]
-      value: 
-      objectReference: {fileID: 1145295830}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[34]
-      value: 
-      objectReference: {fileID: 486472816}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[35]
-      value: 
-      objectReference: {fileID: 1168385305}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[36]
-      value: 
-      objectReference: {fileID: 1189140647}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[37]
-      value: 
-      objectReference: {fileID: 136976892}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[38]
-      value: 
-      objectReference: {fileID: 1154726419}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[39]
-      value: 
-      objectReference: {fileID: 206693068}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[40]
-      value: 
-      objectReference: {fileID: 1319113886}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[41]
-      value: 
-      objectReference: {fileID: 1484953319}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[42]
-      value: 
-      objectReference: {fileID: 1867838418}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[43]
-      value: 
-      objectReference: {fileID: 1859488990}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[44]
-      value: 
-      objectReference: {fileID: 1113230792}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[45]
-      value: 
-      objectReference: {fileID: 1823172962}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[46]
-      value: 
-      objectReference: {fileID: 227639856}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[47]
-      value: 
-      objectReference: {fileID: 179618547}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[48]
-      value: 
-      objectReference: {fileID: 2108325565}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[49]
-      value: 
-      objectReference: {fileID: 1083451877}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[50]
-      value: 
-      objectReference: {fileID: 1832731626}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[51]
-      value: 
-      objectReference: {fileID: 863535661}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[52]
-      value: 
-      objectReference: {fileID: 115829914}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[53]
-      value: 
-      objectReference: {fileID: 2052778967}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[54]
-      value: 
-      objectReference: {fileID: 460893296}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[55]
-      value: 
-      objectReference: {fileID: 1791749179}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[56]
-      value: 
-      objectReference: {fileID: 63959499}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[57]
-      value: 
-      objectReference: {fileID: 750366539}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[58]
-      value: 
-      objectReference: {fileID: 578447121}
-    - target: {fileID: 6053529073962705298, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-      propertyPath: _outgoingJacks.Array.data[59]
-      value: 
-      objectReference: {fileID: 481208429}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
 --- !u!224 &7104398391109686414 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
@@ -48513,4 +48093,3 @@ SceneRoots:
   - {fileID: 2033469535}
   - {fileID: 2108664699}
   - {fileID: 2134815788}
-  - {fileID: 5735641025559961163}

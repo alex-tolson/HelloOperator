@@ -9,21 +9,24 @@ public class Switchboard2 : MonoBehaviour
     //-----Switchboard-----------------
     [SerializeField] private SwitchboardInv _switchboardInv; //--->try this instead of the singleton
     private CallManager _callManager;
+    private DialogueManager _dialogueManager;
+    //
     [SerializeField] CurrentState _currentState;
     [SerializeField] private List<string> _incomingCalls = new List<string>();
     //
     [SerializeField] private SwitchboardSO _incomingCall;
     [SerializeField] private SwitchboardSO _outgoingCall;
     [SerializeField] private List<LightsSlot> _slots = new List<LightsSlot>();
+    [SerializeField] private LightsSlot _currentLightSlot;
     //
     [SerializeField] private int _day = 1;
     private string _incomingCaller;
     [SerializeField] private int _callCount = 0;
-    [SerializeField] private bool _incomingCallCompleted;
-
+    private bool _incomingCallCompleted;
+    [SerializeField] private bool _isIncomingOutgoingInitialized;
     //--------End Switchboard ---------
     //[SerializeField] private BellCall _bell;
-    [SerializeField] private bool _callInitialize = false;
+    private bool _callInitialize = false;
     // private OutgoingWire _outgoingWire;
 
     private void Start()
@@ -41,6 +44,15 @@ public class Switchboard2 : MonoBehaviour
             Debug.LogError("Switchboard2::_switchboardInv is null");
         }
         _callManager = GameObject.Find("Switchboard").GetComponent<CallManager>();
+        if (_callManager == null)
+        {
+            Debug.LogError("Switchboard2.Call Manager is null");
+        }
+        _dialogueManager = GameObject.Find("Canvas_WorldSpace").GetComponent<DialogueManager>();
+        if (_dialogueManager == null)
+        {
+            Debug.LogError("Switchboard2::Dialogue Manager is null");
+        }
         //-----------------------------
 
         InitializedCalls(1);
@@ -56,18 +68,23 @@ public class Switchboard2 : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
-
             AdvanceCallCount();
             CallIsComplete();
             Debug.Log("Advancing day to " + _day + " and call " + _callCount);
         }
             
     }
+    public void ReadyToCall()
+    {
+        _isIncomingOutgoingInitialized = true;
+    }
 
+    public void NotReadyToCall()
+    {
+        _isIncomingOutgoingInitialized = false;
+    }
     public void CallComingThru()
     {
-
-
         Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count + " _incomingCalls.Count");
         _incomingCallCompleted = false;
         if (_callCount == _incomingCalls.Count)
@@ -86,6 +103,7 @@ public class Switchboard2 : MonoBehaviour
                 if (slot.name == _incomingCalls[_callCount])
                 {
                     slot.TurnLightOn();
+                    _currentLightSlot = slot;
                 }
             }
             _callInitialize = true;
@@ -231,22 +249,15 @@ public class Switchboard2 : MonoBehaviour
             if (placement.placementName == _incomingCaller)//if switchboard list selection equals incoming caller
             {
                 _incomingCall = placement;   //set incoming call to switchboard selection
+                //_currentLightSlot.PopulateIncomingCaller(_incomingCall);
                 StateMachineOnCall();
-                //foreach (LightsSlot slot in _slots) //set the light selection to switchboard incoming call name
-                //{
-                //    if (slot.name == _incomingCall.name)
-                //    {
-                //        slot._light.gameObject.SetActive(true);
-                //        slot._light.color = Color.yellow;
-                //    }
-                //}
             }
         }
     }
 
+
     public void UpdateUI()
     {
-
         for (int i = 0; i < _slots.Count; i++)
         {
             _slots[i].AddLights(_switchboardInv._switchboardList[i]);
@@ -257,6 +268,21 @@ public class Switchboard2 : MonoBehaviour
     {
         _outgoingCall = outgoingCall;
 
+        foreach (LightsSlot slot in _slots)
+        {
+            if (slot.name == _outgoingCall.name)
+            { 
+                _currentLightSlot = slot;
+            }
+        }
+
+        //foreach (SwitchboardSO placement in _switchboardInv._switchboardList)//cycle through the switchboard list
+        //{
+        //    if (placement.placementName == _currentLightSlot.name)//if switchboard list selection equals incoming caller
+        //    {
+        //        _currentLightSlot.PopulateOutgoingCallee(_outgoingCall);
+        //    }
+        //}
     }
 
     public void ResetDay()
@@ -270,6 +296,24 @@ public class Switchboard2 : MonoBehaviour
         //clicking the End the Day button triggers cut scene
 
     }
+
+    public void MakeTheCall()
+    {
+        if (_isIncomingOutgoingInitialized)
+        {
+            if (WhoIsCalling() != null && WhoIsCalling().name == _incomingCall.name)
+            {
+                Debug.Log("starting dialog");
+                _dialogueManager.CycleThroughDialogue();
+                //lock toggle into up position till convo is done
+            }
+            if (WhoIsAnswering() != null && WhoIsAnswering().name == _outgoingCall.name)
+            {
+                _callManager.ContinueConvoCaller();
+            }
+        }
+    }
+    
     public void StateMachineOnCall()
     { 
         _currentState = CurrentState.OnCall;

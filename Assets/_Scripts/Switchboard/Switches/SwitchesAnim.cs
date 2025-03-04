@@ -8,31 +8,22 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
     [SerializeField] private SpriteRenderer _mainToggle;
     [SerializeField] private Sprite _toggleUp;
     [SerializeField] private Sprite _toggleDown;
-    [SerializeField] private IncomingWire _incomingWire;
-    [SerializeField] private IncomingJack _jack;
+    private IncomingWire _incomingWireGO;
+    private OutgoingWire _outgoingWireGO;
+    private GameObject _outgoingWire;
     [SerializeField] private SwitchboardSO _incomingCall;
+    [SerializeField] private SwitchboardSO _outgoingCallee;
     private LightsSlot[] _lightsSlots;
     private Switch _currentSwitch;
     private Switchboard2 _switchboard2;
-    private DialogueManager _dialogueManager;
-    private CallManager _callManager;
-    private int i = 0;
 
-    private GameObject _outgoingWireGO;
-    private GameObject _incomingWireGO;
+    private int i = 0;
+    [SerializeField] private LightsSlot _slot;
+    [SerializeField] private GameObject _outgoingWirePrefab;
+    [SerializeField] private GameObject _incomingWirePrefab;
 
     private void Start()
     {
-        _callManager = GameObject.Find("Switchboard").GetComponent<CallManager>();
-        if (_callManager == null)
-        {
-            Debug.LogError("SwitchesAnim::CallManager is null");
-        }
-        _dialogueManager = GameObject.Find("Canvas_WorldSpace").GetComponent<DialogueManager>();
-        if (_dialogueManager == null)
-        {
-            Debug.LogError("SwitchesAnim::Dialogue Manager is null");
-        }
         _switchboard2 = GameObject.Find("Switchboard").GetComponent<Switchboard2>();
         if (_switchboard2 == null)
         {
@@ -51,89 +42,97 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
         {
             OnToggleClicked();
 
-            foreach (LightsSlot light in _lightsSlots)
+            foreach (LightsSlot slot in _lightsSlots)
             {
-
-                if (light.name == this.name)
+                if (slot.name == this.name)
                 {
-                    light.Toggle(this);
-
-                    if (_currentSwitch == Switch.ToggleUp)
-                    {
-
-                        if (_switchboard2.WhoIsCalling() != null &&
-                            _switchboard2.WhoIsCalling().name == this.gameObject.name)
-                        {
-                            Debug.Log("starting dialog");
-                            _dialogueManager.CycleThroughDialogue();
-
-
-                            //lock toggle into up position till convo is done
-                        }
-                        if (_switchboard2.WhoIsAnswering() != null && _switchboard2.WhoIsAnswering().name == this.gameObject.name)
-                        {
-                            _callManager.ContinueConvoCaller();
-                        }
-                    }
-                    else if (_currentSwitch == Switch.ToggleDown)
-                    {
-                        light.DisconnectWires();
-                    }
+                    _slot = slot;
+                    slot.Toggle(_currentSwitch, this);
                 }
+            }
+
+            if (_currentSwitch == Switch.ToggleUp)
+            {
+                _switchboard2.MakeTheCall();
+    
+            }
+            else if (_currentSwitch == Switch.ToggleDown)
+            {
+                _switchboard2.NotReadyToCall();
+                
             }
         }
     }
 
+    //public void PopulateIncomingCaller(SwitchboardSO incomingCallerSwitchboard2)
+    //{
+    //    _incomingCall = incomingCallerSwitchboard2;
 
-    public String WhichSwitchFlipped()
-    {
-        return this.gameObject.name;
-    }
+    //}
+
+    //public void PopulateOutgoingCallee(SwitchboardSO outgoingCalleeSwitchboard2)
+    //{
+    //    _outgoingCallee = outgoingCalleeSwitchboard2;
+    //}
 
     public void OnToggleClicked()
     {
         ++i;
-
-        if (i == 1)
+        try
         {
-            _mainToggle.sprite = _toggleUp;
-            _currentSwitch = Switch.ToggleUp;
-            _incomingWire = FindObjectOfType<IncomingWire>(true); //finds incoming wire even if it's inactive
-            if (_incomingWire == null)
+            if (i == 1)
             {
-                //have popup saying "no answer" or "no one is on the line" and dial tone sound fx playing
+                _mainToggle.sprite = _toggleUp;
+                _currentSwitch = Switch.ToggleUp;
+                _incomingWireGO = FindObjectOfType<IncomingWire>(true); //finds incoming wire even if it's inactive
+                if (_incomingWireGO == null)          // if incoming wire is null
+                {
+                    //have popup saying "no answer" or "no one is on the line and fade out" and dial tone sound fx playing
+                    _switchboard2.NotReadyToCall();
+                }
+                else                                //else
+                {
+                    _switchboard2.IncomingCall();   //set _incomingCaller = _incomingCalls[_callCount] and populate incoming caller
+                    _outgoingWireGO = FindObjectOfType<OutgoingWire>(true);
+                    if (_outgoingWireGO == null)
+                    {
+                        _outgoingWire = Instantiate(_outgoingWirePrefab, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
+                    }
+                    _outgoingWire.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_outgoingWire.transform.position);
+                    _switchboard2.ReadyToCall();
+                }
             }
-            else
+            else if (i == 2)
             {
-                _switchboard2.IncomingCall();
+                _mainToggle.sprite = _toggleDown;
+                _currentSwitch = Switch.ToggleDown;
+                i = 0;
+                if (_switchboard2.IsCallCompleted() && _incomingWireGO != null)
+                {
+                    _switchboard2.ClearComingAndGoing();
+
+                }
+                _slot.TurnOffLight();
+                _slot.IncomingInstantiatedReset();
+                _switchboard2.StateMachineIdle();
+                _switchboard2.NotReadyToCall();
+                DisconnectWires();
             }
         }
-        else if (i == 2)
+        catch (Exception e)
         {
-            _mainToggle.sprite = _toggleDown;
-            _currentSwitch = Switch.ToggleDown;
-            i = 0;
-            _incomingWireGO = GameObject.Find("Wire-Incoming(Clone)");
-            _outgoingWireGO = GameObject.Find("OutgoingWire(Clone)");
-  
-            if (_switchboard2.IsCallCompleted() && _incomingWireGO != null)
-            {
-                _switchboard2.ClearComingAndGoing();
-
-            }
-            _switchboard2.StateMachineIdle();
+            Debug.Log("exception" + e);
         }
+    } 
+    public SwitchboardSO ReturnCallee()
+    {
+        return _outgoingCallee;
     }
 
-    public Switch ToggleStatus()
+    public void DisconnectWires()
     {
-        if (_currentSwitch == Switch.ToggleUp)
-        {
-            return Switch.ToggleUp;
-        }
-        else
-        {
-            return Switch.ToggleDown;
-        }
+        //_incomingWireGO.GetComponent<IncomingWire>().DisconnectIncoming();
+        Destroy(_outgoingWire);
+        _outgoingWireGO.GetComponent<OutgoingWire>().DisconnectOutgoing();
     }
 }

@@ -35,14 +35,15 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        { 
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.I))
+    //    { 
 
-        }
+    //    }
     
-    }
+    //}
+
     public void OnPointerClick(PointerEventData eventData)
     {
         ConnectWireAtEnd();
@@ -65,10 +66,10 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
         _incomingWireEnd.transform.position = _incomingWireEndAnchor.transform.position ;
     }
 
-    public IncomingJack ReturnJack()
-    {
-        return _jack;
-    }
+    //public IncomingJack ReturnJack()
+    //{
+    //    return _jack;
+    //}
 
     public void ConnectWireAtAnchor(LightsSlot light)
     {
@@ -77,7 +78,6 @@ public class IncomingWire : MonoBehaviour, IPointerClickHandler
 
     public Vector3 ReturnIncomingWireEnd()
     {
-        return _incomingWireEnd.transform.position + _wireOffsetOutgoing;
+        return _incomingWireEnd.transform.position;// + _wireOffsetOutgoing;
     }
-
 }
