@@ -64,17 +64,6 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    //public void PopulateIncomingCaller(SwitchboardSO incomingCallerSwitchboard2)
-    //{
-    //    _incomingCall = incomingCallerSwitchboard2;
-
-    //}
-
-    //public void PopulateOutgoingCallee(SwitchboardSO outgoingCalleeSwitchboard2)
-    //{
-    //    _outgoingCallee = outgoingCalleeSwitchboard2;
-    //}
-
     public void OnToggleClicked()
     {
         ++i;
@@ -96,7 +85,9 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
                     _outgoingWireGO = FindObjectOfType<OutgoingWire>(true);
                     if (_outgoingWireGO == null)
                     {
-                        _outgoingWire = Instantiate(_outgoingWirePrefab, _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), Quaternion.identity);
+                        _outgoingWire = Instantiate(_outgoingWirePrefab, 
+                            _incomingWireGO.GetComponent<IncomingWire>().ReturnIncomingWireEnd(), 
+                            Quaternion.identity);
                     }
                     _outgoingWire.GetComponent<OutgoingWire>().ConnectOutgoingAnchorToJack(_outgoingWire.transform.position);
                     _switchboard2.ReadyToCall();
@@ -112,11 +103,12 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
                     _switchboard2.ClearComingAndGoing();
 
                 }
-                _slot.TurnOffLight();
+                _slot.TurnOffLight(); 
+                DisconnectWires();
                 _slot.IncomingInstantiatedReset();
                 _switchboard2.StateMachineIdle();
                 _switchboard2.NotReadyToCall();
-                DisconnectWires();
+                
             }
         }
         catch (Exception e)
@@ -131,8 +123,7 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
 
     public void DisconnectWires()
     {
-        //_incomingWireGO.GetComponent<IncomingWire>().DisconnectIncoming();
-        Destroy(_outgoingWire);
-        _outgoingWireGO.GetComponent<OutgoingWire>().DisconnectOutgoing();
+        Destroy(GameObject.Find("OutgoingWire(Clone)"));
+        Destroy(_outgoingWireGO);
     }
 }

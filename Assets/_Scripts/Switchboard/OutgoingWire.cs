@@ -98,7 +98,7 @@ public class OutgoingWire : MonoBehaviour, IPointerClickHandler
             }
         }
         transform.position = _jack.transform.position + _offsetOutWireAtBegin;
-        Debug.Log("outgoing jack is : " + _jack);
+        //Debug.Log("outgoing jack is : " + _jack);
     }
 
     public void EstablishConnection()

@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using TMPro;
 using UnityEngine;
 
@@ -42,7 +43,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         case 0:
                             {
-                                
+
                                 _callManager.Day1Call0();
                                 DisplayDialogue();
                                 break;
@@ -89,10 +90,17 @@ public class DialogueManager : MonoBehaviour
                                 DisplayDialogue();
                                 break;
                             }
-
+                        case 8:
+                            {
+                                _callManager.Day1Call8();
+                                DisplayDialogue();
+                                break;
+                            }
+                           
                     }
                     break;
                 }
+
             case 2:
                 {
                     switch (_switchboard2.CallCount())
@@ -411,6 +419,12 @@ public class DialogueManager : MonoBehaviour
                                 DisplayDialogue();
                                 break;
                             }
+                        case 6:
+                            {
+                                _callManager.Day7Call6();
+                                DisplayDialogue();
+                                break;
+                            }
                     }
                     break;
                 }
@@ -451,7 +465,142 @@ public class DialogueManager : MonoBehaviour
                     }
                     break;
                 }
+            case 9:
+                {
+                    if (_callManager.ReturnEnding4Count() >= _callManager.ReturnEnding1Count() &&
+                        _callManager.ReturnEnding4Count() >= _callManager.ReturnEnding2Count())
+                    {
 
+
+                        Debug.Log("Ending 4, Call 0");
+                        switch (_switchboard2.CallCount())
+                        {
+                            case 0:
+                                {
+                                    _callManager.Ending4Call0();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    _callManager.Ending4Call1();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    _callManager.Ending4Call2();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    _callManager.Ending4Call3();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    _callManager.Ending4Call4();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 5:
+                                {
+                                    _callManager.Ending4Call5();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    _callManager.Ending4Call6();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 7:
+                                {
+                                    _callManager.Ending4Call7();
+                                    DisplayDialogue();
+                                    break;
+                                }
+
+                        }
+                    }
+                    else if (_callManager.ReturnEnding1Count() >= _callManager.ReturnEnding4Count() &&
+                             _callManager.ReturnEnding1Count() >= _callManager.ReturnEnding2Count())
+                    {
+                        Debug.Log("Ending 1, Call 0");
+                        switch (_switchboard2.CallCount())
+                        {
+                            case 0:
+                                {
+                                    _callManager.Ending1Call0();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    _callManager.Ending1Call1();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    _callManager.Ending1Call2();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    _callManager.Ending1Call3();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    _callManager.Ending1Call4();
+                                    DisplayDialogue();
+                                    break;
+                                }
+
+                        }
+                    }
+                    else if (_callManager.ReturnEnding2Count() >= _callManager.ReturnEnding1Count() &&
+                             _callManager.ReturnEnding2Count() >= _callManager.ReturnEnding4Count())
+                    {
+                        Debug.Log("Ending 2, Call 0");
+                        switch (_switchboard2.CallCount())
+                        {
+                            case 0:
+                                {
+                                    _callManager.Ending2Call0();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    _callManager.Ending2Call1();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    _callManager.Ending2Call2();
+                                    DisplayDialogue();
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    _callManager.Ending2Call3();
+                                    DisplayDialogue();
+                                    break;
+                                }
+
+                        }
+                    }
+
+                    break;
+                }
         }
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Switchboard2 : MonoBehaviour
@@ -27,7 +28,7 @@ public class Switchboard2 : MonoBehaviour
     //--------End Switchboard ---------
     //[SerializeField] private BellCall _bell;
     private bool _callInitialize = false;
-    // private OutgoingWire _outgoingWire;
+
 
     private void Start()
     {
@@ -61,12 +62,12 @@ public class Switchboard2 : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             ResetDay();
             Debug.Log("Advancing day to " + _day + " and call " + _callCount);
         }
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             AdvanceCallCount();
             CallIsComplete();
@@ -79,10 +80,13 @@ public class Switchboard2 : MonoBehaviour
         _isIncomingOutgoingInitialized = true;
     }
 
+
     public void NotReadyToCall()
     {
         _isIncomingOutgoingInitialized = false;
     }
+
+
     public void CallComingThru()
     {
         Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count + " _incomingCalls.Count");
@@ -110,6 +114,7 @@ public class Switchboard2 : MonoBehaviour
         }
     }
 
+
     public void InitializedCalls(int day)
     {
         switch (day)
@@ -125,6 +130,7 @@ public class Switchboard2 : MonoBehaviour
                     _incomingCalls.Add("Z1");
                     _incomingCalls.Add("Y8");
                     _incomingCalls.Add("A0");
+
                     break;
                 }
             case 2:
@@ -210,6 +216,10 @@ public class Switchboard2 : MonoBehaviour
                     _incomingCalls.Add("Y2");
                     _incomingCalls.Add("C5");
                     _incomingCalls.Add("B1");
+                    if (_callManager.Return_call_1_3_Tauten() == true)
+                    {
+                        Add_Call_7_6();
+                    }
                     break;
                 }
             case 8:
@@ -229,12 +239,54 @@ public class Switchboard2 : MonoBehaviour
                     _incomingCalls.Add("A4");
                     break;
                 }
+            case 9:
+                {
+                    _incomingCalls.Clear();
 
+                    if (_callManager.ReturnEnding1Count() >= _callManager.ReturnEnding2Count() &&
+                        _callManager.ReturnEnding1Count() >= _callManager.ReturnEnding4Count())
+                    {
+                        _incomingCalls.Add("Y9");
+                        _incomingCalls.Add("Y9");
+                        _incomingCalls.Add("Z7");
+                        _incomingCalls.Add("C6");
+                        _incomingCalls.Add("Y9");
+
+                    }
+                    else if (_callManager.ReturnEnding2Count() > _callManager.ReturnEnding1Count() &&
+                             _callManager.ReturnEnding2Count() > _callManager.ReturnEnding4Count())
+                    {
+                        _incomingCalls.Add("Z8");
+                        _incomingCalls.Add("Z7");
+                        _incomingCalls.Add("B4");
+                        _incomingCalls.Add("Z8");
+                    }
+                    else if (_callManager.ReturnEnding4Count() > _callManager.ReturnEnding1Count() &&
+                             _callManager.ReturnEnding4Count() > _callManager.ReturnEnding2Count())
+                    {
+                        _incomingCalls.Add("C8");
+                        _incomingCalls.Add("C7");
+                        _incomingCalls.Add("Z1");
+                        _incomingCalls.Add("Z1");
+                        _incomingCalls.Add("X1");
+                        _incomingCalls.Add("C6");
+                        _incomingCalls.Add("Z1");
+                        _incomingCalls.Add("Y5");
+    
+                    }
+                        break;
+                }
         }
-
-
     }
 
+    public void Add_Call_1_8()
+    {
+        _incomingCalls.Add("Z5");
+    }
+    public void Add_Call_7_6()
+    {
+        _incomingCalls.Add("Z8");
+    }
 
     public void IncomingCall()
     {
@@ -275,14 +327,6 @@ public class Switchboard2 : MonoBehaviour
                 _currentLightSlot = slot;
             }
         }
-
-        //foreach (SwitchboardSO placement in _switchboardInv._switchboardList)//cycle through the switchboard list
-        //{
-        //    if (placement.placementName == _currentLightSlot.name)//if switchboard list selection equals incoming caller
-        //    {
-        //        _currentLightSlot.PopulateOutgoingCallee(_outgoingCall);
-        //    }
-        //}
     }
 
     public void ResetDay()

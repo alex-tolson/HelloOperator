@@ -101,30 +101,6 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    ////call this function PopulateIncomingCaller from Switchboard 2
-    //public void PopulateIncomingCaller(SwitchboardSO incomingCallerSwitchboard2)
-    //{
-    //    _incomingCaller = incomingCallerSwitchboard2;
-    //    foreach (SwitchesAnim toggle in _switchesAnim)
-    //    {
-    //        if (toggle.name == _incomingCaller.name)
-    //        {
-    //            toggle.PopulateIncomingCaller(_incomingCaller);
-    //        }
-    //    }
-    //}
-    //public void PopulateOutgoingCallee(SwitchboardSO outgoingCalleeSwitchboard2)
-    //{
-    //    _outgoingCallee = outgoingCalleeSwitchboard2;
-    //    foreach (SwitchesAnim toggle in _switchesAnim)
-    //    {
-    //        if (toggle.name == _outgoingCallee.name)
-    //        {
-    //            toggle.PopulateOutgoingCallee(_outgoingCallee);
-    //        }
-    //    }
-    //}
-
     public void IncomingInstantiatedReset()
     {
         _incomingInstantiated = false;
@@ -151,6 +127,4 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
         _light.sprite = _lightOff;
         Destroy(_gameObjIncoming);
     }
-
-
 }
