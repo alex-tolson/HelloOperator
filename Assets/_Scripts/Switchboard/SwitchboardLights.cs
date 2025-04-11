@@ -13,6 +13,7 @@ public class SwitchboardLights : MonoBehaviour, IPointerClickHandler
         {
             Debug.LogError("SwitchboardLights::Wires function is null");
         }
+
     }
 
     public void OnPointerClick(PointerEventData eventData)

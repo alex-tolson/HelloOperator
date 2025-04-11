@@ -324,8 +324,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &27681777
 CapsuleCollider2D:
@@ -596,7 +597,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &45101912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -953,7 +954,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &58850270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1111,8 +1112,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &62601674
 CapsuleCollider2D:
@@ -1231,7 +1233,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 63823348}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &63823348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,7 +1540,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &64675231
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2174,7 +2188,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &90819298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2443,37 +2457,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &115368213
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &115368215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5871059710127439980, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+  m_PrefabInstance: {fileID: 7704878847275182129}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 115368214}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &115368214
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115368213}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0681856, y: 1.321104, z: -10.018484}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240ec649e79529743b2d80a61cf13a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &115829910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,7 +2618,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &129569465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2994,8 +2988,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &143799948
 CapsuleCollider2D:
@@ -3137,8 +3132,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &157355463
 CapsuleCollider2D:
@@ -3813,8 +3809,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 1.11, y: -3.87, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &182301674
 CapsuleCollider2D:
@@ -3944,7 +3941,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &184598675
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4645,8 +4642,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &212306246
 CapsuleCollider2D:
@@ -5039,6 +5037,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &226235341
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,8 +5154,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &226235347
 CapsuleCollider2D:
@@ -5667,8 +5678,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &242596418
 CapsuleCollider2D:
@@ -5810,8 +5822,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &245066769
 CapsuleCollider2D:
@@ -5953,8 +5966,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &248524966
 CapsuleCollider2D:
@@ -6170,7 +6184,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 250664274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &250664274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6963,8 +6989,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &277540841
 CapsuleCollider2D:
@@ -7523,8 +7550,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &321606927
 CapsuleCollider2D:
@@ -7666,8 +7694,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &326943798
 CapsuleCollider2D:
@@ -7872,6 +7901,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: JournalUI, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &331456451
 GameObject:
   m_ObjectHideFlags: 0
@@ -7925,7 +7978,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &331456455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8998,7 +9051,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &371156121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9104,7 +9157,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &374027277
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9442,6 +9495,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2134815790}
         m_TargetAssemblyTypeName: Switchboard2, Assembly-CSharp
         m_MethodName: ResetDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9883,7 +9948,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &404335114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10160,8 +10225,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &418097440
 CapsuleCollider2D:
@@ -10497,8 +10563,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &434969654
 CapsuleCollider2D:
@@ -10724,8 +10791,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &460161636
 CapsuleCollider2D:
@@ -10964,8 +11032,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &471606000
 CapsuleCollider2D:
@@ -11055,7 +11124,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &475438279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11196,7 +11265,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &479806039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11796,8 +11865,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &498360416
 CapsuleCollider2D:
@@ -11957,6 +12027,18 @@ MonoBehaviour:
       - m_Target: {fileID: 900215554}
         m_TargetAssemblyTypeName: JournalUI, Assembly-CSharp
         m_MethodName: JournalClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12395,7 +12477,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &514717501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12809,7 +12891,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &529962677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13127,7 +13209,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &550332026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13680,6 +13762,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &578447117
 GameObject:
   m_ObjectHideFlags: 0
@@ -13882,8 +13976,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &580001982
 CapsuleCollider2D:
@@ -14398,8 +14493,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &602307013
 CapsuleCollider2D:
@@ -14569,7 +14665,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &609582961
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15105,8 +15201,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &637104209
 CapsuleCollider2D:
@@ -15457,7 +15554,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &672834551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15598,7 +15695,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &675489304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16287,7 +16384,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &698589273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16564,8 +16661,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &708811666
 CapsuleCollider2D:
@@ -16836,7 +16934,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &713170744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17861,7 +17959,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &761028796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18398,8 +18496,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &788055097
 CapsuleCollider2D:
@@ -18649,7 +18748,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &800364296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19090,7 +19189,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &835899451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19276,7 +19375,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &839085661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19669,7 +19768,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &863228083
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20136,8 +20235,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &871387824
 CapsuleCollider2D:
@@ -20262,7 +20362,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &871556379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20916,8 +21016,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &907682180
 CapsuleCollider2D:
@@ -21091,7 +21192,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &918788197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21941,8 +22042,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &965483889
 CapsuleCollider2D:
@@ -22446,8 +22548,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &975492081
 CapsuleCollider2D:
@@ -22572,7 +22675,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &977802309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23168,8 +23271,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1007824654
 CapsuleCollider2D:
@@ -23525,7 +23629,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1066114822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23715,7 +23819,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1075214157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24388,7 +24492,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1101949103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25049,8 +25153,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1143325739
 CapsuleCollider2D:
@@ -25289,8 +25394,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1150329224
 CapsuleCollider2D:
@@ -25495,7 +25601,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1152951926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26313,8 +26419,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1230217677
 CapsuleCollider2D:
@@ -26536,8 +26643,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1233053143
 CapsuleCollider2D:
@@ -26662,7 +26770,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1239553336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27042,7 +27150,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1264866816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27509,8 +27617,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1269124192
 CapsuleCollider2D:
@@ -27997,8 +28106,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1299885538
 CapsuleCollider2D:
@@ -28203,6 +28313,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1319113882
 GameObject:
   m_ObjectHideFlags: 0
@@ -28388,7 +28510,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1323794180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28529,7 +28651,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1324266489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29108,7 +29230,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1348672804
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29214,7 +29336,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1349849936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29504,8 +29626,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1360903331
 CapsuleCollider2D:
@@ -30244,7 +30367,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1386658067}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115368215}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1386658067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30634,7 +30769,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1399381400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30827,8 +30962,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1408260400
 CapsuleCollider2D:
@@ -31151,8 +31287,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1413622526
 CapsuleCollider2D:
@@ -31242,7 +31379,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1423674285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32102,8 +32239,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1459779296
 CapsuleCollider2D:
@@ -32245,8 +32383,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1464465667
 CapsuleCollider2D:
@@ -32565,7 +32704,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1484041329
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32758,8 +32897,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1484544765
 CapsuleCollider2D:
@@ -33162,8 +33302,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1498164176
 CapsuleCollider2D:
@@ -33385,8 +33526,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1515364206
 CapsuleCollider2D:
@@ -33785,7 +33927,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1546678875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34103,7 +34245,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1563936943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34261,8 +34403,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1571789501
 CapsuleCollider2D:
@@ -34566,7 +34709,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1578460347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34839,7 +34982,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1583210863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35227,8 +35370,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1604164567
 CapsuleCollider2D:
@@ -35689,7 +35833,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1617720418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35927,7 +36071,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1620055435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36200,8 +36344,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1621077661
 CapsuleCollider2D:
@@ -36634,8 +36779,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1652643577
 CapsuleCollider2D:
@@ -36861,8 +37007,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1676238041
 CapsuleCollider2D:
@@ -37088,8 +37235,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1681517623
 CapsuleCollider2D:
@@ -37621,8 +37769,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1697397603
 CapsuleCollider2D:
@@ -38106,7 +38255,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1723918416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38586,8 +38735,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1737785548
 CapsuleCollider2D:
@@ -38712,7 +38862,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1745891588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39007,7 +39157,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1764762081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39148,7 +39298,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1765164253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39505,7 +39655,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1771733371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39663,8 +39813,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1790734375
 CapsuleCollider2D:
@@ -40156,8 +40307,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1822550243
 CapsuleCollider2D:
@@ -41386,8 +41538,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1873024409
 CapsuleCollider2D:
@@ -41529,8 +41682,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1884795268
 CapsuleCollider2D:
@@ -42156,7 +42310,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &1932009522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42349,8 +42503,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &1938024394
 CapsuleCollider2D:
@@ -43628,7 +43783,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &2004206037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44097,7 +44252,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &2018801573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44423,8 +44578,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &2025547939
 CapsuleCollider2D:
@@ -44911,7 +45067,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &2049142254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45405,8 +45561,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &2060180219
 CapsuleCollider2D:
@@ -45496,7 +45653,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &2060701258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45637,7 +45794,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &2060958660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45830,8 +45987,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &2074098340
 CapsuleCollider2D:
@@ -45973,8 +46131,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &2075671111
 CapsuleCollider2D:
@@ -46064,7 +46223,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &2077476471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46648,6 +46807,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2097196544
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_Name
+      value: Wire-Incoming
+      objectReference: {fileID: 0}
+    - target: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7057406358666503960, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!1 &2108325561
 GameObject:
   m_ObjectHideFlags: 0
@@ -47138,7 +47358,7 @@ MonoBehaviour:
   _outgoingCallee: {fileID: 0}
   _slot: {fileID: 0}
   _outgoingWirePrefab: {fileID: 1645125028216914405, guid: 00ce4596ee9abfe4f96cefe9771f4f8e, type: 3}
-  _incomingWirePrefab: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
+  _incomingWirePrefab: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
 --- !u!212 &2130745618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47296,8 +47516,9 @@ MonoBehaviour:
   _direction: 0
   _currentState: 0
   _light: {fileID: 0}
-  _incomingWireGO: {fileID: 8451467039979539355, guid: 2df58989f453a274bb07cb4c6a2b4cbd, type: 3}
-  _incomingWirePositionOffset: {x: 0, y: 0, z: 0}
+  _incomingWireGO: {fileID: 3836362955012312437, guid: a10db73a9b63a4a4c9ac4e844124ad3e, type: 3}
+  _bone1PositionOffset: {x: 0, y: 0, z: 0}
+  _bone20PositionOffset: {x: 0, y: 0, z: 0}
   _gameObjIncoming: {fileID: 0}
 --- !u!70 &2132334266
 CapsuleCollider2D:
@@ -47493,7 +47714,7 @@ MonoBehaviour:
   _answererPanel: {fileID: 1684125884}
   _dialogue: {fileID: 1575207245}
   _dialogueChatter: []
-  _ending1Count: 2
+  _ending1Count: 0
   _ending2Count: 0
   _ending4Count: 0
 --- !u!1 &2138137142
@@ -48045,6 +48266,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 298389372401862984, guid: 82419266d509ad24cb42a229cd1387cd, type: 3}
   m_PrefabInstance: {fileID: 7856466294061423889}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7704878847275182129
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0681856
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.321104
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.018484
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606928839330208780, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317490439697584981, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9cfca21151a2d14c8aac986c2036efd, type: 3}
 --- !u!1001 &7856466294061423889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48183,4 +48461,5 @@ SceneRoots:
   - {fileID: 2033469535}
   - {fileID: 2108664699}
   - {fileID: 2134815788}
-  - {fileID: 115368214}
+  - {fileID: 7704878847275182129}
+  - {fileID: 2097196544}

@@ -1,5 +1,4 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -21,6 +20,7 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
     [SerializeField] private LightsSlot _slot;
     [SerializeField] private GameObject _outgoingWirePrefab;
     [SerializeField] private GameObject _incomingWirePrefab;
+    private AudioManager _audioManager;
 
     private void Start()
     {
@@ -34,7 +34,9 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
         {
             Debug.LogError("SwitchesAnim::LightsSlot array is empty");
         }
+        _audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
+
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -67,6 +69,7 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
     public void OnToggleClicked()
     {
         ++i;
+        
         try
         {
             if (i == 1)
@@ -105,11 +108,13 @@ public class SwitchesAnim : MonoBehaviour, IPointerClickHandler
                 }
                 _slot.TurnOffLight(); 
                 DisconnectWires();
+                _incomingWireGO.GetComponent<IncomingWire>().FlipWireToAnchorBool();
                 _slot.IncomingInstantiatedReset();
                 _switchboard2.StateMachineIdle();
                 _switchboard2.NotReadyToCall();
                 
             }
+            _audioManager.PlayRandomLightSwitch();
         }
         catch (Exception e)
         {

@@ -89,7 +89,7 @@ public class Switchboard2 : MonoBehaviour
 
     public void CallComingThru()
     {
-        Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count + " _incomingCalls.Count");
+        //Debug.Log(_callCount + " | call count  | " + _incomingCalls.Count + " _incomingCalls.Count");
         _incomingCallCompleted = false;
         if (_callCount == _incomingCalls.Count)
         {

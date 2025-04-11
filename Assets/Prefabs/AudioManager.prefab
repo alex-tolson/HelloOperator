@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4317490439697584981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606928839330208780}
+  - component: {fileID: 4451165132118753420}
+  - component: {fileID: 5871059710127439980}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &606928839330208780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4317490439697584981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0681856, y: 1.321104, z: -10.018484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4451165132118753420
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4317490439697584981}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5871059710127439980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4317490439697584981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240ec649e79529743b2d80a61cf13a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pluginCableAudio: []
+  _lightSwitchAudio: []
+  _unplugCableAudio: []
+  _turnPageAudio: []
+  _pluginCable0: {fileID: 8300000, guid: 94b015257b95e964aa059d2ac43eca4d, type: 3}
+  _pluginCable1: {fileID: 8300000, guid: 451959fc94e986d40bc38cf711e6a365, type: 3}
+  _pluginCable2: {fileID: 8300000, guid: 22791b03fcc81704080d49abb12b5779, type: 3}
+  _pluginCable3: {fileID: 8300000, guid: 5358872f54de51b4ca97e4d9ebbd899a, type: 3}
+  _pluginCable4: {fileID: 8300000, guid: 9c12688e56e1f7341a94f3b6d612b9f0, type: 3}
+  _pluginCable5: {fileID: 8300000, guid: 0bd4881da49ae2748b0f485f7fdd03ad, type: 3}
+  _pluginCable6: {fileID: 8300000, guid: 0a74d20e15b11fe46b5125697b3bd33a, type: 3}
+  _pluginCable7: {fileID: 8300000, guid: 3e12c5a7bbb5d504c9c8a2d83c6c91a6, type: 3}
+  _unplugCable0: {fileID: 8300000, guid: c4d1d495211020a45894b5604bc6dec0, type: 3}
+  _unplugCable1: {fileID: 8300000, guid: dc0b3189ddc4a2b4983a73aac1bd6f0d, type: 3}
+  _unplugCable2: {fileID: 8300000, guid: 61e6985ac3880734db80f6c14f6be02a, type: 3}
+  _unplugCable3: {fileID: 8300000, guid: e0291815722e9d84190c2fa6f8f57e9e, type: 3}
+  _lightSwitch0: {fileID: 8300000, guid: 42dd9ff0dfb0bec46886c259900cead8, type: 3}
+  _lightSwitch1: {fileID: 8300000, guid: 2b42e1f26a353764480b9ef6052187d7, type: 3}
+  _lightSwitch2: {fileID: 8300000, guid: 0a098f946e069834aa6e1d4f3974e1d8, type: 3}
+  _lightSwitch3: {fileID: 8300000, guid: 9aadafd520f98d0418ced4d808ff70ca, type: 3}
+  _lightSwitch4: {fileID: 8300000, guid: bc3696a52d46f114e98b3e31a55bf934, type: 3}
+  _lightSwitch5: {fileID: 8300000, guid: e67a5c939ba2c59458a167c90254d436, type: 3}
+  _buttonClick: {fileID: 8300000, guid: 32228b92038497e498a4e8951edc8812, type: 3}
+  _bellSound: {fileID: 8300000, guid: 9d475073638b74944b34bd9e4b785028, type: 3}
+  _turnPage0: {fileID: 0}
+  _turnPage1: {fileID: 8300000, guid: ed8141fdbc03ab741bafebb914dbbb23, type: 3}
+  _turnPage2: {fileID: 8300000, guid: af5b0cfffea66f94abed1266c6e90b43, type: 3}
+  _turnPage3: {fileID: 8300000, guid: 22223ce8a6ebfa94fbf7e02c877ef837, type: 3}
+  _turnPage4: {fileID: 8300000, guid: 8ca52c06cfb4c814d940b8372aefc616, type: 3}
+  _turnPage5: {fileID: 8300000, guid: 05c43b2276c76234ba12ae6a959d987b, type: 3}
+  _turnPage6: {fileID: 8300000, guid: 4da7581629f0c4840a80a0d6e427bb5e, type: 3}

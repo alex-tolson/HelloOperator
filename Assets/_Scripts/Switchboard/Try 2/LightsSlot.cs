@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using System;
+
 
 public class LightsSlot : MonoBehaviour, IPointerClickHandler
 {
@@ -24,9 +24,18 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     private GameObject _incomingWire;
     private GameObject _outgoingWire;
     private bool _incomingInstantiated = false;
-    [SerializeField] private Vector3 _incomingWirePositionOffset;
+    [SerializeField] private Vector3 _bone1PositionOffset;
+    [SerializeField] private Vector3 _bone20PositionOffset;
     [SerializeField] private GameObject _gameObjIncoming = null;
+    private AudioManager _audioManager;
 
+    //[SerializeField] private IncomingJack[] _incomingJacks;
+    private Vector2 _incomingCableStartingPosition;
+    private Vector2 _incomingCableEndingPosition;
+    //[SerializeField] GameObject _bone_20;
+    private bool _activated;
+
+ 
     private void Awake()
     {
         _nameOfThisLightslot = this.name;
@@ -49,6 +58,7 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
         {
             Debug.LogError("LightsSlot::Switchboard2 is null");
         }
+        _audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     public void AddLights(SwitchboardSO switchboardScriptableObj)
@@ -71,15 +81,20 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
                 {
                     if (_nameOfThisLightslot == placeHolder.name)
                     {
+                        _activated = true;
                         _gameObjIncoming = Instantiate(_incomingWireGO, placeHolder.transform.position, Quaternion.identity);
-
-                        _incomingWireGO.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);
+                        _incomingCableStartingPosition = _gameObjIncoming.transform.position + _bone1PositionOffset;
+                        _gameObjIncoming.GetComponent<IncomingWire>().ConnectWireAtAnchor(this);
                         _incomingInstantiated = true;
+                        _audioManager.PlayRandomPlugin();
                     }
+
                 }
             }
             else
             {
+                //_activated = false;
+                _audioManager.PlayRandomUnPlug();
                 _switchboard2.ClearComingAndGoing();
                 _incomingInstantiated = false;
                 TurnOffLight();
@@ -99,6 +114,12 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
             Destroy(_gameObjIncoming);
             _switchboard2.NotReadyToCall();
         }
+
+    }
+
+    public Vector2 StartingPosition()
+    {
+        return _incomingCableStartingPosition;
     }
 
     public void IncomingInstantiatedReset()
@@ -126,5 +147,10 @@ public class LightsSlot : MonoBehaviour, IPointerClickHandler
     {
         _light.sprite = _lightOff;
         Destroy(_gameObjIncoming);
+    }
+
+    public bool IsActivated()
+    {
+        return _activated;
     }
 }
